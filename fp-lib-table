@@ -1,0 +1,12 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "MAX6958AAEE_")(type "KiCad")(uri "${KIPRJMOD}/lib/MAX6958AAEE_")(options "")(descr ""))
+  (lib (name "SN74CB3T3245DGVR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74CB3T3245DGVR/footprints.pretty")(options "")(descr ""))
+  (lib (name "LIB_AIC1733-33PVTR")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_AIC1733-33PVTR")(options "")(descr ""))
+  (lib (name "SN74AUP2G07DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74AUP2G07DCKR")(options "")(descr ""))
+  (lib (name "PGB1010603NR")(type "KiCad")(uri "${KIPRJMOD}/lib/PGB1010603NR")(options "")(descr ""))
+  (lib (name "SN74LVC1G06DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74LVC1G06DCKR")(options "")(descr ""))
+  (lib (name "SN74LVC2G06DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74LVC2G06DCKR")(options "")(descr ""))
+  (lib (name "KEYSTONE_5085")(type "KiCad")(uri "${KIPRJMOD}/lib/KEYSTONE_5085")(options "")(descr ""))
+  (lib (name "testpoint")(type "KiCad")(uri "${KIPRJMOD}/lib/testpoint")(options "")(descr ""))
+)

@@ -1,0 +1,8 @@
+**/*-backups/
+\#auto_saved_files\#
+**/*-bak
+**/fp-info-cache
+/*.xml
+/*.csv
+jlcpcb
+**/*.kicad_sch_old
