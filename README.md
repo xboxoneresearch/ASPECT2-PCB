@@ -54,4 +54,6 @@ Before being able to communicate with the device, programming eeprom or regular 
 
 ## References
 
-- [AssemblerGames](https://web.archive.org/web/20250327165519/https://assemblergames.org/viewtopic.php?p=870129)
+- [AssemblerGames](https://web.archive.org/web/20250327165519/https://assemblergames.org/viewtopic.php?p=870129) - first mentioning of FACET2 PCB
+- [FACET on xosft wiki](https://xboxoneresearch.github.io/wiki/hardware/facet/) - Technical documentation of FACET port
+- [libaspect2](https://github.com/xboxoneresearch/libaspect2) - Attempt at an open source library
