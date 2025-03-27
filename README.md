@@ -5,6 +5,9 @@
 
 # ASPECT2 PCB
 
+![PCB - work in progress](./assets/pcb_work_in_progress.png)
+
+
 This repo contains:
 
 * KiCad files for the PCB / schematics
