@@ -51,3 +51,7 @@ Before being able to communicate with the device, programming eeprom or regular 
 * Click Program-button in the dialog box
 * Click Close-button, close FT Prog tool
 * Re-plug Aspect2 board
+
+## References
+
+- [AssemblerGames](https://web.archive.org/web/20250327165519/https://assemblergames.org/viewtopic.php?p=870129)
