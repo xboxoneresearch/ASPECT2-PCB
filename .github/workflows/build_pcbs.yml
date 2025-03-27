@@ -1,0 +1,35 @@
+name: Build PCBs
+
+on:
+  workflow_call:
+  push:
+    paths:
+    - "*.kicad_sch"
+    - "*.kicad_pcb"
+    - "*.kicad_pro"
+    - "kibot.yml"
+  pull_request:
+    paths:
+    - "*.kicad_sch"
+    - "*.kicad_pcb"
+    - "*.kicad_pro"
+    - "kibot.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: INTI-CMNB/KiBot@v2_k8
+        with:
+          config: kibot.yml
+          dir: output
+          schema: 'FACET.kicad_sch'
+          board: 'FACET.kicad_pcb'
+
+      - name: upload results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: output
+          path: output
