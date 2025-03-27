@@ -1,3 +1,8 @@
+[![Build PCBs](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_pcbs.yml/badge.svg)](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_pcbs.yml)
+
+> [!WARNING]  
+> To reach the state of ready-for-manufacturing, check out the [issues](https://github.com/xboxoneresearch/ASPECT2-PCB/issues)
+
 # ASPECT2 PCB
 
 This repo contains:
