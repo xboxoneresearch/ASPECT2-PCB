@@ -1328,44 +1328,6 @@
 			)
 		)
 	)
-	(sheet
-		(at 234.95 46.99)
-		(size 44.45 41.91)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "d6026b81-1647-4e1b-b4f8-42928a377572")
-		(property "Sheetname" " 7 Segment Display"
-			(at 234.95 46.2784 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "7seg_display.kicad_sch"
-			(at 234.95 89.4846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(page "2")
-				)
-			)
-		)
-	)
 	(sheet_instances
 		(path "/"
 			(page "1")

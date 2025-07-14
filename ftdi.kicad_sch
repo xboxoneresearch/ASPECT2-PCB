@@ -2850,12 +2850,6 @@
 		(uuid "3e5e1af6-8d1b-442b-a316-0d04d8915cdf")
 	)
 	(junction
-		(at 198.12 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "43bf290a-be98-41b4-b2df-cc618ef03dc2")
-	)
-	(junction
 		(at 115.57 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3018,12 +3012,6 @@
 		(uuid "e41c6c17-8df4-41de-8a91-9384029ffa39")
 	)
 	(junction
-		(at 201.93 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e6fa0b01-3a79-46b8-9513-f55f1d484933")
-	)
-	(junction
 		(at 118.11 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3040,12 +3028,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2338d8d-8f90-4075-8d60-7129c59667cd")
-	)
-	(junction
-		(at 204.47 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f41a271f-1cd7-49bd-becb-c70f26c75d3a")
 	)
 	(junction
 		(at 110.49 167.64)
@@ -3340,26 +3322,6 @@
 			(type default)
 		)
 		(uuid "1d17f0e0-a43e-4204-95e3-28a4631991cc")
-	)
-	(wire
-		(pts
-			(xy 198.12 127) (xy 208.28 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d6fe52c-20c1-4c3f-af98-7fab88f19f7b")
-	)
-	(wire
-		(pts
-			(xy 157.48 127) (xy 198.12 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e6a40fc-8f1c-4382-a4d4-f9d34facb1bb")
 	)
 	(wire
 		(pts
@@ -3773,16 +3735,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 105.41) (xy 201.93 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57742e28-06a2-4b19-b445-430e017d86da")
-	)
-	(wire
-		(pts
 			(xy 146.05 81.28) (xy 152.4 81.28)
 		)
 		(stroke
@@ -3790,16 +3742,6 @@
 			(type default)
 		)
 		(uuid "585a6ba9-6013-45be-a624-fc0028e9859a")
-	)
-	(wire
-		(pts
-			(xy 204.47 109.22) (xy 204.47 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58d35f7c-41c6-4436-9bee-c54759b518cd")
 	)
 	(wire
 		(pts
@@ -3880,16 +3822,6 @@
 			(type default)
 		)
 		(uuid "63fe65db-e99a-4026-a3f3-dfcd636ea93d")
-	)
-	(wire
-		(pts
-			(xy 204.47 129.54) (xy 208.28 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "646ea9f3-b837-4082-b2c5-a47364a3a690")
 	)
 	(wire
 		(pts
@@ -4213,16 +4145,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 109.22) (xy 204.47 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95e3281a-fff9-4660-9bf6-6d51ac02674e")
-	)
-	(wire
-		(pts
 			(xy 125.095 29.21) (xy 125.095 34.925)
 		)
 		(stroke
@@ -4230,16 +4152,6 @@
 			(type default)
 		)
 		(uuid "9602ba62-be3e-4e7b-87a2-5529b0883b30")
-	)
-	(wire
-		(pts
-			(xy 198.12 109.22) (xy 201.93 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99ea2de5-5072-47b0-9509-b361ec17310c")
 	)
 	(wire
 		(pts
@@ -4463,16 +4375,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 123.19) (xy 204.47 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b70bd099-7d14-43ff-bc85-52884d2f7b96")
-	)
-	(wire
-		(pts
 			(xy 25.4 123.19) (xy 38.1 123.19)
 		)
 		(stroke
@@ -4480,16 +4382,6 @@
 			(type default)
 		)
 		(uuid "b70eedcb-02f0-419a-aae3-e47279e746f5")
-	)
-	(wire
-		(pts
-			(xy 198.12 123.19) (xy 198.12 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b75522b0-7564-42ad-ae27-767fceedba01")
 	)
 	(wire
 		(pts
@@ -4520,6 +4412,16 @@
 			(type default)
 		)
 		(uuid "c04dc21a-d2ce-4a0f-a5be-3ea0a888e0a4")
+	)
+	(wire
+		(pts
+			(xy 157.48 127) (xy 162.56 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0bf85f4-27b6-4489-b0b6-9dfae20546c3")
 	)
 	(wire
 		(pts
@@ -4923,6 +4825,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 129.54) (xy 162.56 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9139ee2-9de5-4549-afeb-9b6f7a6bbf7c")
+	)
+	(wire
+		(pts
 			(xy 41.91 104.14) (xy 45.72 104.14)
 		)
 		(stroke
@@ -4953,16 +4865,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 129.54) (xy 204.47 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed8d82e5-8f12-48aa-bf64-b19b0e1c17cb")
-	)
-	(wire
-		(pts
 			(xy 231.665 69.85) (xy 231.665 70.51)
 		)
 		(stroke
@@ -4990,16 +4892,6 @@
 			(type default)
 		)
 		(uuid "f39fa68f-0f07-49c5-b86b-ee31f8ff0abd")
-	)
-	(wire
-		(pts
-			(xy 198.12 118.11) (xy 198.12 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f52e2c09-0a34-4c43-ba7e-0d507bdf9eb1")
 	)
 	(wire
 		(pts
@@ -5094,16 +4986,6 @@
 			(justify left bottom)
 		)
 		(uuid "54b8d623-6835-414b-a74a-68a49c6c7c84")
-	)
-	(text "Optional I2C pull-up"
-		(exclude_from_sim no)
-		(at 215.646 115.824 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "91fe71ba-ed52-4d37-bb45-631b08d19ff5")
 	)
 	(label "FTDI_SPI_SS_N_R"
 		(at 148.59 73.66 0)
@@ -5657,7 +5539,7 @@
 	)
 	(global_label "SMBUS_CLK_FACET"
 		(shape input)
-		(at 208.28 127 0)
+		(at 162.56 127 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5667,7 +5549,7 @@
 		)
 		(uuid "c42fb6e8-8195-4030-b3bb-563f6c0fe8db")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 228.8032 127 0)
+			(at 183.0832 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5855,7 +5737,7 @@
 	)
 	(global_label "SMBUS_DATA_FACET"
 		(shape input)
-		(at 208.28 129.54 0)
+		(at 162.56 129.54 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5865,7 +5747,7 @@
 		)
 		(uuid "f4657c9a-302b-41d3-a12a-acb6dea7cca8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.6499 129.54 0)
+			(at 183.9299 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6943,102 +6825,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 198.12 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "36f4d22b-2e8d-4bef-97f4-038ae4e80845")
-		(property "Reference" "R46"
-			(at 196.85 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 200.025 123.825 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 198.12 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 198.12 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 198.12 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C4109"
-			(at 198.12 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF2001TCE_C4109.html"
-			(at 198.12 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C4109"
-			(at 196.85 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bf74f995-0a4b-43d0-ab31-e7bebe441cb1")
-		)
-		(pin "2"
-			(uuid "a083af51-0bee-44f0-bcea-9ce67c78400c")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/7f94c121-bd49-4cf2-a199-8adbd7da4bba"
-					(reference "R46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
 		(at 172.72 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7588,102 +7374,6 @@
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/7f94c121-bd49-4cf2-a199-8adbd7da4bba"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 204.47 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "5219e5f2-2227-437c-b627-2ca00916e9db")
-		(property "Reference" "R47"
-			(at 203.2 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 206.375 123.825 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 204.47 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 204.47 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 204.47 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C4109"
-			(at 204.47 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF2001TCE_C4109.html"
-			(at 204.47 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C4109"
-			(at 203.2 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dd1e6886-3850-4531-9916-893d75a27402")
-		)
-		(pin "2"
-			(uuid "ae249151-415d-41e9-ba29-6f3db1eac6c9")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/7f94c121-bd49-4cf2-a199-8adbd7da4bba"
-					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -9855,72 +9545,6 @@
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/7f94c121-bd49-4cf2-a199-8adbd7da4bba"
 					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 201.93 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c7968bb-e041-476d-899f-30e7029ccdea")
-		(property "Reference" "#PWR048"
-			(at 201.93 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 201.93 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 201.93 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 201.93 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "47fd7ac5-81ff-4bd1-a580-b62ab9c9d946")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/7f94c121-bd49-4cf2-a199-8adbd7da4bba"
-					(reference "#PWR048")
 					(unit 1)
 				)
 			)

@@ -1249,12 +1249,6 @@
 		)
 	)
 	(junction
-		(at 237.49 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e072de1-579d-4a49-ac03-0a7429748bc9")
-	)
-	(junction
 		(at 85.09 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1265,12 +1259,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e7f791b-0833-43aa-9b7c-2efef01a33e9")
-	)
-	(junction
-		(at 237.49 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "837bebb2-4a30-4294-aaeb-f87b4f4533fc")
 	)
 	(junction
 		(at 237.49 40.64)
@@ -1600,16 +1588,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 48.26) (xy 237.49 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3180e6c3-e55f-4aa7-8ca3-af716d0cef30")
-	)
-	(wire
-		(pts
 			(xy 106.68 133.35) (xy 106.68 137.16)
 		)
 		(stroke
@@ -1697,26 +1675,6 @@
 			(type default)
 		)
 		(uuid "512143d7-6283-473e-8776-6d3d46070382")
-	)
-	(wire
-		(pts
-			(xy 232.41 45.72) (xy 237.49 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53cdacea-898f-4ae5-95bf-37d403debb0f")
-	)
-	(wire
-		(pts
-			(xy 237.49 48.26) (xy 237.49 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5635c915-a6e0-4cb9-84a7-4e5c186418fc")
 	)
 	(polyline
 		(pts
@@ -1877,16 +1835,6 @@
 			(type default)
 		)
 		(uuid "867cc5bf-1684-4170-9b36-b3e152df153b")
-	)
-	(wire
-		(pts
-			(xy 237.49 45.72) (xy 237.49 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "886e0e08-7e97-4d6d-9351-86f42ef7a97a")
 	)
 	(wire
 		(pts
@@ -4402,89 +4350,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 232.41 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5d650752-4cba-46a1-ae86-854abdf38027")
-		(property "Reference" "TP7"
-			(at 226.06 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 229.108 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Minature"
-			(at 232.41 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 232.41 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 232.41 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" ""
-			(at 232.41 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" ""
-			(at 232.41 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "de3e7786-3973-41f5-8d8a-e50f0b1906de")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/71c11425-cac2-47ba-9458-52d8d85cae8e"
-					(reference "TP7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 40.005 168.91 90)
 		(unit 1)
@@ -4776,7 +4641,7 @@
 		(dnp no)
 		(uuid "6b8c962b-63e9-4368-b3a8-ef12b6c4f6ee")
 		(property "Reference" "D4"
-			(at 127.635 131.445 0)
+			(at 128.778 131.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4784,7 +4649,7 @@
 			)
 		)
 		(property "Value" "red LED"
-			(at 133.858 130.556 0)
+			(at 129.032 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4886,7 +4751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Minature"
 			(at 232.41 24.13 0)
 			(effects
 				(font
@@ -5134,89 +4999,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 232.41 45.72 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8722e3cd-a58f-4298-bd76-f9cba909db1b")
-		(property "Reference" "TP6"
-			(at 226.06 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 229.108 43.18 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Minature"
-			(at 232.41 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 232.41 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 232.41 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" ""
-			(at 232.41 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" ""
-			(at 232.41 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdbbaed3-4ad8-46ba-9d0b-5cf59679bc87")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/71c11425-cac2-47ba-9458-52d8d85cae8e"
-					(reference "TP6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SN74LVC2G06DCKR:SN74LVC2G06DCKR")
 		(at 62.23 44.45 0)
 		(unit 1)
@@ -5403,7 +5185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro-Minature"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Minature"
 			(at 232.41 27.94 0)
 			(effects
 				(font
@@ -6502,7 +6284,7 @@
 		(dnp no)
 		(uuid "ec32181b-5238-48a3-9c32-89af2a4a98f6")
 		(property "Reference" "D3"
-			(at 29.845 165.735 0)
+			(at 31.75 165.354 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6596,7 +6378,7 @@
 		(dnp no)
 		(uuid "ec867245-8713-43e6-8299-5e67cb31081e")
 		(property "Reference" "D1"
-			(at 52.07 128.27 0)
+			(at 55.372 128.778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6604,7 +6386,7 @@
 			)
 		)
 		(property "Value" "red LED"
-			(at 57.658 128.27 0)
+			(at 55.626 136.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
