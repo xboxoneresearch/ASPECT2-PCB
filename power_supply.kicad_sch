@@ -140,357 +140,6 @@
 				)
 			)
 		)
-		(symbol "Device:L_Ferrite_Small"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "L"
-				(at 1.27 1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "L_Ferrite_Small"
-				(at 1.27 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Inductor with ferrite core, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "L_Ferrite_Small_0_1"
-				(arc
-					(start 0 -2.032)
-					(mid 0.5058 -1.524)
-					(end 0 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.016)
-					(mid 0.5058 -0.508)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.905) (xy 0.762 -1.651)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.397) (xy 0.762 -1.143)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -0.889) (xy 0.762 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -0.381) (xy 0.762 -0.127)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.127) (xy 0.762 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.635) (xy 0.762 0.889)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.143) (xy 0.762 1.397)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.651) (xy 0.762 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.651) (xy 1.016 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -1.143) (xy 1.016 -1.397)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -0.635) (xy 1.016 -0.889)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -0.127) (xy 1.016 -0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0.381) (xy 1.016 0.127)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0.889) (xy 1.016 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 1.397) (xy 1.016 1.143)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 1.905) (xy 1.016 1.651)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.5058 0.508)
-					(end 0 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.016)
-					(mid 0.5058 1.524)
-					(end 0 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_Ferrite_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.508)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.508)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Regulator_Linear:TLV75533PDBV"
 			(pin_names
 				(offset 0.254)
@@ -1039,108 +688,6 @@
 				)
 			)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-		)
-	)
-	(junction
-		(at 144.78 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0fc25df7-f029-40f5-8b26-0bde25573132")
 	)
 	(junction
 		(at 81.28 95.25)
@@ -1161,44 +708,14 @@
 		(uuid "6154b83d-9d1a-4703-8684-56138dcd651b")
 	)
 	(junction
-		(at 95.25 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73a0e627-0b1f-43d0-bb50-44a8a56beff9")
-	)
-	(junction
-		(at 95.25 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b4887e3e-2ba2-47ab-a294-d6912567e232")
-	)
-	(junction
-		(at 133.35 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c0e9f56c-dd1e-4856-9c31-18b31264cc2d")
-	)
-	(junction
 		(at 144.78 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9c33908-446e-41a3-a372-05702fca1ff5")
 	)
-	(junction
-		(at 81.28 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d6328f6b-eae0-4d40-a967-aecf8adc0a1a")
-	)
-	(junction
-		(at 133.35 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd00e17b-56f9-4b64-aa3c-de876bf6e3b2")
-	)
 	(wire
 		(pts
-			(xy 95.25 95.25) (xy 107.95 95.25)
+			(xy 81.28 95.25) (xy 107.95 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1208,27 +725,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 110.49) (xy 144.78 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25ca5726-7441-43de-8905-ec069ab76678")
-	)
-	(wire
-		(pts
-			(xy 144.78 88.9) (xy 144.78 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d441eb7-0bfe-4ba8-90a2-8989cffb2784")
-	)
-	(wire
-		(pts
-			(xy 81.28 102.87) (xy 81.28 110.49)
+			(xy 81.28 105.41) (xy 81.28 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1248,17 +745,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 95.25) (xy 95.25 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b1822e4-74d0-4580-9780-343127175ff7")
-	)
-	(wire
-		(pts
-			(xy 123.19 95.25) (xy 133.35 95.25)
+			(xy 123.19 95.25) (xy 144.78 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1268,43 +755,13 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 92.71) (xy 81.28 95.25)
+			(xy 81.28 81.28) (xy 81.28 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "51c6f560-613c-4441-95d3-7bd2548d725d")
-	)
-	(wire
-		(pts
-			(xy 81.28 81.28) (xy 81.28 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57946f09-f3ab-4b9f-b5aa-c6e7017205ef")
-	)
-	(wire
-		(pts
-			(xy 144.78 81.28) (xy 144.78 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58cf622b-6e3c-449b-9e1c-1731ba46bea0")
-	)
-	(wire
-		(pts
-			(xy 81.28 90.17) (xy 81.28 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66d71759-02a4-465a-8928-ed8a8a41b662")
 	)
 	(wire
 		(pts
@@ -1318,16 +775,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 110.49) (xy 95.25 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78d64cc6-a331-472b-b0af-91e6564de0e2")
-	)
-	(wire
-		(pts
 			(xy 144.78 102.87) (xy 144.78 110.49)
 		)
 		(stroke
@@ -1335,36 +782,6 @@
 			(type default)
 		)
 		(uuid "8a91cab2-a8d1-4b89-b058-3fb8f01f12ce")
-	)
-	(wire
-		(pts
-			(xy 81.28 95.25) (xy 95.25 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93ccb6be-843e-4401-b079-7bec9de2dee0")
-	)
-	(wire
-		(pts
-			(xy 133.35 95.25) (xy 133.35 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97940fc0-fb5d-4384-8daf-3b8bd77f4655")
-	)
-	(wire
-		(pts
-			(xy 133.35 95.25) (xy 144.78 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8237e3b-5f95-48c8-8d2c-44ccdec3343b")
 	)
 	(wire
 		(pts
@@ -1378,7 +795,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 110.49) (xy 133.35 110.49)
+			(xy 81.28 110.49) (xy 144.78 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1388,7 +805,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 80.01) (xy 144.78 81.28)
+			(xy 144.78 80.01) (xy 144.78 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1408,27 +825,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 102.87) (xy 133.35 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "edea5f4b-5ef7-4209-8f21-00ef035f845d")
-	)
-	(wire
-		(pts
-			(xy 95.25 102.87) (xy 95.25 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5206a43-a884-4428-9c79-5c1ecb9a3a46")
-	)
-	(wire
-		(pts
-			(xy 81.28 95.25) (xy 81.28 97.79)
+			(xy 81.28 95.25) (xy 81.28 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1537,199 +934,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 95.25 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1de145bb-5a82-420b-bdd5-cdf6dc92b6bc")
-		(property "Reference" "C15"
-			(at 98.425 99.7013 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1 uF"
-			(at 98.425 102.2413 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 95.25 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 95.25 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 95.25 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C14663"
-			(at 95.25 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603KRX7R9BB104_C14663.html"
-			(at 95.25 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C14663"
-			(at 98.425 99.7013 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1d44c602-0365-4628-97a5-7b8c3a5fc58e")
-		)
-		(pin "2"
-			(uuid "8bd6a61e-6d78-409f-8b15-b943f1bdb02a")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/847d956d-b9cc-42b2-b762-eac049b2e2f2"
-					(reference "C15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Ferrite_Small")
-		(at 144.78 86.36 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2335d162-0a6c-4af9-abe1-fbe17c9eb639")
-		(property "Reference" "L2"
-			(at 146.05 85.0899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "600R / 0.5A"
-			(at 146.05 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric"
-			(at 144.78 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor with ferrite core, small symbol"
-			(at 144.78 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C275451"
-			(at 144.78 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Ferrite-Beads_TDK-MMZ1608S601ATA00_C275451.html"
-			(at 144.78 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C275451"
-			(at 140.335 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89a513ec-db6e-4e69-afae-536a049e9899")
-		)
-		(pin "2"
-			(uuid "aae711ae-30a5-42db-a241-30b4ada9c73f")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/847d956d-b9cc-42b2-b762-eac049b2e2f2"
-					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 144.78 80.01 0)
 		(unit 1)
@@ -1790,169 +994,6 @@
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/847d956d-b9cc-42b2-b762-eac049b2e2f2"
 					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Ferrite_Small")
-		(at 81.28 87.63 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5f835bef-1838-4a4d-8bbd-d1dde9a44066")
-		(property "Reference" "L1"
-			(at 86.106 86.868 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "600R / 0.5A"
-			(at 96.012 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1812_4532Metric"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor with ferrite core, small symbol"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C275451"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Ferrite-Beads_TDK-MMZ1608S601ATA00_C275451.html"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C275451"
-			(at 78.74 88.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "30311c19-6506-48ed-b8bd-b0056563f5c9")
-		)
-		(pin "2"
-			(uuid "cd0ce3bc-5869-448c-8168-20a8175ffe01")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/847d956d-b9cc-42b2-b762-eac049b2e2f2"
-					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 144.78 81.28 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "689a61f1-1d92-44bd-ba2b-cfd56104c882")
-		(property "Reference" "#FLG02"
-			(at 142.875 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 140.97 81.2799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 144.78 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3bc1cb55-8012-4ddf-b5d7-62b9e2c576d0")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/847d956d-b9cc-42b2-b762-eac049b2e2f2"
-					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -2027,7 +1068,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 81.28 100.33 0)
+		(at 81.28 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2035,15 +1076,6 @@
 		(dnp no)
 		(uuid "85506a38-ce4c-4a0f-8aab-ecb7cb392227")
 		(property "Reference" "C14"
-			(at 84.455 99.7013 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7 uF"
 			(at 84.455 102.2413 0)
 			(effects
 				(font
@@ -2052,8 +1084,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "1uF (X7R)"
+			(at 84.455 104.7813 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 81.28 100.33 0)
+			(at 81.28 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2062,7 +1103,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 100.33 0)
+			(at 81.28 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2071,7 +1112,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 81.28 100.33 0)
+			(at 81.28 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2080,7 +1121,7 @@
 			)
 		)
 		(property "JLCPCB Part#" "C19666"
-			(at 81.28 100.33 0)
+			(at 81.28 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2089,7 +1130,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A475KO8NNNC_C19666.html"
-			(at 81.28 100.33 0)
+			(at 81.28 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2098,7 +1139,7 @@
 			)
 		)
 		(property "LCSC" "C19666"
-			(at 84.455 99.7013 0)
+			(at 84.455 102.2413 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2116,73 +1157,6 @@
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/847d956d-b9cc-42b2-b762-eac049b2e2f2"
 					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 81.28 92.71 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "944cc414-3312-482b-9b10-291a355021a4")
-		(property "Reference" "#FLG04"
-			(at 79.375 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 77.47 92.7099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 81.28 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "264d5867-7d12-465c-95ff-1a335ce4869f")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/847d956d-b9cc-42b2-b762-eac049b2e2f2"
-					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -2360,7 +1334,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 133.35 100.33 0)
+		(at 144.78 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2368,102 +1342,6 @@
 		(dnp no)
 		(uuid "d0cb6c9b-bfb3-4722-9de8-d832a3eb33da")
 		(property "Reference" "C16"
-			(at 136.525 99.7013 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1 uF"
-			(at 136.525 102.2413 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 133.35 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 133.35 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 133.35 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C14663"
-			(at 133.35 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603KRX7R9BB104_C14663.html"
-			(at 133.35 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C14663"
-			(at 136.525 99.7013 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1649bdb5-c667-4eb4-aaee-7652f4a91e63")
-		)
-		(pin "2"
-			(uuid "7eed06f3-6501-4639-8f66-1729f55215aa")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/847d956d-b9cc-42b2-b762-eac049b2e2f2"
-					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 144.78 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e67b7e17-6c28-4060-9ad5-82f6bda499a6")
-		(property "Reference" "C17"
 			(at 147.955 99.7013 0)
 			(effects
 				(font
@@ -2472,7 +1350,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7 uF"
+		(property "Value" "0.47 uF (X7R)"
 			(at 147.955 102.2413 0)
 			(effects
 				(font
@@ -2508,7 +1386,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C19666"
+		(property "JLCPCB Part#" "C14663"
 			(at 144.78 100.33 0)
 			(effects
 				(font
@@ -2517,7 +1395,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A475KO8NNNC_C19666.html"
+		(property "Purchase Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0603KRX7R9BB104_C14663.html"
 			(at 144.78 100.33 0)
 			(effects
 				(font
@@ -2526,7 +1404,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C19666"
+		(property "LCSC" "C14663"
 			(at 147.955 99.7013 0)
 			(effects
 				(font
@@ -2536,15 +1414,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0a1251b1-ad94-485e-8c99-7be93e6947ea")
+			(uuid "1649bdb5-c667-4eb4-aaee-7652f4a91e63")
 		)
 		(pin "2"
-			(uuid "98e5abc0-96ed-4b04-835b-62b8daa6badb")
+			(uuid "7eed06f3-6501-4639-8f66-1729f55215aa")
 		)
 		(instances
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/847d956d-b9cc-42b2-b762-eac049b2e2f2"
-					(reference "C17")
+					(reference "C16")
 					(unit 1)
 				)
 			)
