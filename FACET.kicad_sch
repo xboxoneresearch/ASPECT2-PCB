@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55")
 	(paper "A4")
 	(title_block
@@ -11,9 +11,13 @@
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
@@ -111,12 +115,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:Earth"
+		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -129,7 +138,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "Earth"
+			(property "Value" "GND"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -146,7 +155,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -155,7 +164,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
 				(effects
 					(font
@@ -164,7 +173,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global ground gnd"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -173,46 +182,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Earth_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy -0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 -2.54) (xy 0.127 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy -1.27 -1.27)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -223,7 +196,7 @@
 					)
 				)
 			)
-			(symbol "Earth_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -243,12 +216,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -339,7 +317,19 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Tell KiCad that \"Earth\" and \"+3.3v\"\nare power nets. In other words, it \nshouldn't care where they originate."
+		(exclude_from_sim no)
+		(at 210.82 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b101a81a-b6d2-4866-a5ba-3cf213b5cc31")
 	)
 	(junction
 		(at 176.53 135.89)
@@ -498,17 +488,6 @@
 			(type default)
 		)
 		(uuid "d8a850fb-ac0c-4e58-996f-2fd5b37148c9")
-	)
-	(text "Tell KiCad that \"Earth\" and \"+3.3v\"\nare power nets. In other words, it \nshouldn't care where they originate."
-		(exclude_from_sim no)
-		(at 210.82 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b101a81a-b6d2-4866-a5ba-3cf213b5cc31")
 	)
 	(global_label "V_3P3STBY_FACET"
 		(shape input)
@@ -684,7 +663,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
+		(lib_id "power:GND")
 		(at 220.98 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -729,7 +708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 220.98 142.24 0)
 			(effects
 				(font
@@ -817,7 +796,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
+		(lib_id "power:GND")
 		(at 176.53 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -862,7 +841,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 176.53 149.86 0)
 			(effects
 				(font
@@ -1141,6 +1120,10 @@
 	(sheet
 		(at 27.94 125.73)
 		(size 45.72 49.53)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1179,6 +1162,10 @@
 	(sheet
 		(at 27.94 20.32)
 		(size 57.15 64.77)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1217,6 +1204,10 @@
 	(sheet
 		(at 90.17 113.03)
 		(size 45.72 62.23)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1255,6 +1246,10 @@
 	(sheet
 		(at 96.52 20.32)
 		(size 58.42 66.04)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1293,6 +1288,10 @@
 	(sheet
 		(at 168.91 22.86)
 		(size 63.5 66.04)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1333,4 +1332,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
