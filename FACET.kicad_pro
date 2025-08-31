@@ -533,32 +533,28 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.154,
-        "diff_pair_gap": 0.154,
-        "diff_pair_width": 0.2794,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "clearance": 0.3,
+        "name": "I2C",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15
+      },
+      {
         "name": "PWR",
         "pcb_color": "rgb(255, 132, 0)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.3,
-        "via_diameter": 0.6,
-        "via_drill": 0.3
+        "track_width": 0.3
       },
       {
-        "clearance": 0.154,
         "diff_pair_gap": 0.2,
         "diff_pair_width": 0.1575,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
         "name": "SIGNAL",
         "pcb_color": "rgb(0, 255, 2)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3
+        "track_width": 0.15
       }
     ],
     "meta": {
@@ -568,20 +564,8 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "SIGNAL",
-        "pattern": "*SB_*"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "*KER_*"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "*JTAG_*"
-      },
-      {
         "netclass": "PWR",
-        "pattern": "+3.3V"
+        "pattern": "VBUS"
       },
       {
         "netclass": "PWR",
@@ -589,23 +573,31 @@
       },
       {
         "netclass": "SIGNAL",
-        "pattern": "*FTDI*"
+        "pattern": "D*"
       },
       {
         "netclass": "PWR",
-        "pattern": "VBUS"
-      },
-      {
-        "netclass": "PWR",
-        "pattern": "*VPHY*"
+        "pattern": "+3.3V"
       },
       {
         "netclass": "PWR",
         "pattern": "*VREG*"
       },
       {
+        "netclass": "PWR",
+        "pattern": "*VPHY*"
+      },
+      {
         "netclass": "SIGNAL",
-        "pattern": "D*"
+        "pattern": "*FTDI_*"
+      },
+      {
+        "netclass": "I2C",
+        "pattern": "*FTDI_SMBUS*"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "FACET*"
       }
     ]
   },

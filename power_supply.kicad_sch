@@ -705,26 +705,6 @@
 		)
 		(uuid "f752c294-e1ee-40e7-8f08-e2a5c5c1f86c")
 	)
-	(label "VREG_VOUT"
-		(at 127 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3e5dede6-c6d7-4425-b9dd-2db629398d01")
-	)
-	(label "VREG_VIN"
-		(at 86.36 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c6ff6c3f-d82f-41db-b9c2-b06a5dbe1193")
-	)
 	(global_label "VBUS"
 		(shape input)
 		(at 81.28 81.28 90)
