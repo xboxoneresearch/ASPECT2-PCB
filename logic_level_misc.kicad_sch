@@ -2884,7 +2884,7 @@
 			)
 		)
 	)
-	(global_label "SB_TMS"
+	(global_label "FACET_SB_TMS"
 		(shape input)
 		(at 124.46 53.34 0)
 		(fields_autoplaced yes)
@@ -2896,7 +2896,7 @@
 		)
 		(uuid "076ff176-b28e-47e8-a43e-b945cf939ff3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.5208 53.34 0)
+			(at 141.1473 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2928,7 +2928,7 @@
 			)
 		)
 	)
-	(global_label "SB_TDO_FACET"
+	(global_label "FACET_SB_TDO"
 		(shape input)
 		(at 124.46 55.88 0)
 		(fields_autoplaced yes)
@@ -2940,7 +2940,7 @@
 		)
 		(uuid "2fd03bbe-6993-449e-b72f-9d2d7531cc5d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.9918 55.88 0)
+			(at 141.0869 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3038,7 +3038,7 @@
 			)
 		)
 	)
-	(global_label "SB_TCK"
+	(global_label "FACET_SB_TCK"
 		(shape input)
 		(at 124.46 60.96 0)
 		(fields_autoplaced yes)
@@ -3050,7 +3050,7 @@
 		)
 		(uuid "7de44780-a1fa-4f57-99a0-2d15feaf122d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.3999 60.96 0)
+			(at 141.0264 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3236,7 +3236,7 @@
 			)
 		)
 	)
-	(global_label "SB_TDI"
+	(global_label "FACET_SB_TDI"
 		(shape input)
 		(at 124.46 58.42 0)
 		(fields_autoplaced yes)
@@ -3248,7 +3248,7 @@
 		)
 		(uuid "bcbce057-c7b4-4987-86cc-90f1f47b61a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.7347 58.42 0)
+			(at 140.3612 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)

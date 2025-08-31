@@ -4060,7 +4060,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 90.17) (xy 106.68 90.17)
+			(xy 92.71 90.17) (xy 96.52 90.17)
 		)
 		(stroke
 			(width 0)
@@ -4688,7 +4688,7 @@
 		)
 		(uuid "ff6a1adb-bc96-4a82-99e2-7c3462b39e17")
 	)
-	(global_label "SB_TCK"
+	(global_label "FACET_SB_TCK"
 		(shape input)
 		(at 105.41 167.64 0)
 		(fields_autoplaced yes)
@@ -4700,7 +4700,7 @@
 		)
 		(uuid "02350e8e-d2af-451b-a978-f74e2a6a9d14")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.445 167.64 0)
+			(at 121.9764 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4710,7 +4710,7 @@
 			)
 		)
 	)
-	(global_label "SB_TMS"
+	(global_label "FACET_SB_TMS"
 		(shape input)
 		(at 105.41 170.18 0)
 		(fields_autoplaced yes)
@@ -4722,7 +4722,7 @@
 		)
 		(uuid "04800aed-6da0-48d6-b05a-e9a8381835e3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.5659 170.18 0)
+			(at 122.0973 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4864,7 +4864,7 @@
 			)
 		)
 	)
-	(global_label "SB_TDO_FACET"
+	(global_label "FACET_SB_TDO"
 		(shape input)
 		(at 97.79 69.85 0)
 		(fields_autoplaced yes)
@@ -4876,7 +4876,7 @@
 		)
 		(uuid "2e7c1ec9-f516-47d3-a04e-43f8fda77d22")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.3218 69.85 0)
+			(at 114.4169 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4886,7 +4886,7 @@
 			)
 		)
 	)
-	(global_label "SMBUS_CLK_FACET"
+	(global_label "FTDI_SMBUS_CLK_FACET"
 		(shape input)
 		(at 33.02 114.3 0)
 		(fields_autoplaced yes)
@@ -4898,7 +4898,7 @@
 		)
 		(uuid "31da9e56-359a-4418-86d4-a8eac3d6321e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.5432 114.3 0)
+			(at 58.5369 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4908,7 +4908,7 @@
 			)
 		)
 	)
-	(global_label "SB_TMS"
+	(global_label "FACET_SB_TMS"
 		(shape input)
 		(at 53.34 72.39 180)
 		(fields_autoplaced yes)
@@ -4920,7 +4920,7 @@
 		)
 		(uuid "3474d9eb-b765-4160-8f3a-5d0e7e62ef34")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 43.1841 72.39 0)
+			(at 36.6527 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4930,7 +4930,7 @@
 			)
 		)
 	)
-	(global_label "SB_TDI"
+	(global_label "FACET_SB_TDI"
 		(shape input)
 		(at 105.41 175.26 0)
 		(fields_autoplaced yes)
@@ -4942,7 +4942,7 @@
 		)
 		(uuid "45a20068-fb2b-40c7-9291-8ff13249294c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.7798 175.26 0)
+			(at 121.3112 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5018,9 +5018,9 @@
 			)
 		)
 	)
-	(global_label "SMBUS_DATA_FACET"
+	(global_label "FTDI_SMBUS_DATA_FACET"
 		(shape input)
-		(at 106.68 90.17 0)
+		(at 96.52 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5030,7 +5030,7 @@
 		)
 		(uuid "78570960-5882-46b0-aec1-cf342216c0ff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.0499 90.17 0)
+			(at 122.8836 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5062,7 +5062,7 @@
 			)
 		)
 	)
-	(global_label "SMBUS_CLK_FACET"
+	(global_label "FTDI_SMBUS_CLK_FACET"
 		(shape input)
 		(at 53.34 90.17 180)
 		(fields_autoplaced yes)
@@ -5074,7 +5074,7 @@
 		)
 		(uuid "8bc23751-f8cc-4ce4-9147-3428d3735986")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 32.7217 90.17 0)
+			(at 27.8231 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5128,7 +5128,7 @@
 			)
 		)
 	)
-	(global_label "KER_DBG_CTS"
+	(global_label "FTDI_KER_DBG_CTS"
 		(shape input)
 		(at 97.79 77.47 0)
 		(fields_autoplaced yes)
@@ -5140,7 +5140,7 @@
 		)
 		(uuid "a61a548c-1fd1-4b2b-bf7d-e327df7cb21d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.6565 77.47 0)
+			(at 118.6502 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5150,7 +5150,7 @@
 			)
 		)
 	)
-	(global_label "SMBUS_DATA_FACET"
+	(global_label "FTDI_SMBUS_DATA_FACET"
 		(shape input)
 		(at 64.77 133.35 0)
 		(fields_autoplaced yes)
@@ -5162,7 +5162,7 @@
 		)
 		(uuid "bf25d7ce-1ee4-40c8-b3fb-1b41da5d1bd0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.1399 133.35 0)
+			(at 91.1336 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5172,7 +5172,7 @@
 			)
 		)
 	)
-	(global_label "SB_TDO_FACET"
+	(global_label "FACET_SB_TDO"
 		(shape input)
 		(at 105.41 172.72 0)
 		(fields_autoplaced yes)
@@ -5194,7 +5194,7 @@
 			)
 		)
 	)
-	(global_label "SB_TDI"
+	(global_label "FACET_SB_TDI"
 		(shape input)
 		(at 53.34 69.85 180)
 		(fields_autoplaced yes)
@@ -5206,7 +5206,7 @@
 		)
 		(uuid "cc6ea102-b6e3-4797-9058-81fe88474dc9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 43.9702 69.85 0)
+			(at 37.4388 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5216,7 +5216,7 @@
 			)
 		)
 	)
-	(global_label "SB_TCK"
+	(global_label "FACET_SB_TCK"
 		(shape input)
 		(at 44.45 74.93 180)
 		(fields_autoplaced yes)
@@ -5228,7 +5228,7 @@
 		)
 		(uuid "cf670550-dd67-4a62-9c36-fb6d2cc3c428")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.415 74.93 0)
+			(at 27.8836 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5260,7 +5260,7 @@
 			)
 		)
 	)
-	(global_label "KER_DBG_TXD_FACET"
+	(global_label "FTDI_KER_DBG_TXD_FACET"
 		(shape input)
 		(at 53.34 80.01 180)
 		(fields_autoplaced yes)
@@ -5272,7 +5272,7 @@
 		)
 		(uuid "d7f7ee65-3c9b-4b6e-9af3-b2a977c1a562")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.847 80.01 0)
+			(at 25.9484 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5282,7 +5282,7 @@
 			)
 		)
 	)
-	(global_label "KER_DBG_RXD"
+	(global_label "FTDI_KER_DBG_RXD"
 		(shape input)
 		(at 53.34 82.55 180)
 		(fields_autoplaced yes)
@@ -5294,7 +5294,7 @@
 		)
 		(uuid "da184070-fbb3-4fb4-92f0-d1dc7f8559f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.076 82.55 0)
+			(at 32.1774 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5392,7 +5392,7 @@
 			)
 		)
 	)
-	(global_label "KER_DBG_RTS_FACET"
+	(global_label "FTDI_KER_DBG_RTS_FACET"
 		(shape input)
 		(at 97.79 80.01 0)
 		(fields_autoplaced yes)
@@ -5404,7 +5404,7 @@
 		)
 		(uuid "f25369aa-6c98-4ae6-ad1e-49cafdb369f8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.1879 80.01 0)
+			(at 125.1816 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
