@@ -578,7 +578,7 @@
       },
       {
         "netclass": "SIGNAL",
-        "pattern": "D*"
+        "pattern": "*D+"
       },
       {
         "netclass": "PWR",
@@ -598,7 +598,7 @@
       },
       {
         "netclass": "I2C",
-        "pattern": "*FTDI_SMBUS*"
+        "pattern": "*FTDI_SMBUS_*_FACET"
       },
       {
         "netclass": "SIGNAL",
@@ -611,6 +611,18 @@
       {
         "netclass": "SIGNAL",
         "pattern": "Net-(U1-*)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "*D-"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "*SMBUS_*_R"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "*OE*"
       }
     ]
   },

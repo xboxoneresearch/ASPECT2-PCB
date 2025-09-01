@@ -4688,6 +4688,26 @@
 		)
 		(uuid "ff6a1adb-bc96-4a82-99e2-7c3462b39e17")
 	)
+	(label "D+"
+		(at 205.74 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "984f2dd6-9262-46db-b0a5-3978a3acbdf6")
+	)
+	(label "D-"
+		(at 205.74 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec408284-7ac0-4c84-b936-7b3fe40dcc52")
+	)
 	(global_label "FACET_SB_TCK"
 		(shape input)
 		(at 105.41 167.64 0)
@@ -5084,8 +5104,8 @@
 			)
 		)
 	)
-	(global_label "D+"
-		(shape input)
+	(global_label "ESD_D+"
+		(shape bidirectional)
 		(at 243.84 83.82 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5096,7 +5116,7 @@
 		)
 		(uuid "a38d159d-da44-4529-a528-3a2534c630d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 249.6833 83.82 0)
+			(at 255.3748 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5326,8 +5346,8 @@
 			)
 		)
 	)
-	(global_label "D-"
-		(shape input)
+	(global_label "ESD_D-"
+		(shape bidirectional)
 		(at 243.84 86.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5338,7 +5358,7 @@
 		)
 		(uuid "e46e85c6-4cfb-433c-99e9-0be861e4928f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 249.6833 86.36 0)
+			(at 255.3748 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
