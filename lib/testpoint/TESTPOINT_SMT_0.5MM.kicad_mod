@@ -1,7 +1,7 @@
 (footprint "TESTPOINT_SMT_0.5MM"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "TESTPOINT_SMT_0.5MM"
 		(at 0 1.5 0)
@@ -26,18 +26,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "a27e27de-ce28-481c-934a-cc3bcd872ca9")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -47,6 +35,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -59,14 +48,38 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(attr smd exclude_from_pos_files exclude_from_bom)
+	(fp_circle
+		(center 0 0)
+		(end 0.4 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "55e60a7d-a81f-43d8-beb5-2aa23388caab")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.4 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a4e8e65d-7c7f-428c-b1b9-8bbd18afe762")
+	)
 	(pad "1" smd circle
 		(at 0 0)
 		(size 0.5 0.5)
 		(layers "F.Cu" "F.Mask")
 		(uuid "eb8d9d47-2217-483f-891b-268c002933dd")
 	)
+	(embedded_fonts no)
 )
