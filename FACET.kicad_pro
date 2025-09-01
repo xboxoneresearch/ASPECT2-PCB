@@ -607,6 +607,10 @@
       {
         "netclass": "SIGNAL",
         "pattern": "*OSC*"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U1-*)"
       }
     ]
   },
