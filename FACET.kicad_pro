@@ -284,7 +284,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "power_pin_not_driven|939800|977900|af9add18-94fd-45c7-92f8-69811d476d00|00000000-0000-0000-0000-000000000000|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6790ceb4-c894-4a55-bed0-4e1e495dcffe|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6790ceb4-c894-4a55-bed0-4e1e495dcffe|",
+        "False positive, safe to ignore"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -468,11 +473,11 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "ignore",
+      "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "footprint_filter": "ignore",
+      "footprint_filter": "warning",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
@@ -495,8 +500,8 @@
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
-      "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
+      "simulation_model_issue": "warning",
+      "single_global_label": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
@@ -598,6 +603,10 @@
       {
         "netclass": "SIGNAL",
         "pattern": "FACET*"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "*OSC*"
       }
     ]
   },
