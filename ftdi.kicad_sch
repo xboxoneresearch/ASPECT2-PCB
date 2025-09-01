@@ -5257,8 +5257,8 @@
 			)
 		)
 	)
-	(global_label "D+"
-		(shape input)
+	(global_label "ESD_D+"
+		(shape bidirectional)
 		(at 68.58 93.98 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5269,7 +5269,7 @@
 		)
 		(uuid "17ed8121-60a8-4c00-ba6f-020d67a0e907")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.7367 93.98 0)
+			(at 57.0452 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5807,8 +5807,8 @@
 			)
 		)
 	)
-	(global_label "D-"
-		(shape input)
+	(global_label "ESD_D-"
+		(shape bidirectional)
 		(at 68.58 91.44 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5819,7 +5819,7 @@
 		)
 		(uuid "de74667f-3b8f-4141-bb39-e0e05e21a673")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.7367 91.44 0)
+			(at 57.0452 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
