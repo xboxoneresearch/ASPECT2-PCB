@@ -4921,7 +4921,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT65P210X110-6N"
+		(property "Footprint" "SN74AUP2G07DCKR:SOT65P210X110-6N"
 			(at 214.63 125.73 0)
 			(effects
 				(font
@@ -5546,7 +5546,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT65P210X110-5N"
+		(property "Footprint" "SN74LVC1G06DCKR:SOT65P210X110-5N"
 			(at 205.74 52.07 0)
 			(effects
 				(font
