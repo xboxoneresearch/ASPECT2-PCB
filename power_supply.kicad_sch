@@ -552,7 +552,7 @@
 	)
 	(text "FTDI POWER SUPPLY"
 		(exclude_from_sim no)
-		(at 144.272 60.706 0)
+		(at 144.78 60.96 0)
 		(effects
 			(font
 				(size 2.54 2.54)

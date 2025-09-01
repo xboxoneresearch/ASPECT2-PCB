@@ -3526,7 +3526,7 @@
 	)
 	(text "AARDVARK I2C"
 		(exclude_from_sim no)
-		(at 39.116 102.87 0)
+		(at 39.37 102.87 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3538,7 +3538,7 @@
 	)
 	(text "USB PORT"
 		(exclude_from_sim no)
-		(at 216.408 47.498 0)
+		(at 215.9 46.99 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3549,7 +3549,7 @@
 	)
 	(text "EXT. SPI PORT"
 		(exclude_from_sim no)
-		(at 223.774 129.794 0)
+		(at 223.52 129.54 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3560,7 +3560,7 @@
 	)
 	(text "FACET Connector"
 		(exclude_from_sim no)
-		(at 102.108 46.736 0)
+		(at 101.6 46.99 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4180,7 +4180,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 72.39) (xy 93.98 91.44)
+			(xy 93.98 72.39) (xy 93.98 97.79)
 		)
 		(stroke
 			(width 0)
@@ -6418,7 +6418,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 93.98 91.44 0)
+		(at 93.98 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6427,7 +6427,7 @@
 		(fields_autoplaced yes)
 		(uuid "724c8536-f417-4481-b47e-f6404b3bc9ff")
 		(property "Reference" "#PWR01"
-			(at 93.98 97.79 0)
+			(at 93.98 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6436,7 +6436,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 93.98 95.25 0)
+			(at 93.98 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6445,7 +6445,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 91.44 0)
+			(at 93.98 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6454,7 +6454,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 91.44 0)
+			(at 93.98 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6463,7 +6463,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 91.44 0)
+			(at 93.98 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)

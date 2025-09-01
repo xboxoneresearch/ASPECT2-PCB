@@ -320,9 +320,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Tell KiCad that \"Earth\" and \"+3.3v\"\nare power nets. In other words, it \nshouldn't care where they originate."
+	(text "Tell KiCad that 3V3 from FACET is a power net.\nIn other words, it shouldn't care where it originates."
 		(exclude_from_sim no)
-		(at 210.82 133.35 0)
+		(at 199.39 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -471,17 +471,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 142.24) (xy 220.98 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1bc740f-bfd6-4ccb-a14d-c845322c9125")
-	)
-	(wire
-		(pts
-			(xy 232.41 140.97) (xy 232.41 148.59)
+			(xy 213.36 137.16) (xy 213.36 144.78)
 		)
 		(stroke
 			(width 0)
@@ -491,7 +481,7 @@
 	)
 	(global_label "V_3P3STBY_FACET"
 		(shape input)
-		(at 232.41 148.59 0)
+		(at 213.36 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -501,79 +491,13 @@
 		)
 		(uuid "403c035e-ecbc-47b6-8ea7-897d0eb866e2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 252.3026 148.59 0)
+			(at 233.2526 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 220.98 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "023e9506-9fe9-4e6b-86c9-4a21b66dce7b")
-		(property "Reference" "#FLG01"
-			(at 220.98 139.065 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 220.98 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 220.98 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c38ec6db-c4df-422b-837f-af97e6ff2811")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#FLG01")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -663,75 +587,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 220.98 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36e87901-7e4b-4de7-b35d-1209808a2179")
-		(property "Reference" "#PWR012"
-			(at 220.98 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 220.98 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a1dca3e-6d10-4caf-823b-1c799d1b92a0")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 232.41 140.97 0)
+		(at 213.36 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -740,7 +597,7 @@
 		(fields_autoplaced yes)
 		(uuid "5857d706-db1b-436b-aedc-cc94bc28731d")
 		(property "Reference" "#FLG03"
-			(at 232.41 139.065 0)
+			(at 213.36 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -749,7 +606,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 232.41 137.16 0)
+			(at 213.36 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -757,7 +614,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 232.41 140.97 0)
+			(at 213.36 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -766,7 +623,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 140.97 0)
+			(at 213.36 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -775,7 +632,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 232.41 140.97 0)
+			(at 213.36 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
