@@ -232,7 +232,7 @@ outputs:
     suffix: F_Fab
     description: Front documentation
   options:
-    old: KIBOT_LAST-1
+    old: HEAD~1
     old_type: git
     new: HEAD
     new_type: git
