@@ -3,17 +3,17 @@ name: Build PCBs
 on:
   workflow_call:
   push:
-    paths:
-    - "*.kicad_sch"
-    - "*.kicad_pcb"
-    - "*.kicad_pro"
-    - "kibot.yml"
+#    paths:
+#    - "*.kicad_sch"
+#    - "*.kicad_pcb"
+#    - "*.kicad_pro"
+#    - "kibot.yml"
   pull_request:
-    paths:
-    - "*.kicad_sch"
-    - "*.kicad_pcb"
-    - "*.kicad_pro"
-    - "kibot.yml"
+#    paths:
+#    - "*.kicad_sch"
+#    - "*.kicad_pcb"
+#    - "*.kicad_pro"
+#    - "kibot.yml"
 
 permissions:
   contents: read
