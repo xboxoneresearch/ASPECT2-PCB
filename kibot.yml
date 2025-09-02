@@ -193,12 +193,6 @@ outputs:
   - layer: In2.Cu
     suffix: In2_Cu
     description: Inner layer 2
-  - layer: In3.Cu
-    suffix: In3_Cu
-    description: Inner layer 3
-  - layer: In4.Cu
-    suffix: In4_Cu
-    description: Inner layer 4
   - layer: B.Cu
     suffix: B_Cu
     description: Bottom copper
@@ -263,12 +257,6 @@ outputs:
   - layer: In2.Cu
     suffix: In2_Cu
     description: Inner layer 2
-  - layer: In3.Cu
-    suffix: In3_Cu
-    description: Inner layer 3
-  - layer: In4.Cu
-    suffix: In4_Cu
-    description: Inner layer 4
   - layer: B.Cu
     suffix: B_Cu
     description: Bottom copper
@@ -342,12 +330,6 @@ outputs:
   - layer: In2.Cu
     suffix: In2_Cu
     description: Inner layer 2
-  - layer: In3.Cu
-    suffix: In3_Cu
-    description: Inner layer 3
-  - layer: In4.Cu
-    suffix: In4_Cu
-    description: Inner layer 4
   - layer: B.Cu
     suffix: B_Cu
     description: Bottom copper
@@ -401,12 +383,6 @@ outputs:
   - layer: In2.Cu
     suffix: In2_Cu
     description: Inner layer 2
-  - layer: In3.Cu
-    suffix: In3_Cu
-    description: Inner layer 3
-  - layer: In4.Cu
-    suffix: In4_Cu
-    description: Inner layer 4
   - layer: B.Cu
     suffix: B_Cu
     description: Bottom copper
@@ -505,12 +481,6 @@ outputs:
   - layer: In2.Cu
     suffix: In2_Cu
     description: Inner layer 2
-  - layer: In3.Cu
-    suffix: In3_Cu
-    description: Inner layer 3
-  - layer: In4.Cu
-    suffix: In4_Cu
-    description: Inner layer 4
   - layer: B.Cu
     suffix: B_Cu
     description: Bottom copper
@@ -596,16 +566,6 @@ outputs:
       - layer: User.Comments
       sheet: Inner layer 2
     - layers:
-      - layer: In3.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 3
-    - layers:
-      - layer: In4.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 4
-    - layers:
       - layer: B.Cu
       - layer: B.Mask
         color: '#14332440'
@@ -671,16 +631,6 @@ outputs:
       - layer: Edge.Cuts
       - layer: User.Comments
       sheet: Inner layer 2
-    - layers:
-      - layer: In3.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 3
-    - layers:
-      - layer: In4.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 4
     - layers:
       - layer: B.Cu
       - layer: B.Mask
@@ -749,16 +699,6 @@ outputs:
       - layer: User.Comments
       sheet: Inner layer 2
     - layers:
-      - layer: In3.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 3
-    - layers:
-      - layer: In4.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 4
-    - layers:
       - layer: B.Cu
       - layer: B.Mask
         color: '#14332440'
@@ -826,16 +766,6 @@ outputs:
       - layer: User.Comments
       sheet: Inner layer 2
     - layers:
-      - layer: In3.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 3
-    - layers:
-      - layer: In4.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 4
-    - layers:
       - layer: B.Cu
       - layer: B.Mask
         color: '#14332440'
@@ -901,16 +831,6 @@ outputs:
       - layer: Edge.Cuts
       - layer: User.Comments
       sheet: Inner layer 2
-    - layers:
-      - layer: In3.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 3
-    - layers:
-      - layer: In4.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 4
     - layers:
       - layer: B.Cu
       - layer: B.Mask
@@ -1100,12 +1020,6 @@ outputs:
   - layer: In2.Cu
     suffix: In2_Cu
     description: Inner layer 2
-  - layer: In3.Cu
-    suffix: In3_Cu
-    description: Inner layer 3
-  - layer: In4.Cu
-    suffix: In4_Cu
-    description: Inner layer 4
   - layer: B.Cu
     suffix: B_Cu
     description: Bottom copper
@@ -1177,12 +1091,6 @@ outputs:
   - layer: In2.Cu
     suffix: In2_Cu
     description: Inner layer 2
-  - layer: In3.Cu
-    suffix: In3_Cu
-    description: Inner layer 3
-  - layer: In4.Cu
-    suffix: In4_Cu
-    description: Inner layer 4
   - layer: B.Cu
     suffix: B_Cu
     description: Bottom copper
@@ -1305,12 +1213,6 @@ outputs:
   - layer: In2.Cu
     suffix: In2_Cu
     description: Inner layer 2
-  - layer: In3.Cu
-    suffix: In3_Cu
-    description: Inner layer 3
-  - layer: In4.Cu
-    suffix: In4_Cu
-    description: Inner layer 4
   - layer: B.Cu
     suffix: B_Cu
     description: Bottom copper
@@ -1365,9 +1267,7 @@ definitions:
   _KIBOT_GERBER_LAYERS: "- layer: 'F.Cu'\n        suffix: 'F_Cu'\n        description:\
     \ 'Front copper'\n      - layer: 'In1.Cu'\n        suffix: 'In1_Cu'\n        description:\
     \ 'Inner layer 1'\n      - layer: 'In2.Cu'\n        suffix: 'In2_Cu'\n       \
-    \ description: 'Inner layer 2'\n      - layer: 'In3.Cu'\n        suffix: 'In3_Cu'\n\
-    \        description: 'Inner layer 3'\n      - layer: 'In4.Cu'\n        suffix:\
-    \ 'In4_Cu'\n        description: 'Inner layer 4'\n      - layer: 'B.Cu'\n    \
+    \ description: 'Inner layer 2'\n      - layer: 'B.Cu'\n    \
     \    suffix: 'B_Cu'\n        description: 'Bottom copper'\n      - layer: 'B.Paste'\n\
     \        suffix: 'B_Paste'\n        description: 'Bottom solder paste'\n     \
     \ - layer: 'F.Paste'\n        suffix: 'F_Paste'\n        description: 'Front solder\
