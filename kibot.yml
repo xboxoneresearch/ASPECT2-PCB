@@ -162,7 +162,7 @@ outputs:
     count_smd_tht: true
     xlsx:
       style: modern-green
-      kicost: true
+      kicost: false
       specs: true
       kicost_api_disable: KitSpace
     pre_transform: _kicost_rename

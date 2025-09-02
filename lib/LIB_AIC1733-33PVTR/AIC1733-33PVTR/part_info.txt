@@ -1,9 +1,0 @@
-Manufacturer=AIG
-PartNumber=AIC1733-33PVTR
-PartCategory=Integrated Circuit
-PackageCategory=SOT23 (5-Pin)
-PinCount=5
-Version=1.1
-Released=2021-09-26 07:50:19
-Downloaded=2023-06-20 07:39:52
-3D=Y

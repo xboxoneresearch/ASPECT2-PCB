@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP AIC1733-33PVTR
-D 500mA, Low Dropout Linear Regulator with Shutdown
-K
-F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-4/DSA-77410.pdf
-$ENDCMP
-#
-#End Doc Library
