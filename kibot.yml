@@ -29,7 +29,6 @@ import:
 - file: PCBWay
   definitions:
     _KIBOT_MANF_DIR: Manufacturers/PCBWay
-- file: PanelDemo_4x4
 
 preflight:
   drc:
