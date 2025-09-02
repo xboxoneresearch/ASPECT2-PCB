@@ -945,7 +945,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF (X7R)"
+		(property "Value" "1uF"
 			(at 84.455 104.7813 0)
 			(effects
 				(font
@@ -1006,6 +1006,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Type" "X7R"
+			(at 86.614 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1145,7 +1153,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.47 uF (X7R)"
+		(property "Value" "0.47 uF"
 			(at 147.955 102.2413 0)
 			(effects
 				(font
@@ -1206,6 +1214,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Type" "X7R"
+			(at 150.622 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

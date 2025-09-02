@@ -8138,7 +8138,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5aa4c323-6655-4844-bee5-4f1bc17901ee")
 		(property "Reference" "L3"
 			(at 29.21 20.3199 0)
@@ -8149,7 +8148,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "600R / 0.5A"
+		(property "Value" "600R"
 			(at 29.21 22.8599 0)
 			(effects
 				(font
@@ -8183,6 +8182,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Power rating" "0.5A"
+			(at 36.576 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "JLCPCB Part#" "C275451"
@@ -10426,7 +10433,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b5110663-b796-49d3-ba01-3f7be99b3ea4")
 		(property "Reference" "L4"
 			(at 29.21 46.9899 0)
@@ -10437,7 +10443,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "600R / 0.5A"
+		(property "Value" "600R"
 			(at 29.21 49.5299 0)
 			(effects
 				(font
@@ -10498,6 +10504,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Power rating" "0.5A"
+			(at 36.576 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
