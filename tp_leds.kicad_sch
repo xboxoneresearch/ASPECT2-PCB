@@ -4337,25 +4337,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C25082"
-			(at 97.79 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF1500TCE_C25082.html"
-			(at 97.79 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25082"
+		(property "LCSC" "C25076"
 			(at 97.79 43.18 0)
 			(effects
 				(font
@@ -4432,17 +4414,8 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" ""
-			(at 232.41 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" ""
-			(at 232.41 36.83 0)
+		(property "LCSC" "C238131"
+			(at 226.06 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4716,25 +4689,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C15849"
-			(at 26.67 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.html"
-			(at 26.67 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C15849"
+		(property "LCSC" "C29936"
 			(at 29.21 182.245 0)
 			(effects
 				(font
@@ -4870,24 +4825,6 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 115.57 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C72038"
-			(at 115.57 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.html"
 			(at 115.57 45.72 0)
 			(effects
 				(font
@@ -5115,25 +5052,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C163455"
-			(at 100.33 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0402FR-0768RL_C163455.html"
-			(at 100.33 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C163455"
+		(property "LCSC" "C25076"
 			(at 100.33 130.81 0)
 			(effects
 				(font
@@ -5341,25 +5260,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C25082"
-			(at 97.79 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF1500TCE_C25082.html"
-			(at 97.79 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25082"
+		(property "LCSC" "C25076"
 			(at 97.79 35.56 0)
 			(effects
 				(font
@@ -5419,7 +5320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc2g06"
 			(at 62.23 90.17 0)
 			(effects
 				(font
@@ -5467,26 +5368,6 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "None"
-			(at 62.23 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74LVC2G06DCKR/Texas+Instruments/view-part/?ref=snap"
-			(at 62.23 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
 		(property "MP" "SN74LVC2G06DCKR"
 			(at 62.23 90.17 0)
 			(effects
@@ -5514,6 +5395,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105252"
+			(at 62.23 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -5589,24 +5479,6 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 115.57 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C72038"
-			(at 115.57 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.html"
 			(at 115.57 91.44 0)
 			(effects
 				(font
@@ -5692,24 +5564,6 @@
 			)
 		)
 		(property "Description" "Single Buffer Gate, Open Drain, Low-Voltage CMOS"
-			(at 57.15 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C460520"
-			(at 57.15 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Buffer-Driver-Transceiver_Diodes-Incorporated-74LVC1G07W5-7_C460520.html"
 			(at 57.15 168.91 0)
 			(effects
 				(font
@@ -5869,25 +5723,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C25082"
-			(at 97.79 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF1500TCE_C25082.html"
-			(at 97.79 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25082"
+		(property "LCSC" "C25076"
 			(at 97.79 88.9 0)
 			(effects
 				(font
@@ -5963,25 +5799,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C163455"
-			(at 40.64 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0402FR-0768RL_C163455.html"
-			(at 40.64 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C163455"
+		(property "LCSC" "C25076"
 			(at 40.64 166.37 0)
 			(effects
 				(font
@@ -6049,24 +5867,6 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 48.26 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C25082"
-			(at 48.26 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF1500TCE_C25082.html"
 			(at 48.26 133.35 0)
 			(effects
 				(font
@@ -6144,24 +5944,6 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 88.9 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C72038"
-			(at 88.9 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.html"
 			(at 88.9 133.35 0)
 			(effects
 				(font
@@ -6256,24 +6038,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C72038"
-			(at 129.54 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.html"
-			(at 129.54 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C72038"
 			(at 127.635 131.445 0)
 			(effects
@@ -6360,17 +6124,8 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" ""
-			(at 232.41 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" ""
-			(at 232.41 29.21 0)
+		(property "LCSC" "C238131"
+			(at 226.06 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6435,24 +6190,6 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 115.57 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C72038"
-			(at 115.57 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.html"
 			(at 115.57 38.1 0)
 			(effects
 				(font
@@ -6548,25 +6285,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C15849"
-			(at 90.17 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.html"
-			(at 90.17 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C15849"
+		(property "LCSC" "C29936"
 			(at 92.71 67.945 0)
 			(effects
 				(font
@@ -6627,7 +6346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc2g06"
 			(at 62.23 44.45 0)
 			(effects
 				(font
@@ -6675,26 +6394,6 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "None"
-			(at 62.23 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74LVC2G06DCKR/Texas+Instruments/view-part/?ref=snap"
-			(at 62.23 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
 		(property "MP" "SN74LVC2G06DCKR"
 			(at 62.23 44.45 0)
 			(effects
@@ -6722,6 +6421,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105252"
+			(at 62.23 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -6805,17 +6513,8 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" ""
-			(at 232.41 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" ""
-			(at 232.41 33.02 0)
+		(property "LCSC" "C238131"
+			(at 226.06 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7021,17 +6720,8 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" ""
-			(at 232.41 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" ""
-			(at 232.41 43.18 0)
+		(property "LCSC" "C238131"
+			(at 226.06 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7370,25 +7060,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C163455"
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0402FR-0768RL_C163455.html"
-			(at 138.43 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C163455"
+		(property "LCSC" "C25076"
 			(at 138.43 132.715 0)
 			(effects
 				(font
@@ -7599,25 +7271,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C15849"
-			(at 90.17 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.html"
-			(at 90.17 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C15849"
+		(property "LCSC" "C29936"
 			(at 92.71 22.225 0)
 			(effects
 				(font
@@ -7826,24 +7480,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C72038"
-			(at 115.57 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.html"
-			(at 115.57 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C72038"
 			(at 112.395 78.74 0)
 			(effects
@@ -7921,24 +7557,6 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 31.75 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C72038"
-			(at 31.75 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.html"
 			(at 31.75 168.91 0)
 			(effects
 				(font
@@ -8033,24 +7651,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C72038"
-			(at 55.88 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.html"
-			(at 55.88 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C72038"
 			(at 52.705 128.27 0)
 			(effects
@@ -8137,17 +7737,8 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" ""
-			(at 232.41 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" ""
-			(at 232.41 40.64 0)
+		(property "LCSC" "C238131"
+			(at 226.06 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8219,25 +7810,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C25082"
-			(at 97.79 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF1500TCE_C25082.html"
-			(at 97.79 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25082"
+		(property "LCSC" "C25076"
 			(at 97.79 81.28 0)
 			(effects
 				(font

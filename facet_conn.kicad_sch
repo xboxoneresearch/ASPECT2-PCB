@@ -5596,6 +5596,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 210.82 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "aa50b667-752e-4267-a15b-8f1e6c594298")
 		)
@@ -5650,7 +5659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+		(property "Datasheet" "https://www.digikey.ch/htmldatasheets/production/7427/0/0/2/usblc6-2.pdf"
 			(at 226.06 92.075 0)
 			(effects
 				(font
@@ -5662,6 +5671,15 @@
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
 			(at 224.79 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7519"
+			(at 226.4411 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5865,7 +5883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.jst-connector.com/datasheet/jst-connector/B10B-PHDSS.pdf"
 			(at 224.79 148.59 0)
 			(effects
 				(font
@@ -5875,24 +5893,6 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 224.79 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C471519"
-			(at 224.79 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://jlcpcb.com/partdetail/Jst_SalesAmerica-B10B_PHDSS_LF_SN/C471519"
 			(at 224.79 148.59 0)
 			(effects
 				(font
@@ -6003,24 +6003,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part#" "C19666"
-			(at 128.27 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A475KO8NNNC_C19666.html"
-			(at 128.27 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C19666"
 			(at 131.445 99.7013 0)
 			(effects
@@ -6091,24 +6073,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 133.35 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C19666"
-			(at 133.35 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A475KO8NNNC_C19666.html"
 			(at 133.35 100.33 0)
 			(effects
 				(font
@@ -6327,6 +6291,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 210.312 73.914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4420e5a8-cf6b-446e-b4c1-440a7f250e5f")
 		)
@@ -6386,24 +6359,6 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 176.53 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C17168"
-			(at 176.53 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0402WGF0000TCE_C17168.html"
 			(at 176.53 111.76 0)
 			(effects
 				(font
@@ -6558,6 +6513,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17168"
+			(at 61.468 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c8a9965f-3e5c-4ea1-9dee-7820fe437e42")
 		)
@@ -6665,7 +6629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_2x02_P2.00mm_Vertical"
 			(at 45.72 128.27 0)
 			(effects
 				(font
@@ -6674,7 +6638,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/20021221.pdf"
 			(at 45.72 128.27 0)
 			(effects
 				(font
@@ -6685,6 +6649,15 @@
 		)
 		(property "Description" "Generic connector, double row, 02x02, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 45.72 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C41415752"
+			(at 46.99 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6768,6 +6741,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C22392240"
+			(at 62.23 168.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5ab8932a-710a-4718-98c2-0f4f5e8a2715")
 		)
@@ -6841,7 +6823,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/stmm-1xx-xx-xx-d-xx-xx-xx-x-xx-mkt1.pdf"
 			(at 85.09 74.93 0)
 			(effects
 				(font
@@ -6851,24 +6833,6 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x13, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part#" "C720761"
-			(at 85.09 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://jlcpcb.com/partdetail/Wcon-311126MG0BK00R1/C720761"
 			(at 85.09 74.93 0)
 			(effects
 				(font
@@ -7086,6 +7050,15 @@
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 184.15 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7095263"
+			(at 184.15 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
