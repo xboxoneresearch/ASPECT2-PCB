@@ -4705,7 +4705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "testpoint:TESTPOINT_SMT_0.5MM"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 262.89 64.77 0)
 			(effects
 				(font
@@ -4925,7 +4925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "testpoint:TESTPOINT_SMT_0.5MM"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 217.17 53.34 0)
 			(effects
 				(font
@@ -5133,7 +5133,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "testpoint:TESTPOINT_SMT_0.5MM"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 262.89 62.23 0)
 			(effects
 				(font
@@ -6592,7 +6592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "testpoint:TESTPOINT_SMT_0.5MM"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 262.89 55.88 0)
 			(effects
 				(font
@@ -6658,7 +6658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "testpoint:TESTPOINT_SMT_0.5MM"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 218.44 49.53 0)
 			(effects
 				(font
@@ -6859,7 +6859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "testpoint:TESTPOINT_SMT_0.5MM"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 262.89 67.31 0)
 			(effects
 				(font
@@ -7212,7 +7212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "testpoint:TESTPOINT_SMT_0.5MM"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 262.89 53.34 0)
 			(effects
 				(font
@@ -7278,7 +7278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "testpoint:TESTPOINT_SMT_0.5MM"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 217.17 63.5 0)
 			(effects
 				(font
@@ -7951,7 +7951,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "testpoint:TESTPOINT_SMT_0.5MM"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 217.17 58.42 0)
 			(effects
 				(font
@@ -8019,7 +8019,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "testpoint:TESTPOINT_SMT_0.5MM"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 262.89 59.69 0)
 			(effects
 				(font
