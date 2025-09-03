@@ -2892,12 +2892,6 @@
 		(uuid "6e7f791b-0833-43aa-9b7c-2efef01a33e9")
 	)
 	(junction
-		(at 237.49 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a9b8ec5f-e923-4e94-af07-e21aa2b80f88")
-	)
-	(junction
 		(at 124.46 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2996,16 +2990,6 @@
 			(type default)
 		)
 		(uuid "070180a1-be49-4282-8566-da44125fa0e0")
-	)
-	(wire
-		(pts
-			(xy 232.41 43.18) (xy 237.49 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0732dd3a-28b1-4b8e-a618-6bc55bf68bad")
 	)
 	(wire
 		(pts
@@ -3256,16 +3240,6 @@
 			(type default)
 		)
 		(uuid "41165cdf-b841-4ad0-a216-201d506b0f61")
-	)
-	(wire
-		(pts
-			(xy 237.49 43.18) (xy 237.49 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "417f0c3f-28ec-48dd-8e49-ee0ee999158e")
 	)
 	(wire
 		(pts
@@ -3669,7 +3643,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 40.64) (xy 250.19 40.64)
+			(xy 232.41 40.64) (xy 250.19 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3856,16 +3830,6 @@
 			(type default)
 		)
 		(uuid "fa32d0fd-ef3e-48df-8304-68d6fd660012")
-	)
-	(wire
-		(pts
-			(xy 232.41 40.64) (xy 237.49 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffedff93-0ef5-4ae0-8efd-3b17a5dbc76b")
 	)
 	(global_label "V_3P3STBY_FACET"
 		(shape input)
@@ -6662,80 +6626,6 @@
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/71c11425-cac2-47ba-9458-52d8d85cae8e"
 					(reference "TP_CD2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 232.41 43.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "92894033-92c5-4881-89b4-9ada379bda16")
-		(property "Reference" "TP5"
-			(at 226.06 43.18 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 229.108 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
-			(at 232.41 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 232.41 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 232.41 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C238131"
-			(at 226.06 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "daa98e62-048e-4561-bd74-2a72e4eff2ef")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/71c11425-cac2-47ba-9458-52d8d85cae8e"
-					(reference "TP5")
 					(unit 1)
 				)
 			)
