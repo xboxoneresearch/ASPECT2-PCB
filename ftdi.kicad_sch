@@ -5301,6 +5301,28 @@
 			)
 		)
 	)
+	(global_label "FTDI_SMBUS_DATA"
+		(shape input)
+		(at 185.42 129.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "25b95488-4d52-4da8-9efb-c56ea7fbea61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.2522 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "FTDI_KER_DBG_RTS_FACET"
 		(shape input)
 		(at 189.23 142.24 0)
@@ -5675,28 +5697,6 @@
 			)
 		)
 	)
-	(global_label "FTDI_SMBUS_CLK_FACET"
-		(shape input)
-		(at 185.42 127 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c42fb6e8-8195-4030-b3bb-563f6c0fe8db")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 210.9369 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "FTDI_SB_TDI"
 		(shape input)
 		(at 182.88 91.44 0)
@@ -5829,6 +5829,28 @@
 			)
 		)
 	)
+	(global_label "FTDI_SMBUS_CLK"
+		(shape input)
+		(at 185.42 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df93c264-0455-4409-878a-a4c6895a8bb1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.4055 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "FTDI_AD6"
 		(shape input)
 		(at 152.4 81.28 0)
@@ -5864,28 +5886,6 @@
 		(uuid "ef8b9047-557d-46ee-940d-dd9e26afdebd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 210.3926 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "FTDI_SMBUS_DATA_FACET"
-		(shape input)
-		(at 185.42 129.54 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f4657c9a-302b-41d3-a12a-acb6dea7cca8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 211.7836 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
