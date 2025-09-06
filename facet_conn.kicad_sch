@@ -6457,7 +6457,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17888.pdf"
 			(at 176.53 111.76 0)
 			(effects
 				(font
@@ -6475,8 +6475,26 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17888"
 			(at 179.07 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 176.53 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "1206W4F0000T5E"
+			(at 176.53 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)

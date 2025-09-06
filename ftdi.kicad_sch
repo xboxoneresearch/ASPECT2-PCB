@@ -7375,7 +7375,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1905.pdf"
 			(at 76.2 161.29 0)
 			(effects
 				(font
@@ -7393,8 +7393,26 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1905"
 			(at 78.74 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "FH"
+			(at 76.2 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "1206CG300J500NT"
+			(at 76.2 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
