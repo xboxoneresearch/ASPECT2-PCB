@@ -4139,7 +4139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25900.pdf"
 			(at 190.5 91.44 0)
 			(effects
 				(font
@@ -4159,6 +4159,24 @@
 		)
 		(property "LCSC" "C25900"
 			(at 189.23 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 190.5 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF4701TCE"
+			(at 190.5 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4282,7 +4300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KA8NNN"
 			(at 119.38 176.53 0)
 			(effects
 				(font
@@ -4302,6 +4320,24 @@
 		)
 		(property "LCSC" "C29936"
 			(at 121.92 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 119.38 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10B105KA8NNNC"
+			(at 119.38 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4360,7 +4396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KA8NNN"
 			(at 245.11 132.08 0)
 			(effects
 				(font
@@ -4380,6 +4416,24 @@
 		)
 		(property "LCSC" "C29936"
 			(at 247.65 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 245.11 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10B105KA8NNNC"
+			(at 245.11 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4505,7 +4559,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25900.pdf"
 			(at 186.69 91.44 0)
 			(effects
 				(font
@@ -4525,6 +4579,24 @@
 		)
 		(property "LCSC" "C25900"
 			(at 185.42 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 186.69 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF4701TCE"
+			(at 186.69 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4564,7 +4636,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 120.65 34.925 90)
 			(effects
 				(font
@@ -4581,7 +4653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
 			(at 120.65 33.02 0)
 			(effects
 				(font
@@ -4601,6 +4673,24 @@
 		)
 		(property "LCSC" "C25744"
 			(at 120.65 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 120.65 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1002TCE"
+			(at 120.65 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4659,7 +4749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25900.pdf"
 			(at 232.41 137.16 0)
 			(effects
 				(font
@@ -4679,6 +4769,24 @@
 		)
 		(property "LCSC" "C25900"
 			(at 231.14 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 232.41 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF4701TCE"
+			(at 232.41 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4804,7 +4912,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25900.pdf"
 			(at 237.49 137.16 0)
 			(effects
 				(font
@@ -4824,6 +4932,24 @@
 		)
 		(property "LCSC" "C25900"
 			(at 236.22 131.445 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 237.49 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF4701TCE"
+			(at 237.49 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4882,7 +5008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KA8NNN"
 			(at 118.11 83.82 0)
 			(effects
 				(font
@@ -4902,6 +5028,24 @@
 		)
 		(property "LCSC" "C29936"
 			(at 120.65 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 118.11 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10B105KA8NNNC"
+			(at 118.11 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5073,7 +5217,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 116.84 128.27 90)
 			(effects
 				(font
@@ -5090,7 +5234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
 			(at 116.84 125.73 0)
 			(effects
 				(font
@@ -5110,6 +5254,24 @@
 		)
 		(property "LCSC" "C25744"
 			(at 116.84 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 116.84 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1002TCE"
+			(at 116.84 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5166,7 +5328,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25076.pdf"
 			(at 251.46 105.41 0)
 			(effects
 				(font
@@ -5186,6 +5348,24 @@
 		)
 		(property "LCSC" "C25076"
 			(at 248.92 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 251.46 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1000TCE"
+			(at 251.46 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5358,7 +5538,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 200.66 67.945 90)
 			(effects
 				(font
@@ -5375,7 +5555,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
 			(at 200.66 66.04 0)
 			(effects
 				(font
@@ -5395,6 +5575,24 @@
 		)
 		(property "LCSC" "C25744"
 			(at 200.66 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 200.66 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1002TCE"
+			(at 200.66 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5451,7 +5649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25076.pdf"
 			(at 251.46 102.87 0)
 			(effects
 				(font
@@ -5471,6 +5669,24 @@
 		)
 		(property "LCSC" "C25076"
 			(at 248.285 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 251.46 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1000TCE"
+			(at 251.46 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5529,7 +5745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KA8NNN"
 			(at 232.41 95.25 0)
 			(effects
 				(font
@@ -5549,6 +5765,24 @@
 		)
 		(property "LCSC" "C29936"
 			(at 234.95 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 232.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10B105KA8NNNC"
+			(at 232.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5753,7 +5987,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2.3V~3.6V TSSOP-20 Signal Switches, Multiplexers, Decoders ROHS"
 			(at 110.49 48.26 0)
 			(effects
 				(font
@@ -5764,6 +5998,24 @@
 		)
 		(property "LCSC" "C15298"
 			(at 108.5341 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "TI"
+			(at 110.49 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "SN74CB3T3245PWR"
+			(at 110.49 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6292,7 +6544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 109.22 33.02 0)
 			(effects
 				(font
@@ -6312,6 +6564,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 109.22 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 109.22 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 109.22 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6781,7 +7051,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KA8NNN"
 			(at 186.69 132.08 0)
 			(effects
 				(font
@@ -6801,6 +7071,24 @@
 		)
 		(property "LCSC" "C29936"
 			(at 184.15 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 186.69 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10B105KA8NNNC"
+			(at 186.69 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6935,7 +7223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2.3V~3.6V TSSOP-20 Signal Switches, Multiplexers, Decoders ROHS"
 			(at 106.68 140.97 0)
 			(effects
 				(font
@@ -6946,6 +7234,24 @@
 		)
 		(property "LCSC" "C15298"
 			(at 104.7241 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "TI"
+			(at 106.68 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "SN74CB3T3245PWR"
+			(at 106.68 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7192,7 +7498,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KA8NNN"
 			(at 250.19 50.8 0)
 			(effects
 				(font
@@ -7212,6 +7518,24 @@
 		)
 		(property "LCSC" "C29936"
 			(at 252.73 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 250.19 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10B105KA8NNNC"
+			(at 250.19 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)

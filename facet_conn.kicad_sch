@@ -5578,7 +5578,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25905.pdf"
 			(at 205.74 76.2 0)
 			(effects
 				(font
@@ -5598,6 +5598,24 @@
 		)
 		(property "LCSC" "C25905"
 			(at 210.82 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 205.74 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF5101TCE"
+			(at 205.74 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5680,6 +5698,24 @@
 		)
 		(property "LCSC" "C7519"
 			(at 226.4411 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "ST"
+			(at 224.79 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "USBLC6-2SC6"
+			(at 224.79 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5910,6 +5946,24 @@
 				(hide yes)
 			)
 		)
+		(property "MF" "JST"
+			(at 224.79 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "B10B-PHDSS(LF)(SN)"
+			(at 224.79 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8ba5c74e-a405-4129-9447-b7ba3a7557c6")
 		)
@@ -5985,7 +6039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A475KO8NNN"
 			(at 128.27 100.33 0)
 			(effects
 				(font
@@ -6005,6 +6059,24 @@
 		)
 		(property "LCSC" "C19666"
 			(at 131.445 99.7013 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 128.27 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10A475KO8NNNC"
+			(at 128.27 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6063,7 +6135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A475KO8NNN"
 			(at 133.35 100.33 0)
 			(effects
 				(font
@@ -6083,6 +6155,24 @@
 		)
 		(property "LCSC" "C19666"
 			(at 136.525 99.7013 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 133.35 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10A475KO8NNNC"
+			(at 133.35 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6273,7 +6363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25905.pdf"
 			(at 205.74 73.66 0)
 			(effects
 				(font
@@ -6293,6 +6383,24 @@
 		)
 		(property "LCSC" "C25905"
 			(at 210.312 73.914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 205.74 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF5101TCE"
+			(at 205.74 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6367,7 +6475,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17168"
+		(property "LCSC" ""
 			(at 179.07 111.76 0)
 			(effects
 				(font
@@ -6495,7 +6603,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 59.69 128.27 0)
 			(effects
 				(font
@@ -6515,6 +6623,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 61.468 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 59.69 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 59.69 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6665,6 +6791,24 @@
 				(hide yes)
 			)
 		)
+		(property "MF" "hanxia"
+			(at 45.72 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "HX JN2.0-2x2P ZZ H6.4"
+			(at 45.72 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a5dc6990-3ed7-4036-89e4-49bd552ad4fe")
 		)
@@ -6743,6 +6887,24 @@
 		)
 		(property "LCSC" "C22392240"
 			(at 62.23 168.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "XYECONN"
+			(at 73.66 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "IDC1.27-US2S-5A"
+			(at 73.66 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6843,6 +7005,24 @@
 		)
 		(property "LCSC" "C720761"
 			(at 99.06 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Wcon"
+			(at 85.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "3111-26MG0BK00R1"
+			(at 85.09 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7059,6 +7239,24 @@
 		)
 		(property "LCSC" "C7095263"
 			(at 184.15 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Global Connector Technology"
+			(at 184.15 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "USB4085-GF-A"
+			(at 184.15 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)

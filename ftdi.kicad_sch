@@ -5997,7 +5997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 227.33 60.96 0)
 			(effects
 				(font
@@ -6017,6 +6017,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 230.505 60.3313 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 227.33 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 227.33 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6141,7 +6159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 236.22 60.96 0)
 			(effects
 				(font
@@ -6161,6 +6179,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 239.395 60.3313 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 236.22 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 236.22 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6219,7 +6255,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
 			(at 48.26 104.14 0)
 			(effects
 				(font
@@ -6239,6 +6275,24 @@
 		)
 		(property "LCSC" "C25744"
 			(at 49.53 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 48.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1002TCE"
+			(at 48.26 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6295,7 +6349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 173.99 66.04 0)
 			(effects
 				(font
@@ -6315,6 +6369,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 170.18 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 173.99 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 173.99 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6371,7 +6443,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 177.8 111.76 0)
 			(effects
 				(font
@@ -6391,6 +6463,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 172.085 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 177.8 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 177.8 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6449,7 +6539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1658.pdf"
 			(at 64.77 161.29 0)
 			(effects
 				(font
@@ -6469,6 +6559,24 @@
 		)
 		(property "LCSC" "C1658"
 			(at 57.785 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "FH"
+			(at 64.77 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0603CG300J500NT"
+			(at 64.77 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6660,7 +6768,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25752.pdf"
 			(at 81.28 110.49 0)
 			(effects
 				(font
@@ -6680,6 +6788,24 @@
 		)
 		(property "LCSC" "C25752"
 			(at 76.835 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 81.28 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1202TCE"
+			(at 81.28 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6736,7 +6862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 172.72 76.2 0)
 			(effects
 				(font
@@ -6756,6 +6882,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 167.894 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 172.72 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 172.72 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6878,7 +7022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 172.72 78.74 0)
 			(effects
 				(font
@@ -6898,6 +7042,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 172.72 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 172.72 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 172.72 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6954,7 +7116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 177.8 129.54 0)
 			(effects
 				(font
@@ -6974,6 +7136,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 172.085 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 177.8 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 177.8 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7032,7 +7212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A475KO8NNN"
 			(at 60.96 76.2 0)
 			(effects
 				(font
@@ -7052,6 +7232,24 @@
 		)
 		(property "LCSC" "C19666"
 			(at 64.135 75.5713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 60.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10A475KO8NNNC"
+			(at 60.96 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7195,7 +7393,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1658"
+		(property "LCSC" ""
 			(at 78.74 158.75 0)
 			(effects
 				(font
@@ -7283,6 +7481,24 @@
 				(hide yes)
 			)
 		)
+		(property "MF" "MICROCHIP"
+			(at 38.1 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "93LC56BT-I/OT"
+			(at 38.1 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "77d3da7a-e021-4e7b-b492-0fb4451e1c7b")
 		)
@@ -7346,7 +7562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A475KO8NNN"
 			(at 27.94 30.48 0)
 			(effects
 				(font
@@ -7366,6 +7582,24 @@
 		)
 		(property "LCSC" "C19666"
 			(at 31.115 29.8513 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 27.94 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10A475KO8NNNC"
+			(at 27.94 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7422,7 +7656,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 177.8 119.38 0)
 			(effects
 				(font
@@ -7442,6 +7676,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 172.085 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 177.8 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 177.8 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7567,7 +7819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 125.73 26.67 0)
 			(effects
 				(font
@@ -7587,6 +7839,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 128.905 26.0413 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 125.73 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 125.73 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7709,7 +7979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 177.8 142.24 0)
 			(effects
 				(font
@@ -7729,6 +7999,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 172.085 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 177.8 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 177.8 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7785,7 +8073,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C6071564.pdf"
 			(at 69.85 154.94 0)
 			(effects
 				(font
@@ -7805,6 +8093,24 @@
 		)
 		(property "LCSC" "C6071564"
 			(at 69.85 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "SST"
+			(at 69.85 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "3225 12M 18PF 20PPM"
+			(at 69.85 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7869,7 +8175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C275451.pdf"
 			(at 27.94 21.59 0)
 			(effects
 				(font
@@ -7897,6 +8203,24 @@
 		)
 		(property "LCSC" "C275451"
 			(at 23.495 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "TDK"
+			(at 27.94 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "MMZ1608S601ATA00"
+			(at 27.94 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7953,7 +8277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 172.72 93.98 0)
 			(effects
 				(font
@@ -7973,6 +8297,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 168.91 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 172.72 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 172.72 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8031,7 +8373,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A475KO8NNN"
 			(at 27.94 59.69 0)
 			(effects
 				(font
@@ -8051,6 +8393,24 @@
 		)
 		(property "LCSC" "C19666"
 			(at 31.115 59.0613 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 27.94 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10A475KO8NNNC"
+			(at 27.94 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8107,7 +8467,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 172.72 71.12 0)
 			(effects
 				(font
@@ -8127,6 +8487,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 169.545 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 172.72 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 172.72 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8185,7 +8563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 80.01 76.2 0)
 			(effects
 				(font
@@ -8205,6 +8583,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 83.185 75.5713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 80.01 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 80.01 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8284,6 +8680,24 @@
 		)
 		(property "LCSC" "C56742"
 			(at 130.2259 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "FTDI"
+			(at 115.57 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "FT4232HL-Reel"
+			(at 115.57 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8526,7 +8940,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 177.8 139.7 0)
 			(effects
 				(font
@@ -8546,6 +8960,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 172.085 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 177.8 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 177.8 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8604,7 +9036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 147.32 26.67 0)
 			(effects
 				(font
@@ -8624,6 +9056,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 150.495 26.0413 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 147.32 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 147.32 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8682,7 +9132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C4109.pdf"
 			(at 64.77 139.7 0)
 			(effects
 				(font
@@ -8702,6 +9152,24 @@
 		)
 		(property "LCSC" "C4109"
 			(at 67.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 64.77 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF2001TCE"
+			(at 64.77 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8892,7 +9360,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 39.37 30.48 0)
 			(effects
 				(font
@@ -8912,6 +9380,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 42.545 29.8513 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 39.37 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 39.37 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8968,7 +9454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 177.8 114.3 0)
 			(effects
 				(font
@@ -8988,6 +9474,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 172.085 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 177.8 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 177.8 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9046,7 +9550,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 69.85 76.2 0)
 			(effects
 				(font
@@ -9066,6 +9570,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 73.025 75.5713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 69.85 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9122,7 +9644,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 172.72 96.52 0)
 			(effects
 				(font
@@ -9142,6 +9664,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 168.91 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 172.72 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 172.72 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9198,7 +9738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 172.72 88.9 0)
 			(effects
 				(font
@@ -9218,6 +9758,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 168.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 172.72 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 172.72 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9274,7 +9832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 172.72 73.66 0)
 			(effects
 				(font
@@ -9294,6 +9852,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 169.545 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 172.72 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 172.72 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9350,7 +9926,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 177.8 137.16 0)
 			(effects
 				(font
@@ -9370,6 +9946,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 172.085 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 177.8 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 177.8 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9428,7 +10022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 39.37 59.69 0)
 			(effects
 				(font
@@ -9448,6 +10042,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 42.545 59.0613 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 39.37 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 39.37 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9571,7 +10183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 177.8 116.84 0)
 			(effects
 				(font
@@ -9591,6 +10203,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 172.085 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 177.8 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 177.8 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9647,7 +10277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 172.72 68.58 0)
 			(effects
 				(font
@@ -9667,6 +10297,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 169.545 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 172.72 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 172.72 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9726,7 +10374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C92584.pdf"
 			(at 58.42 111.76 0)
 			(effects
 				(font
@@ -9746,6 +10394,24 @@
 		)
 		(property "LCSC" "C92584"
 			(at 64.77 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Korean Hroparts Elec"
+			(at 63.5 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "K2-1187SQ-A4SW-06"
+			(at 63.5 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9804,7 +10470,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C275451.pdf"
 			(at 27.94 48.26 0)
 			(effects
 				(font
@@ -9837,6 +10503,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MF" "TDK"
+			(at 27.94 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "MMZ1608S601ATA00"
+			(at 27.94 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9957,7 +10641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 246.38 60.96 0)
 			(effects
 				(font
@@ -9977,6 +10661,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 249.555 60.3313 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 246.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 246.38 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10100,7 +10802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 177.8 134.62 0)
 			(effects
 				(font
@@ -10120,6 +10822,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 172.085 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 177.8 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 177.8 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10178,7 +10898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 135.89 26.67 0)
 			(effects
 				(font
@@ -10198,6 +10918,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 139.065 26.0413 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 135.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 135.89 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10321,7 +11059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 172.72 91.44 0)
 			(effects
 				(font
@@ -10341,6 +11079,24 @@
 		)
 		(property "LCSC" "C25105"
 			(at 168.91 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 172.72 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 172.72 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10463,7 +11219,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
 			(at 177.8 127 0)
 			(effects
 				(font
@@ -10483,6 +11239,24 @@
 		)
 		(property "LCSC" "C17168"
 			(at 172.085 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 177.8 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF0000TCE"
+			(at 177.8 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10608,7 +11382,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14663.pdf"
 			(at 218.44 60.96 0)
 			(effects
 				(font
@@ -10628,6 +11402,24 @@
 		)
 		(property "LCSC" "C14663"
 			(at 221.615 60.3313 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "YAGEO"
+			(at 218.44 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CC0603KRX7R9BB104"
+			(at 218.44 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10752,7 +11544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
 			(at 49.53 123.19 0)
 			(effects
 				(font
@@ -10772,6 +11564,24 @@
 		)
 		(property "LCSC" "C25744"
 			(at 51.435 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 49.53 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1002TCE"
+			(at 49.53 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)

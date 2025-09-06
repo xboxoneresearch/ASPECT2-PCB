@@ -4283,7 +4283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25076.pdf"
 			(at 97.79 45.72 0)
 			(effects
 				(font
@@ -4303,6 +4303,24 @@
 		)
 		(property "LCSC" "C25076"
 			(at 97.79 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 97.79 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1000TCE"
+			(at 97.79 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4360,7 +4378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C238131.pdf"
 			(at 232.41 31.75 0)
 			(effects
 				(font
@@ -4380,6 +4398,24 @@
 		)
 		(property "LCSC" "C238131"
 			(at 226.06 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Keystone"
+			(at 232.41 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "5019"
+			(at 232.41 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4635,7 +4671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KA8NNN"
 			(at 26.67 184.15 0)
 			(effects
 				(font
@@ -4655,6 +4691,24 @@
 		)
 		(property "LCSC" "C29936"
 			(at 29.21 182.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 26.67 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10B105KA8NNNC"
+			(at 26.67 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4779,7 +4833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C965807.pdf"
 			(at 115.57 45.72 0)
 			(effects
 				(font
@@ -4807,6 +4861,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 115.57 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "XINGLIGHT"
+			(at 115.57 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "XL-1608UBC-04"
 			(at 115.57 45.72 0)
 			(effects
 				(font
@@ -4998,7 +5070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25076.pdf"
 			(at 100.33 133.35 0)
 			(effects
 				(font
@@ -5018,6 +5090,24 @@
 		)
 		(property "LCSC" "C25076"
 			(at 100.33 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 100.33 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1000TCE"
+			(at 100.33 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5206,7 +5296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25076.pdf"
 			(at 97.79 38.1 0)
 			(effects
 				(font
@@ -5226,6 +5316,24 @@
 		)
 		(property "LCSC" "C25076"
 			(at 97.79 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 97.79 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1000TCE"
+			(at 97.79 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5433,7 +5541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C965807.pdf"
 			(at 115.57 91.44 0)
 			(effects
 				(font
@@ -5461,6 +5569,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 115.57 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "XINGLIGHT"
+			(at 115.57 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "XL-1608UBC-04"
 			(at 115.57 91.44 0)
 			(effects
 				(font
@@ -5538,6 +5664,24 @@
 		)
 		(property "LCSC" "C460520"
 			(at 57.15 178.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "DIODES"
+			(at 57.15 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "74LVC1G07W5-7"
+			(at 57.15 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5669,7 +5813,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25076.pdf"
 			(at 97.79 91.44 0)
 			(effects
 				(font
@@ -5689,6 +5833,24 @@
 		)
 		(property "LCSC" "C25076"
 			(at 97.79 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 97.79 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1000TCE"
+			(at 97.79 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5745,7 +5907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25076.pdf"
 			(at 40.64 168.91 0)
 			(effects
 				(font
@@ -5765,6 +5927,24 @@
 		)
 		(property "LCSC" "C25076"
 			(at 40.64 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 40.64 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1000TCE"
+			(at 40.64 168.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5821,7 +6001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25082.pdf"
 			(at 48.26 133.35 0)
 			(effects
 				(font
@@ -5841,6 +6021,24 @@
 		)
 		(property "LCSC" "C25082"
 			(at 48.26 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 48.26 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1500TCE"
+			(at 48.26 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5898,7 +6096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C965799.pdf"
 			(at 88.9 133.35 0)
 			(effects
 				(font
@@ -5926,6 +6124,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 88.9 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "XINGLIGHT"
+			(at 88.9 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "XL-1608SURC-06"
 			(at 88.9 133.35 0)
 			(effects
 				(font
@@ -5984,7 +6200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C965799.pdf"
 			(at 129.54 134.62 0)
 			(effects
 				(font
@@ -6012,6 +6228,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 129.54 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "XINGLIGHT"
+			(at 129.54 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "XL-1608SURC-06"
 			(at 129.54 134.62 0)
 			(effects
 				(font
@@ -6070,7 +6304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C238131.pdf"
 			(at 232.41 24.13 0)
 			(effects
 				(font
@@ -6090,6 +6324,24 @@
 		)
 		(property "LCSC" "C238131"
 			(at 226.06 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Keystone"
+			(at 232.41 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "5019"
+			(at 232.41 29.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6144,7 +6396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C965807.pdf"
 			(at 115.57 38.1 0)
 			(effects
 				(font
@@ -6172,6 +6424,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 115.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "XINGLIGHT"
+			(at 115.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "XL-1608UBC-04"
 			(at 115.57 38.1 0)
 			(effects
 				(font
@@ -6231,7 +6501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KA8NNN"
 			(at 90.17 69.85 0)
 			(effects
 				(font
@@ -6251,6 +6521,24 @@
 		)
 		(property "LCSC" "C29936"
 			(at 92.71 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 90.17 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10B105KA8NNNC"
+			(at 90.17 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6459,7 +6747,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C238131.pdf"
 			(at 232.41 27.94 0)
 			(effects
 				(font
@@ -6479,6 +6767,24 @@
 		)
 		(property "LCSC" "C238131"
 			(at 226.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Keystone"
+			(at 232.41 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "5019"
+			(at 232.41 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6932,7 +7238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25076.pdf"
 			(at 138.43 134.62 0)
 			(effects
 				(font
@@ -6952,6 +7258,24 @@
 		)
 		(property "LCSC" "C25076"
 			(at 138.43 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 138.43 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1000TCE"
+			(at 138.43 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7143,7 +7467,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10B105KA8NNN"
 			(at 90.17 24.13 0)
 			(effects
 				(font
@@ -7163,6 +7487,24 @@
 		)
 		(property "LCSC" "C29936"
 			(at 92.71 22.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Samsung Electro-Mechanics"
+			(at 90.17 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "CL10B105KA8NNNC"
+			(at 90.17 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7352,7 +7694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C965807.pdf"
 			(at 115.57 83.82 0)
 			(effects
 				(font
@@ -7380,6 +7722,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 115.57 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "XINGLIGHT"
+			(at 115.57 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "XL-1608UBC-04"
 			(at 115.57 83.82 0)
 			(effects
 				(font
@@ -7437,7 +7797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C84267.pdf"
 			(at 31.75 168.91 0)
 			(effects
 				(font
@@ -7465,6 +7825,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 31.75 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "NATIONSTAR"
+			(at 31.75 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "NCD0603G1"
 			(at 31.75 168.91 0)
 			(effects
 				(font
@@ -7523,7 +7901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C965799.pdf"
 			(at 55.88 133.35 0)
 			(effects
 				(font
@@ -7551,6 +7929,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 55.88 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "XINGLIGHT"
+			(at 55.88 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "XL-1608SURC-06"
 			(at 55.88 133.35 0)
 			(effects
 				(font
@@ -7609,7 +8005,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C238131.pdf"
 			(at 232.41 35.56 0)
 			(effects
 				(font
@@ -7629,6 +8025,24 @@
 		)
 		(property "LCSC" "C238131"
 			(at 226.06 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Keystone"
+			(at 232.41 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "5019"
+			(at 232.41 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7682,7 +8096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25076.pdf"
 			(at 97.79 83.82 0)
 			(effects
 				(font
@@ -7702,6 +8116,24 @@
 		)
 		(property "LCSC" "C25076"
 			(at 97.79 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 97.79 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1000TCE"
+			(at 97.79 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
