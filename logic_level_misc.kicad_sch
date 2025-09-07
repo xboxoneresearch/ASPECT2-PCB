@@ -6755,7 +6755,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74LVC1G06DBV"
+		(property "Value" "SN74LVC1G06DCKR"
 			(at 205.74 41.91 0)
 			(effects
 				(font
@@ -6791,7 +6791,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C840103"
+		(property "LCSC" "C7828"
 			(at 205.74 40.005 0)
 			(effects
 				(font
