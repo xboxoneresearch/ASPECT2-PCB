@@ -6530,7 +6530,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 64.77 161.29 0)
 			(effects
 				(font
@@ -6539,7 +6539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C1658.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1570.pdf"
 			(at 64.77 161.29 0)
 			(effects
 				(font
@@ -6557,7 +6557,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1658"
+		(property "LCSC" "C1570"
 			(at 57.785 160.02 0)
 			(effects
 				(font
@@ -6575,7 +6575,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "0603CG300J500NT"
+		(property "MP" "0402CG300J500NT"
 			(at 64.77 161.29 0)
 			(effects
 				(font
@@ -7375,7 +7375,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C1905.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1570.pdf"
 			(at 76.2 161.29 0)
 			(effects
 				(font
@@ -7393,7 +7393,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1905"
+		(property "LCSC" "C1570"
 			(at 78.74 158.75 0)
 			(effects
 				(font
@@ -7411,7 +7411,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "1206CG300J500NT"
+		(property "MP" "0402CG300J500NT"
 			(at 76.2 161.29 0)
 			(effects
 				(font
