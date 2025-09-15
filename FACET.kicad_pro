@@ -534,7 +534,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.3,
+        "clearance": 0.2,
         "name": "I2C",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
@@ -613,12 +613,16 @@
         "pattern": "*D-"
       },
       {
-        "netclass": "SIGNAL",
+        "netclass": "I2C",
         "pattern": "*SMBUS_*_R"
       },
       {
         "netclass": "SIGNAL",
         "pattern": "*OE*"
+      },
+      {
+        "netclass": "I2C",
+        "pattern": "*I2C2*"
       }
     ]
   },
@@ -846,6 +850,10 @@
     [
       "71c11425-cac2-47ba-9458-52d8d85cae8e",
       "Testpoints, LEDs"
+    ],
+    [
+      "cf0a1fe6-4d52-4e94-93d0-c50a738ac440",
+      "OLED PostCode display"
     ]
   ],
   "text_variables": {}

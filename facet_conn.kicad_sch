@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "61aa7e20-c7d5-4a76-a4ed-ef53eb1be52e")
 	(paper "A4")
+	(title_block
+		(title "FACET2 Homebrew")
+		(date "2023-07-01")
+		(rev "1.1")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_ARM_JTAG_SWD_10"
 			(pin_names
