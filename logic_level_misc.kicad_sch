@@ -1858,16 +1858,6 @@
 		)
 		(uuid "0c93a96d-20e2-472d-b0f2-82559b3bc088")
 	)
-	(text "TODO: Place correctly dimensioned pull-ups for trace capacitance"
-		(exclude_from_sim no)
-		(at 239.014 128.016 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0dd2b9cc-26ce-4582-a895-07f4e9ad6fb3")
-	)
 	(text "LEVEL SHIFTER-Enable (OE) Signal inverter"
 		(exclude_from_sim no)
 		(at 166.37 34.29 0)
@@ -4748,7 +4738,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "2k2"
 			(at 231.14 133.477 0)
 			(effects
 				(font
@@ -4784,7 +4774,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25900"
+		(property "LCSC" "C25879"
 			(at 231.14 131.445 0)
 			(effects
 				(font
@@ -4911,7 +4901,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "2k2"
 			(at 235.458 133.477 0)
 			(effects
 				(font
@@ -4947,7 +4937,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25900"
+		(property "LCSC" "C25879"
 			(at 236.22 131.445 0)
 			(effects
 				(font

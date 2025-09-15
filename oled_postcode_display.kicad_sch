@@ -399,6 +399,144 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_ST_STM32G0:STM32G031J6Mx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1011,10 +1149,28 @@
 		(uuid "8cca3086-10c3-4fda-b0aa-f5837477098f")
 	)
 	(junction
+		(at 139.7 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "469f5eb7-0f83-443b-97ec-2fdddf8b3901")
+	)
+	(junction
+		(at 135.89 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55833c7b-6ca8-400b-adcf-e840fb858adf")
+	)
+	(junction
 		(at 231.14 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3e5480c-c084-45c6-8ed8-e156b46da467")
+	)
+	(junction
+		(at 130.81 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a79a2160-9e48-4ada-9459-30403a1cb070")
 	)
 	(junction
 		(at 92.71 54.61)
@@ -1058,6 +1214,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 72.39) (xy 135.89 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d02938b-6fdb-47f9-90ac-08ad86ed81fe")
+	)
+	(wire
+		(pts
 			(xy 97.79 59.69) (xy 97.79 63.5)
 		)
 		(stroke
@@ -1068,7 +1234,17 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 87.63) (xy 132.08 87.63)
+			(xy 139.7 83.82) (xy 139.7 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3552ef63-efc4-473d-9fc4-fa456ca9b172")
+	)
+	(wire
+		(pts
+			(xy 123.19 87.63) (xy 139.7 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1138,6 +1314,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 87.63) (xy 147.32 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f033791-9d24-47e8-8bac-d6f5718bcc14")
+	)
+	(wire
+		(pts
 			(xy 198.12 95.25) (xy 198.12 101.6)
 		)
 		(stroke
@@ -1168,6 +1354,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 72.39) (xy 139.7 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b41e6f58-9b78-4cea-90fd-944ea20cb704")
+	)
+	(wire
+		(pts
 			(xy 123.19 95.25) (xy 132.08 95.25)
 		)
 		(stroke
@@ -1175,6 +1371,16 @@
 			(type default)
 		)
 		(uuid "b5751f30-a6d8-4d71-8ad9-a84ebea77d95")
+	)
+	(wire
+		(pts
+			(xy 130.81 78.74) (xy 130.81 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b96decf5-7246-4fe2-ac75-85c3739b424a")
 	)
 	(wire
 		(pts
@@ -1218,13 +1424,23 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 90.17) (xy 132.08 90.17)
+			(xy 123.19 90.17) (xy 130.81 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cd637016-111e-483d-886e-6a685ff4b397")
+	)
+	(wire
+		(pts
+			(xy 135.89 72.39) (xy 139.7 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d02d9e2e-31b6-4d9d-8cd8-2c507b30cf27")
 	)
 	(wire
 		(pts
@@ -1238,6 +1454,26 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 90.17) (xy 147.32 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deae6f9b-ba67-4b2d-9c62-2fdf9c946846")
+	)
+	(wire
+		(pts
+			(xy 130.81 83.82) (xy 130.81 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e415f4f5-3f42-48d4-802a-05becf3b79a0")
+	)
+	(wire
+		(pts
 			(xy 198.12 101.6) (xy 226.06 101.6)
 		)
 		(stroke
@@ -1245,6 +1481,16 @@
 			(type default)
 		)
 		(uuid "e52b3bec-c432-43a4-9a3f-c38217c884b8")
+	)
+	(wire
+		(pts
+			(xy 135.89 67.31) (xy 135.89 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eae82704-260d-47ac-99e2-e7902bf8a7fa")
 	)
 	(wire
 		(pts
@@ -1267,7 +1513,7 @@
 		(uuid "fb35f458-b229-4a2e-bfe7-f39d920f2838")
 	)
 	(label "I2C2_SCL_OLED"
-		(at 132.08 87.63 0)
+		(at 147.32 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1277,7 +1523,7 @@
 		(uuid "08ff8ff5-b5ae-4265-a133-2943b8b9d0ab")
 	)
 	(label "I2C2_SDA_OLED"
-		(at 132.08 90.17 0)
+		(at 147.32 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1411,6 +1657,72 @@
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 135.89 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28f7ad0c-6360-49f6-ab05-361b183e45f2")
+		(property "Reference" "#PWR070"
+			(at 135.89 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 135.89 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 135.89 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb1c0c70-3ab4-438c-9d89-1aca76189e14")
+		)
+		(instances
+			(project "FACET"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -1605,6 +1917,164 @@
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 139.7 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f68f602-b027-4b1a-86b7-a7d8913a4b8e")
+		(property "Reference" "R47"
+			(at 142.24 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2K2"
+			(at 142.24 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25879"
+			(at 142.24 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e162d15a-c8cf-43e1-b868-9671a073ae42")
+		)
+		(pin "2"
+			(uuid "476b21f9-ed47-44cc-89a2-ed1d5efce440")
+		)
+		(instances
+			(project "FACET"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 130.81 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "644847b7-9cb7-4894-92be-a5edd31f965f")
+		(property "Reference" "R48"
+			(at 133.35 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2K2"
+			(at 133.35 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 130.81 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 130.81 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25879"
+			(at 133.35 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96fd5dff-af86-4235-a49e-52cf52414ea4")
+		)
+		(pin "2"
+			(uuid "55efff04-aebf-4779-b8cd-0a621b59b344")
+		)
+		(instances
+			(project "FACET"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
+					(reference "R48")
 					(unit 1)
 				)
 			)
