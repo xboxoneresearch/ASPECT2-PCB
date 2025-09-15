@@ -778,7 +778,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Isolator:ISO1541"
+		(symbol "Isolator:ISO1540"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -790,7 +790,7 @@
 					)
 				)
 			)
-			(property "Value" "ISO1541"
+			(property "Value" "ISO1540"
 				(at 3.81 6.35 0)
 				(effects
 					(font
@@ -816,7 +816,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "I2C Isolator, 2.5 kVrms, Unidirectional Clock, Bidirectional data, SOIC-8"
+			(property "Description" "I2C Isolator, 2.5 kVrms, Bidirectional clock and data, SOIC-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -843,7 +843,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ISO1541_0_1"
+			(symbol "ISO1540_0_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 7.62 -7.62)
@@ -951,7 +951,19 @@
 					)
 				)
 			)
-			(symbol "ISO1541_1_1"
+			(symbol "ISO1540_1_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy -1.27 -2.54) (xy -0.635 -3.175) (xy -0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(pin power_in line
 					(at -10.16 2.54 0)
 					(length 2.54)
@@ -988,7 +1000,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at -10.16 -2.54 0)
 					(length 2.54)
 					(name "SCL1"
@@ -1060,7 +1072,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 10.16 -2.54 180)
 					(length 2.54)
 					(name "SCL2"
@@ -7564,7 +7576,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Isolator:ISO1541")
+		(lib_id "Isolator:ISO1540")
 		(at 213.36 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7581,7 +7593,7 @@
 				)
 			)
 		)
-		(property "Value" "ISO1541"
+		(property "Value" "ISO1540"
 			(at 213.36 135.89 0)
 			(effects
 				(font
@@ -7607,8 +7619,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "I2C Isolator, 2.5 kVrms, Unidirectional Clock, Bidirectional data, SOIC-8"
+		(property "Description" "I2C Isolator, 2.5 kVrms, Bidirectional clock and data, SOIC-8"
 			(at 213.36 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C179739"
+			(at 213.36 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
