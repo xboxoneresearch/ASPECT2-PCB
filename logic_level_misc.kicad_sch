@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "47f5c44a-02ad-4f79-923c-a6b0b994e295")
 	(paper "A4")
+	(title_block
+		(title "FACET2 Homebrew")
+		(date "2023-07-01")
+		(rev "1.1")
+	)
 	(lib_symbols
 		(symbol "2024-05-02_01-26-28:SN74CB3T3245DGVR"
 			(pin_names
@@ -773,7 +778,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Isolator:ISO1541"
+		(symbol "Isolator:ISO1540"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -785,7 +790,7 @@
 					)
 				)
 			)
-			(property "Value" "ISO1541"
+			(property "Value" "ISO1540"
 				(at 3.81 6.35 0)
 				(effects
 					(font
@@ -811,7 +816,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "I2C Isolator, 2.5 kVrms, Unidirectional Clock, Bidirectional data, SOIC-8"
+			(property "Description" "I2C Isolator, 2.5 kVrms, Bidirectional clock and data, SOIC-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -838,7 +843,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ISO1541_0_1"
+			(symbol "ISO1540_0_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 7.62 -7.62)
@@ -946,7 +951,19 @@
 					)
 				)
 			)
-			(symbol "ISO1541_1_1"
+			(symbol "ISO1540_1_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy -1.27 -2.54) (xy -0.635 -3.175) (xy -0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(pin power_in line
 					(at -10.16 2.54 0)
 					(length 2.54)
@@ -983,7 +1000,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at -10.16 -2.54 0)
 					(length 2.54)
 					(name "SCL1"
@@ -1055,7 +1072,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 10.16 -2.54 180)
 					(length 2.54)
 					(name "SCL2"
@@ -1840,16 +1857,6 @@
 			(justify left bottom)
 		)
 		(uuid "0c93a96d-20e2-472d-b0f2-82559b3bc088")
-	)
-	(text "TODO: Place correctly dimensioned pull-ups for trace capacitance"
-		(exclude_from_sim no)
-		(at 239.014 128.016 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0dd2b9cc-26ce-4582-a895-07f4e9ad6fb3")
 	)
 	(text "LEVEL SHIFTER-Enable (OE) Signal inverter"
 		(exclude_from_sim no)
@@ -4731,7 +4738,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "2k2"
 			(at 231.14 133.477 0)
 			(effects
 				(font
@@ -4749,7 +4756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C25900.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25879.pdf"
 			(at 232.41 137.16 0)
 			(effects
 				(font
@@ -4767,7 +4774,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25900"
+		(property "LCSC" "C25879"
 			(at 231.14 131.445 0)
 			(effects
 				(font
@@ -4785,7 +4792,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "0402WGF4701TCE"
+		(property "MP" "0402WGF2201TCE"
 			(at 232.41 137.16 0)
 			(effects
 				(font
@@ -4894,7 +4901,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "2k2"
 			(at 235.458 133.477 0)
 			(effects
 				(font
@@ -4912,7 +4919,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C25900.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25879.pdf"
 			(at 237.49 137.16 0)
 			(effects
 				(font
@@ -4930,7 +4937,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25900"
+		(property "LCSC" "C25879"
 			(at 236.22 131.445 0)
 			(effects
 				(font
@@ -4948,7 +4955,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "0402WGF4701TCE"
+		(property "MP" "0402WGF2201TCE"
 			(at 237.49 137.16 0)
 			(effects
 				(font
@@ -7559,7 +7566,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Isolator:ISO1541")
+		(lib_id "Isolator:ISO1540")
 		(at 213.36 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7576,7 +7583,7 @@
 				)
 			)
 		)
-		(property "Value" "ISO1541"
+		(property "Value" "ISO1540"
 			(at 213.36 135.89 0)
 			(effects
 				(font
@@ -7602,8 +7609,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "I2C Isolator, 2.5 kVrms, Unidirectional Clock, Bidirectional data, SOIC-8"
+		(property "Description" "I2C Isolator, 2.5 kVrms, Bidirectional clock and data, SOIC-8"
 			(at 213.36 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C179739"
+			(at 213.36 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)

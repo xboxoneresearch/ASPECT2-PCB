@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "dceda7ab-df71-4ba1-bb60-28101cb85338")
 	(paper "A4")
+	(title_block
+		(title "FACET2 Homebrew")
+		(date "2023-07-01")
+		(rev "1.1")
+	)
 	(lib_symbols
 		(symbol "Device:C_Small"
 			(pin_numbers
