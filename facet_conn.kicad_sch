@@ -3665,10 +3665,6 @@
 		(uuid "0a56ad3f-e165-4b67-9735-020101e68d85")
 	)
 	(no_connect
-		(at 105.41 162.56)
-		(uuid "2c310f70-1b9b-4843-86aa-6885f33d2ea1")
-	)
-	(no_connect
 		(at 199.39 99.06)
 		(uuid "3b925f43-15b7-429d-ad62-faebb24f68b1")
 	)
@@ -5276,6 +5272,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FTDI_JTAG_RST_N"
+		(shape input)
+		(at 105.41 162.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d439eaa7-65f3-4f7d-b3c7-930965cd37b5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.3955 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
