@@ -1,11 +1,10 @@
 [![Build PCBs](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_pcbs.yml/badge.svg)](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_pcbs.yml)
 
-> [!WARNING]  
-> To reach the state of ready-for-manufacturing, check out the [issues](https://github.com/xboxoneresearch/ASPECT2-PCB/issues)
-
 # ASPECT2 PCB
 
-![PCB - work in progress](./assets/pcb_work_in_progress.png)
+![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/FACET-3D_top.png)
+![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/FACET-3D_top30deg.png)
+![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/FACET-3D_bottom.png)
 
 
 This repo contains:
@@ -28,7 +27,7 @@ This repo contains:
 
 ### Design Circuit
 
-* [KiCad 8.0](https://www.kicad.org/download/)
+* [KiCad 9.0](https://www.kicad.org/download/)
 * [KiCad JLCPCB tools extension](https://github.com/Bouni/kicad-jlcpcb-tools) (generating manufacturing files -> Gerbers, BOM, CPL)
 
 ### Using the module
