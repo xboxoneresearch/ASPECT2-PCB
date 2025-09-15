@@ -4756,7 +4756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C25900.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25879.pdf"
 			(at 232.41 137.16 0)
 			(effects
 				(font
@@ -4792,7 +4792,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "0402WGF4701TCE"
+		(property "MP" "0402WGF2201TCE"
 			(at 232.41 137.16 0)
 			(effects
 				(font
@@ -4919,7 +4919,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C25900.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25879.pdf"
 			(at 237.49 137.16 0)
 			(effects
 				(font
@@ -4955,7 +4955,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "0402WGF4701TCE"
+		(property "MP" "0402WGF2201TCE"
 			(at 237.49 137.16 0)
 			(effects
 				(font

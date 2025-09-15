@@ -1959,7 +1959,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25879.pdf"
 			(at 139.7 81.28 0)
 			(effects
 				(font
@@ -1979,6 +1979,24 @@
 		)
 		(property "LCSC" "C25879"
 			(at 142.24 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF2201TCE"
+			(at 139.7 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2038,7 +2056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25879.pdf"
 			(at 130.81 81.28 0)
 			(effects
 				(font
@@ -2058,6 +2076,24 @@
 		)
 		(property "LCSC" "C25879"
 			(at 133.35 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 130.81 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF2201TCE"
+			(at 130.81 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
