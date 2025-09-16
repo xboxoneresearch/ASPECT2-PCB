@@ -54,9 +54,13 @@ Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c \
+Drivers/ssd1306/ssd1306/ssd1306_fonts.c \
+Drivers/ssd1306/ssd1306/ssd1306.c \
 Core/Src/system_stm32g0xx.c \
 Core/Src/sysmem.c \
-Core/Src/syscalls.c  
+Core/Src/syscalls.c \
+Core/Src/display.c \
+Core/Src/slave.c
 
 # ASM sources
 ASM_SOURCES =  \
@@ -123,7 +127,8 @@ C_INCLUDES =  \
 -IDrivers/STM32G0xx_HAL_Driver/Inc \
 -IDrivers/STM32G0xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32G0xx/Include \
--IDrivers/CMSIS/Include
+-IDrivers/CMSIS/Include \
+-IDrivers/ssd1306/ssd1306
 
 
 # compile gcc flags
