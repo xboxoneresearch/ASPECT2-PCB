@@ -3,13 +3,6 @@
 kibot:
   version: 1
 
-global:
-  filters:
-  - number: 1007
-  - number: 1015
-  - number: 58
-  - number: 107
-
 import:
 - file: Elecrow
   definitions:
@@ -187,7 +180,7 @@ outputs:
   comment: PCB diff between the last two changes
   type: diff
   dir: diff
-  layers:
+  layers: &copper_and_cmts
   - layer: F.Cu
     suffix: F_Cu
     description: Front copper
@@ -251,55 +244,7 @@ outputs:
   comment: Individual layers in DXF format
   type: dxf
   dir: Individual_Layers/DXF
-  layers:
-  - layer: F.Cu
-    suffix: F_Cu
-    description: Front copper
-  - layer: In1.Cu
-    suffix: In1_Cu
-    description: Inner layer 1
-  - layer: In2.Cu
-    suffix: In2_Cu
-    description: Inner layer 2
-  - layer: B.Cu
-    suffix: B_Cu
-    description: Bottom copper
-  - layer: B.Paste
-    suffix: B_Paste
-    description: Bottom solder paste
-  - layer: F.Paste
-    suffix: F_Paste
-    description: Front solder paste
-  - layer: B.Silkscreen
-    suffix: B_Silkscreen
-    description: Bottom silkscreen (artwork)
-  - layer: F.Silkscreen
-    suffix: F_Silkscreen
-    description: Front silkscreen (artwork)
-  - layer: B.Mask
-    suffix: B_Mask
-    description: Bottom soldermask (negative)
-  - layer: F.Mask
-    suffix: F_Mask
-    description: Front soldermask (negative)
-  - layer: User.Comments
-    suffix: User_Comments
-    description: User comments
-  - layer: Edge.Cuts
-    suffix: Edge_Cuts
-    description: Board shape
-  - layer: B.Courtyard
-    suffix: B_Courtyard
-    description: Bottom courtyard area
-  - layer: F.Courtyard
-    suffix: F_Courtyard
-    description: Front courtyard area
-  - layer: B.Fab
-    suffix: B_Fab
-    description: Bottom documentation
-  - layer: F.Fab
-    suffix: F_Fab
-    description: Front documentation
+  layers: *copper_and_cmts
 - name: basic_dxf_sch_print
   comment: Schematic in DXF format
   type: dxf_sch_print
@@ -324,108 +269,12 @@ outputs:
   comment: Gerbers in modern format, recommended by the standard
   type: gerber
   dir: Gerbers_and_Drill
-  layers:
-  - layer: F.Cu
-    suffix: F_Cu
-    description: Front copper
-  - layer: In1.Cu
-    suffix: In1_Cu
-    description: Inner layer 1
-  - layer: In2.Cu
-    suffix: In2_Cu
-    description: Inner layer 2
-  - layer: B.Cu
-    suffix: B_Cu
-    description: Bottom copper
-  - layer: B.Paste
-    suffix: B_Paste
-    description: Bottom solder paste
-  - layer: F.Paste
-    suffix: F_Paste
-    description: Front solder paste
-  - layer: B.Silkscreen
-    suffix: B_Silkscreen
-    description: Bottom silkscreen (artwork)
-  - layer: F.Silkscreen
-    suffix: F_Silkscreen
-    description: Front silkscreen (artwork)
-  - layer: B.Mask
-    suffix: B_Mask
-    description: Bottom soldermask (negative)
-  - layer: F.Mask
-    suffix: F_Mask
-    description: Front soldermask (negative)
-  - layer: User.Comments
-    suffix: User_Comments
-    description: User comments
-  - layer: Edge.Cuts
-    suffix: Edge_Cuts
-    description: Board shape
-  - layer: B.Courtyard
-    suffix: B_Courtyard
-    description: Bottom courtyard area
-  - layer: F.Courtyard
-    suffix: F_Courtyard
-    description: Front courtyard area
-  - layer: B.Fab
-    suffix: B_Fab
-    description: Bottom documentation
-  - layer: F.Fab
-    suffix: F_Fab
-    description: Front documentation
+  layers: *copper_and_cmts
 - name: basic_hpgl
   comment: Individual layers in HPGL format
   type: hpgl
   dir: Individual_Layers/HPGL
-  layers:
-  - layer: F.Cu
-    suffix: F_Cu
-    description: Front copper
-  - layer: In1.Cu
-    suffix: In1_Cu
-    description: Inner layer 1
-  - layer: In2.Cu
-    suffix: In2_Cu
-    description: Inner layer 2
-  - layer: B.Cu
-    suffix: B_Cu
-    description: Bottom copper
-  - layer: B.Paste
-    suffix: B_Paste
-    description: Bottom solder paste
-  - layer: F.Paste
-    suffix: F_Paste
-    description: Front solder paste
-  - layer: B.Silkscreen
-    suffix: B_Silkscreen
-    description: Bottom silkscreen (artwork)
-  - layer: F.Silkscreen
-    suffix: F_Silkscreen
-    description: Front silkscreen (artwork)
-  - layer: B.Mask
-    suffix: B_Mask
-    description: Bottom soldermask (negative)
-  - layer: F.Mask
-    suffix: F_Mask
-    description: Front soldermask (negative)
-  - layer: User.Comments
-    suffix: User_Comments
-    description: User comments
-  - layer: Edge.Cuts
-    suffix: Edge_Cuts
-    description: Board shape
-  - layer: B.Courtyard
-    suffix: B_Courtyard
-    description: Bottom courtyard area
-  - layer: F.Courtyard
-    suffix: F_Courtyard
-    description: Front courtyard area
-  - layer: B.Fab
-    suffix: B_Fab
-    description: Bottom documentation
-  - layer: F.Fab
-    suffix: F_Fab
-    description: Front documentation
+  layers: *copper_and_cmts
 - name: basic_hpgl_sch_print
   comment: Schematic in HPGL format
   type: hpgl_sch_print
@@ -475,55 +324,7 @@ outputs:
   comment: Interactive diff between commits
   type: kiri
   dir: diff
-  layers:
-  - layer: F.Cu
-    suffix: F_Cu
-    description: Front copper
-  - layer: In1.Cu
-    suffix: In1_Cu
-    description: Inner layer 1
-  - layer: In2.Cu
-    suffix: In2_Cu
-    description: Inner layer 2
-  - layer: B.Cu
-    suffix: B_Cu
-    description: Bottom copper
-  - layer: B.Paste
-    suffix: B_Paste
-    description: Bottom solder paste
-  - layer: F.Paste
-    suffix: F_Paste
-    description: Front solder paste
-  - layer: B.Silkscreen
-    suffix: B_Silkscreen
-    description: Bottom silkscreen (artwork)
-  - layer: F.Silkscreen
-    suffix: F_Silkscreen
-    description: Front silkscreen (artwork)
-  - layer: B.Mask
-    suffix: B_Mask
-    description: Bottom soldermask (negative)
-  - layer: F.Mask
-    suffix: F_Mask
-    description: Front soldermask (negative)
-  - layer: User.Comments
-    suffix: User_Comments
-    description: User comments
-  - layer: Edge.Cuts
-    suffix: Edge_Cuts
-    description: Board shape
-  - layer: B.Courtyard
-    suffix: B_Courtyard
-    description: Bottom courtyard area
-  - layer: F.Courtyard
-    suffix: F_Courtyard
-    description: Front courtyard area
-  - layer: B.Fab
-    suffix: B_Fab
-    description: Bottom documentation
-  - layer: F.Fab
-    suffix: F_Fab
-    description: Front documentation
+  layers: *copper_and_cmts
   options:
     max_commits: 4
 - name: basic_navigate_results_rb
@@ -549,7 +350,7 @@ outputs:
   dir: PCB/PDF
   options:
     format: PDF
-    pages:
+    pages: &pcb_pages
     - layers:
       - layer: F.Cu
       - layer: F.Mask
@@ -615,65 +416,7 @@ outputs:
   dir: PCB/SVG
   options:
     format: SVG
-    pages:
-    - layers:
-      - layer: F.Cu
-      - layer: F.Mask
-        color: '#14332440'
-      - layer: F.Paste
-      - layer: F.Silkscreen
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front copper
-    - layers:
-      - layer: In1.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 1
-    - layers:
-      - layer: In2.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 2
-    - layers:
-      - layer: B.Cu
-      - layer: B.Mask
-        color: '#14332440'
-      - layer: B.Paste
-      - layer: B.Silkscreen
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom copper
-    - layers:
-      - layer: B.Courtyard
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom courtyard area
-    - layers:
-      - layer: F.Courtyard
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front courtyard area
-    - layers:
-      - layer: B.Fab
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom documentation
-    - layers:
-      - layer: F.Fab
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front documentation
-    - repeat_for_layer: User.Drawings
-      repeat_layers: drill_pairs
-      layers:
-      - layer: User.Drawings
-        color: '#000000'
-      - layer: Edge.Cuts
-        color: '#000000'
+    pages: *pcb_pages
     keep_temporal_files: true
     add_background: true
 - name: basic_pcb_print_png
@@ -682,65 +425,7 @@ outputs:
   dir: PCB/PNG
   options:
     format: PNG
-    pages:
-    - layers:
-      - layer: F.Cu
-      - layer: F.Mask
-        color: '#14332440'
-      - layer: F.Paste
-      - layer: F.Silkscreen
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front copper
-    - layers:
-      - layer: In1.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 1
-    - layers:
-      - layer: In2.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 2
-    - layers:
-      - layer: B.Cu
-      - layer: B.Mask
-        color: '#14332440'
-      - layer: B.Paste
-      - layer: B.Silkscreen
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom copper
-    - layers:
-      - layer: B.Courtyard
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom courtyard area
-    - layers:
-      - layer: F.Courtyard
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front courtyard area
-    - layers:
-      - layer: B.Fab
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom documentation
-    - layers:
-      - layer: F.Fab
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front documentation
-    - repeat_for_layer: User.Drawings
-      repeat_layers: drill_pairs
-      layers:
-      - layer: User.Drawings
-        color: '#000000'
-      - layer: Edge.Cuts
-        color: '#000000'
+    pages: *pcb_pages
     keep_temporal_files: true
     add_background: true
 - name: basic_pcb_print_eps
@@ -749,65 +434,7 @@ outputs:
   dir: PCB/EPS
   options:
     format: EPS
-    pages:
-    - layers:
-      - layer: F.Cu
-      - layer: F.Mask
-        color: '#14332440'
-      - layer: F.Paste
-      - layer: F.Silkscreen
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front copper
-    - layers:
-      - layer: In1.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 1
-    - layers:
-      - layer: In2.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 2
-    - layers:
-      - layer: B.Cu
-      - layer: B.Mask
-        color: '#14332440'
-      - layer: B.Paste
-      - layer: B.Silkscreen
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom copper
-    - layers:
-      - layer: B.Courtyard
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom courtyard area
-    - layers:
-      - layer: F.Courtyard
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front courtyard area
-    - layers:
-      - layer: B.Fab
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom documentation
-    - layers:
-      - layer: F.Fab
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front documentation
-    - repeat_for_layer: User.Drawings
-      repeat_layers: drill_pairs
-      layers:
-      - layer: User.Drawings
-        color: '#000000'
-      - layer: Edge.Cuts
-        color: '#000000'
+    pages: *pcb_pages
     keep_temporal_files: true
 - name: basic_pcb_print_ps
   comment: PCB
@@ -815,65 +442,7 @@ outputs:
   dir: PCB/PS
   options:
     format: PS
-    pages:
-    - layers:
-      - layer: F.Cu
-      - layer: F.Mask
-        color: '#14332440'
-      - layer: F.Paste
-      - layer: F.Silkscreen
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front copper
-    - layers:
-      - layer: In1.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 1
-    - layers:
-      - layer: In2.Cu
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Inner layer 2
-    - layers:
-      - layer: B.Cu
-      - layer: B.Mask
-        color: '#14332440'
-      - layer: B.Paste
-      - layer: B.Silkscreen
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom copper
-    - layers:
-      - layer: B.Courtyard
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom courtyard area
-    - layers:
-      - layer: F.Courtyard
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front courtyard area
-    - layers:
-      - layer: B.Fab
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      mirror: true
-      sheet: Bottom documentation
-    - layers:
-      - layer: F.Fab
-      - layer: Edge.Cuts
-      - layer: User.Comments
-      sheet: Front documentation
-    - repeat_for_layer: User.Drawings
-      repeat_layers: drill_pairs
-      layers:
-      - layer: User.Drawings
-        color: '#000000'
-      - layer: Edge.Cuts
-        color: '#000000'
+    pages: *pcb_pages
     keep_temporal_files: true
 - name: basic_pcbdraw_svg_jlcpcb_green_enig_top
   comment: PCB 2D render in SVG format, using jlcpcb-green-enig style
@@ -1014,55 +583,7 @@ outputs:
   comment: Individual layers in PDF format
   type: pdf
   dir: Individual_Layers/PDF
-  layers:
-  - layer: F.Cu
-    suffix: F_Cu
-    description: Front copper
-  - layer: In1.Cu
-    suffix: In1_Cu
-    description: Inner layer 1
-  - layer: In2.Cu
-    suffix: In2_Cu
-    description: Inner layer 2
-  - layer: B.Cu
-    suffix: B_Cu
-    description: Bottom copper
-  - layer: B.Paste
-    suffix: B_Paste
-    description: Bottom solder paste
-  - layer: F.Paste
-    suffix: F_Paste
-    description: Front solder paste
-  - layer: B.Silkscreen
-    suffix: B_Silkscreen
-    description: Bottom silkscreen (artwork)
-  - layer: F.Silkscreen
-    suffix: F_Silkscreen
-    description: Front silkscreen (artwork)
-  - layer: B.Mask
-    suffix: B_Mask
-    description: Bottom soldermask (negative)
-  - layer: F.Mask
-    suffix: F_Mask
-    description: Front soldermask (negative)
-  - layer: User.Comments
-    suffix: User_Comments
-    description: User comments
-  - layer: Edge.Cuts
-    suffix: Edge_Cuts
-    description: Board shape
-  - layer: B.Courtyard
-    suffix: B_Courtyard
-    description: Bottom courtyard area
-  - layer: F.Courtyard
-    suffix: F_Courtyard
-    description: Front courtyard area
-  - layer: B.Fab
-    suffix: B_Fab
-    description: Bottom documentation
-  - layer: F.Fab
-    suffix: F_Fab
-    description: Front documentation
+  layers: *copper_and_cmts
 - name: basic_pdf_sch_print
   comment: Schematic in PDF format
   type: pdf_sch_print
@@ -1085,55 +606,7 @@ outputs:
   comment: Individual layers in PS format
   type: ps
   dir: Individual_Layers/PS
-  layers:
-  - layer: F.Cu
-    suffix: F_Cu
-    description: Front copper
-  - layer: In1.Cu
-    suffix: In1_Cu
-    description: Inner layer 1
-  - layer: In2.Cu
-    suffix: In2_Cu
-    description: Inner layer 2
-  - layer: B.Cu
-    suffix: B_Cu
-    description: Bottom copper
-  - layer: B.Paste
-    suffix: B_Paste
-    description: Bottom solder paste
-  - layer: F.Paste
-    suffix: F_Paste
-    description: Front solder paste
-  - layer: B.Silkscreen
-    suffix: B_Silkscreen
-    description: Bottom silkscreen (artwork)
-  - layer: F.Silkscreen
-    suffix: F_Silkscreen
-    description: Front silkscreen (artwork)
-  - layer: B.Mask
-    suffix: B_Mask
-    description: Bottom soldermask (negative)
-  - layer: F.Mask
-    suffix: F_Mask
-    description: Front soldermask (negative)
-  - layer: User.Comments
-    suffix: User_Comments
-    description: User comments
-  - layer: Edge.Cuts
-    suffix: Edge_Cuts
-    description: Board shape
-  - layer: B.Courtyard
-    suffix: B_Courtyard
-    description: Bottom courtyard area
-  - layer: F.Courtyard
-    suffix: F_Courtyard
-    description: Front courtyard area
-  - layer: B.Fab
-    suffix: B_Fab
-    description: Bottom documentation
-  - layer: F.Fab
-    suffix: F_Fab
-    description: Front documentation
+  layers: *copper_and_cmts
 - name: basic_ps_sch_print
   comment: Schematic in PS format
   type: ps_sch_print
@@ -1207,55 +680,7 @@ outputs:
   comment: Individual layers in SVG format
   type: svg
   dir: Individual_Layers/SVG
-  layers:
-  - layer: F.Cu
-    suffix: F_Cu
-    description: Front copper
-  - layer: In1.Cu
-    suffix: In1_Cu
-    description: Inner layer 1
-  - layer: In2.Cu
-    suffix: In2_Cu
-    description: Inner layer 2
-  - layer: B.Cu
-    suffix: B_Cu
-    description: Bottom copper
-  - layer: B.Paste
-    suffix: B_Paste
-    description: Bottom solder paste
-  - layer: F.Paste
-    suffix: F_Paste
-    description: Front solder paste
-  - layer: B.Silkscreen
-    suffix: B_Silkscreen
-    description: Bottom silkscreen (artwork)
-  - layer: F.Silkscreen
-    suffix: F_Silkscreen
-    description: Front silkscreen (artwork)
-  - layer: B.Mask
-    suffix: B_Mask
-    description: Bottom soldermask (negative)
-  - layer: F.Mask
-    suffix: F_Mask
-    description: Front soldermask (negative)
-  - layer: User.Comments
-    suffix: User_Comments
-    description: User comments
-  - layer: Edge.Cuts
-    suffix: Edge_Cuts
-    description: Board shape
-  - layer: B.Courtyard
-    suffix: B_Courtyard
-    description: Bottom courtyard area
-  - layer: F.Courtyard
-    suffix: F_Courtyard
-    description: Front courtyard area
-  - layer: B.Fab
-    suffix: B_Fab
-    description: Bottom documentation
-  - layer: F.Fab
-    suffix: F_Fab
-    description: Front documentation
+  layers: *copper_and_cmts
 - name: basic_svg_sch_print
   comment: Schematic in SVG format
   type: svg_sch_print
