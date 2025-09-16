@@ -18,12 +18,14 @@ void Display_Init(void)
 
 const char *get_segment_name(uint8_t seg) {
   switch (seg & 0xF0) {
-    case 0x70:
-      return "OS";
-    case 0x30:
-      return "SP";
     case 0x10:
+      return "CPU";
+    case 0x30:
+      return "PSP";
+    case 0x70:
       return "SMC";
+    case 0xF0:
+      return "OS";
     default:
       return "???";
   }

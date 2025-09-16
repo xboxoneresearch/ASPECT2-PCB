@@ -62,4 +62,5 @@ See [firmware/](./firmware/) for build & flash instructions.
 
 - [AssemblerGames](https://web.archive.org/web/20250327165519/https://assemblergames.org/viewtopic.php?p=870129) - first mentioning of FACET2 PCB
 - [FACET on xosft wiki](https://xboxoneresearch.github.io/wiki/hardware/facet/) - Technical documentation of FACET port
+- [POST code on xosft wiki](https://xboxoneresearch.github.io/wiki/hardware/post/) - Original MAX6958A circuit and error codes
 - [libaspect2](https://github.com/xboxoneresearch/libaspect2) - Attempt at an open source library
