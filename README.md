@@ -1,4 +1,5 @@
 [![Build PCBs](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_pcbs.yml/badge.svg)](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_pcbs.yml)
+[![Build firmware](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_stm32_fw.yml/badge.svg)](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_stm32_fw.yml)
 
 # ASPECT2 PCB
 
@@ -10,7 +11,8 @@
 This repo contains:
 
 * KiCad files for the PCB / schematics
-* EEPROM template for FT_PROG
+* [EEPROM template](./eeprom/) for FT_PROG
+* [STM32 firmware](./firmware/)
 
 ## Directory structure
 
@@ -19,6 +21,7 @@ This repo contains:
 ├── eeprom
 │   ├── Greybull_FabD+.xml - FT Prog template (official on-board FACET)
 │   └── Facet2_fabA+.xml - FT Prog template (derived from onboard FTDI dump)
+├── firmware - STM32 firmware
 ├── lib - additional KiCad symbols / footprints
 └── references - Datasheets and original blurry PCB photos
 ```
@@ -51,8 +54,13 @@ Before being able to communicate with the device, programming eeprom or regular 
 * Click Close-button, close FT Prog tool
 * Re-plug Aspect2 board
 
+## Programming the STM32 (POST Code display)
+
+See [firmware/](./firmware/) for build & flash instructions.
+
 ## References
 
 - [AssemblerGames](https://web.archive.org/web/20250327165519/https://assemblergames.org/viewtopic.php?p=870129) - first mentioning of FACET2 PCB
 - [FACET on xosft wiki](https://xboxoneresearch.github.io/wiki/hardware/facet/) - Technical documentation of FACET port
+- [POST code on xosft wiki](https://xboxoneresearch.github.io/wiki/hardware/post/) - Original MAX6958A circuit and error codes
 - [libaspect2](https://github.com/xboxoneresearch/libaspect2) - Attempt at an open source library

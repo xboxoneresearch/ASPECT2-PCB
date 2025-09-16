@@ -3,23 +3,23 @@ name: Build PCBs
 on:
   workflow_call:
   push:
-#    paths:
-#    - "*.kicad_sch"
-#    - "*.kicad_pcb"
-#    - "*.kicad_pro"
-#    - "kibot.yml"
+    paths:
+    - "*.kicad_sch"
+    - "*.kicad_pcb"
+    - "*.kicad_pro"
+    - "kibot.yml"
   pull_request:
-#    paths:
-#    - "*.kicad_sch"
-#    - "*.kicad_pcb"
-#    - "*.kicad_pro"
-#    - "kibot.yml"
+    paths:
+    - "*.kicad_sch"
+    - "*.kicad_pcb"
+    - "*.kicad_pro"
+    - "kibot.yml"
 
 jobs:
-  build:
+  build_pcb:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - uses: INTI-CMNB/KiBot@v2_k9

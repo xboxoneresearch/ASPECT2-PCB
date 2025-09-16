@@ -1,0 +1,49 @@
+name: STM32 Build
+
+on:
+  workflow_call:
+  push:
+    paths:
+    - "firmware/**"
+  pull_request:
+    paths:
+    - "firmware/**"
+
+env:
+  TOOLCHAIN_URL: https://developer.arm.com/-/media/Files/downloads/gnu/14.3.rel1/binrel/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi.tar.xz
+
+jobs:
+  build_stm32_fw:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v5
+
+    - name: Install ARM GCC Toolchain
+      run: |
+        cd /tmp
+        wget -q -O arm-gnu-toolchain.tar.xz ${{ env.TOOLCHAIN_URL }}
+        tar -xf arm-gnu-toolchain.tar.xz
+        sudo mv arm-gnu-toolchain-* /opt/gcc-arm-none-eabi
+        echo "/opt/gcc-arm-none-eabi/bin" >> $GITHUB_PATH
+        
+    - name: Verify ARM GCC installation
+      run: |
+        arm-none-eabi-gcc --version
+        arm-none-eabi-objcopy --version
+
+    - name: Build
+      working-directory: firmware
+      run: make
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      if: success()
+      with:
+        name: aspect2-stm32-firmware-${{ github.sha }}
+        path: |
+          firmware/build/*.bin
+          firmware/build/*.elf
+          firmware/build/*.hex
+        retention-days: 30
