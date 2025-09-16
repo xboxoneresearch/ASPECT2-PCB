@@ -1,4 +1,5 @@
 [![Build PCBs](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_pcbs.yml/badge.svg)](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_pcbs.yml)
+[![Build firmware](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_stm32_fw.yml/badge.svg)](https://github.com/xboxoneresearch/ASPECT2-PCB/actions/workflows/build_stm32_fw.yml)
 
 # ASPECT2 PCB
 
@@ -10,7 +11,8 @@
 This repo contains:
 
 * KiCad files for the PCB / schematics
-* EEPROM template for FT_PROG
+* [EEPROM template](./eeprom/) for FT_PROG
+* [STM32 firmware](./firmware/)
 
 ## Directory structure
 
@@ -19,6 +21,7 @@ This repo contains:
 ├── eeprom
 │   ├── Greybull_FabD+.xml - FT Prog template (official on-board FACET)
 │   └── Facet2_fabA+.xml - FT Prog template (derived from onboard FTDI dump)
+├── firmware - STM32 firmware
 ├── lib - additional KiCad symbols / footprints
 └── references - Datasheets and original blurry PCB photos
 ```
@@ -50,6 +53,10 @@ Before being able to communicate with the device, programming eeprom or regular 
 * Click Program-button in the dialog box
 * Click Close-button, close FT Prog tool
 * Re-plug Aspect2 board
+
+## Programming the STM32 (POST Code display)
+
+See [firmware/](./firmware/) for build & flash instructions.
 
 ## References
 
