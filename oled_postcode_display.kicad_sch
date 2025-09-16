@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "FACET2 Homebrew")
-		(date "2023-07-01")
-		(rev "1.1")
+		(date "${ISSUE_DATE}")
+		(rev "${DESIGN_REV}")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x04_Socket"
@@ -1889,6 +1889,24 @@
 				(hide yes)
 			)
 		)
+		(property "MF" "STMicroelectronics"
+			(at 92.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "STM32G031J6Mx"
+			(at 92.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d196a3b8-a38c-46c9-a261-0d9d0ff41afc")
 		)
@@ -2219,7 +2237,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c1c37dad-503a-4515-b759-fb234ff3f0f7")
 		(property "Reference" "J2"
