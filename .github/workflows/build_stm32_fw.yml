@@ -1,8 +1,13 @@
 name: STM32 Build
 
 on:
+  workflow_call:
   push:
+    paths:
+    - "firmware/**"
   pull_request:
+    paths:
+    - "firmware/**"
 
 env:
   TOOLCHAIN_URL: https://developer.arm.com/-/media/Files/downloads/gnu/14.3.rel1/binrel/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi.tar.xz
@@ -13,7 +18,7 @@ jobs:
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Install ARM GCC Toolchain
       run: |
