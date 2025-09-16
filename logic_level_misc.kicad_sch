@@ -6003,7 +6003,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15298"
+		(property "LCSC" "C2674445"
 			(at 108.5341 29.21 0)
 			(effects
 				(font
@@ -6021,7 +6021,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "SN74CB3T3245PWR"
+		(property "MP" "SN74CB3T3245DGVR"
 			(at 110.49 48.26 0)
 			(effects
 				(font
@@ -7179,7 +7179,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15298"
+		(property "LCSC" "C2674445"
 			(at 104.7241 121.92 0)
 			(effects
 				(font
@@ -7197,7 +7197,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "SN74CB3T3245PWR"
+		(property "MP" "SN74CB3T3245DGVR"
 			(at 106.68 140.97 0)
 			(effects
 				(font
