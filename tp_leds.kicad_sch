@@ -5406,7 +5406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2-ch, 1.65-V to 5.5-V inverters with open-drain outputs"
 			(at 62.23 90.17 0)
 			(effects
 				(font
@@ -5415,27 +5415,26 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Texas Instruments"
-			(at 62.23 90.17 0)
+		(property "LCSC" "C105252"
+			(at 62.23 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "2-ch, 1.65-V to 5.5-V inverters with open-drain outputs"
-			(at 62.23 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Package" "SOT-SC70-6 Texas Instruments"
+			(at 62.23 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
 			(at 62.23 90.17 0)
 			(effects
 				(font
@@ -5452,35 +5451,6 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 62.23 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SN74LVC2G06DCKR/Texas+Instruments/view-part/?ref=eda"
-			(at 62.23 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C105252"
-			(at 62.23 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
 			)
 		)
@@ -6612,7 +6582,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2-ch, 1.65-V to 5.5-V inverters with open-drain outputs"
 			(at 62.23 44.45 0)
 			(effects
 				(font
@@ -6621,27 +6591,26 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Texas Instruments"
-			(at 62.23 44.45 0)
+		(property "LCSC" "C105252"
+			(at 62.23 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "2-ch, 1.65-V to 5.5-V inverters with open-drain outputs"
-			(at 62.23 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Package" "SOT-SC70-6 Texas Instruments"
+			(at 62.23 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
 			(at 62.23 44.45 0)
 			(effects
 				(font
@@ -6658,35 +6627,6 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 62.23 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SN74LVC2G06DCKR/Texas+Instruments/view-part/?ref=eda"
-			(at 62.23 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C105252"
-			(at 62.23 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
 			)
 		)

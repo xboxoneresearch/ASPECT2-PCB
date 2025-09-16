@@ -6144,7 +6144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2-ch, 0.8-V to 3.6-V low power buffers with open-drain outputs"
 			(at 210.82 105.41 0)
 			(effects
 				(font
@@ -6162,26 +6162,6 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Texas Instruments"
-			(at 210.82 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "2-ch, 0.8-V to 3.6-V low power buffers with open-drain outputs"
-			(at 210.82 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
 		(property "Package" "SOT-SC70-6 Texas Instruments"
 			(at 210.82 105.41 0)
 			(effects
@@ -6192,27 +6172,17 @@
 				(hide yes)
 			)
 		)
+		(property "MF" "Texas Instruments"
+			(at 210.82 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
 		(property "MP" "SN74AUP2G07DCKR"
-			(at 210.82 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 210.82 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SN74AUP2G07DCKR/Texas+Instruments/view-part/?ref=eda"
 			(at 210.82 105.41 0)
 			(effects
 				(font
@@ -6789,7 +6759,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single 1.65-V to 5.5-V inverter with open-drain outputs"
 			(at 205.74 52.07 0)
 			(effects
 				(font
@@ -6807,26 +6777,6 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Texas Instruments"
-			(at 205.74 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Single 1.65-V to 5.5-V inverter with open-drain outputs"
-			(at 205.74 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
 		(property "Package" "SC70-5 Texas Instruments"
 			(at 205.74 52.07 0)
 			(effects
@@ -6837,27 +6787,17 @@
 				(hide yes)
 			)
 		)
+		(property "MF" "Texas Instruments"
+			(at 205.74 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
 		(property "MP" "SN74LVC1G06DCKR"
-			(at 205.74 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 205.74 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SN74LVC1G06DCKR/Texas+Instruments/view-part/?ref=eda"
 			(at 205.74 52.07 0)
 			(effects
 				(font
@@ -7620,6 +7560,24 @@
 		)
 		(property "LCSC" "C179739"
 			(at 213.36 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 213.36 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "ISO1540"
+			(at 213.36 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
