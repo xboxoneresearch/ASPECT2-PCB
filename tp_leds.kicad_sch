@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "FACET2 Homebrew")
-		(date "2023-07-01")
-		(rev "1.1")
+		(date "${ISSUE_DATE}")
+		(rev "${DESIGN_REV}")
 	)
 	(lib_symbols
 		(symbol "74xGxx:74LVC1G07"

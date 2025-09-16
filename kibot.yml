@@ -31,6 +31,11 @@ import:
     _KIBOT_MANF_DIR: Manufacturers/PCBWay
 
 preflight:
+  set_text_variables:
+    - name: DESIGN_REV
+      command: echo ${GITHUB_REF_NAME}
+    - name: ISSUE_DATE
+      command: date -I
   drc:
     dont_stop: true
     format: HTML,RPT,JSON,CSV
