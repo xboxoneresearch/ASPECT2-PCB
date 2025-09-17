@@ -2780,6 +2780,16 @@
 		)
 		(uuid "54b8d623-6835-414b-a74a-68a49c6c7c84")
 	)
+	(text "33 Ohm dampening resistor for JTAG TDO\nis close to FACET connector"
+		(exclude_from_sim no)
+		(at 218.44 94.742 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "952e64a4-a2c9-4a7f-bcb6-49de51dfdbfd")
+	)
 	(junction
 		(at 116.84 20.32)
 		(diameter 0)
