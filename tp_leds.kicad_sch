@@ -5387,7 +5387,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SN74LVC2G06DCKR:SOT65P210X110-6N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 62.23 90.17 0)
 			(effects
 				(font
@@ -6563,7 +6563,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SN74LVC2G06DCKR:SOT65P210X110-6N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 62.23 44.45 0)
 			(effects
 				(font
