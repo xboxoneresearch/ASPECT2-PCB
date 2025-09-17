@@ -3931,6 +3931,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 69.85) (xy 125.73 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5150b8d8-28b7-4e98-bb99-926a09a515db")
+	)
+	(wire
+		(pts
 			(xy 53.34 72.39) (xy 80.01 72.39)
 		)
 		(stroke
@@ -4531,16 +4541,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 69.85) (xy 97.79 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca35704b-a374-4d22-b168-c8b5ee426bc9")
-	)
-	(wire
-		(pts
 			(xy 53.34 77.47) (xy 80.01 77.47)
 		)
 		(stroke
@@ -4638,6 +4638,16 @@
 			(type default)
 		)
 		(uuid "ea174993-5d70-402f-8746-8e24a0112ca8")
+	)
+	(wire
+		(pts
+			(xy 92.71 69.85) (xy 107.95 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edddce59-b8c0-44cc-b949-13633db97441")
 	)
 	(wire
 		(pts
@@ -4887,7 +4897,7 @@
 	)
 	(global_label "FACET_SB_TDO"
 		(shape input)
-		(at 97.79 69.85 0)
+		(at 125.73 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4897,7 +4907,7 @@
 		)
 		(uuid "2e7c1ec9-f516-47d3-a04e-43f8fda77d22")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.4169 69.85 0)
+			(at 142.3569 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6791,6 +6801,127 @@
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6790ceb4-c894-4a55-bed0-4e1e495dcffe"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 110.49 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "781f57c0-205d-4f8d-8a8a-2126b7dce6a5")
+		(property "Reference" "R49"
+			(at 110.49 67.564 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 110.236 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 110.49 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
+			(at 110.49 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 110.49 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 104.775 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 110.49 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 110.49 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 110.49 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 110.49 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 110.49 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e9a7da6-c8e5-42bc-bfef-aa055bf68f75")
+		)
+		(pin "2"
+			(uuid "81798b80-416b-4913-a6ad-21851eff018c")
+		)
+		(instances
+			(project "FACET"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6790ceb4-c894-4a55-bed0-4e1e495dcffe"
+					(reference "R49")
 					(unit 1)
 				)
 			)
