@@ -33,8 +33,6 @@
       "vias",
       "footprint_text",
       "footprint_anchors",
-      "ratsnest",
-      "grid",
       "footprints_front",
       "footprints_back",
       "footprint_values",
@@ -48,8 +46,8 @@
       "drc_exclusions",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_07febaa0_fffffff7",
-    "zone_display_mode": 1
+    "visible_layers": "ffffffff_ffffffff_fffffff5_ffffffaf",
+    "zone_display_mode": 0
   },
   "git": {
     "repo_password": "",
@@ -91,18 +89,18 @@
       11
     ],
     "col_widths": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      94
     ],
     "custom_group_rules": [],
     "expanded_rows": [],

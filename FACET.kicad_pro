@@ -721,19 +721,19 @@
           "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "MF",
           "name": "MF",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "MP",
           "name": "MP",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -770,8 +770,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
-      "sort_asc": false,
-      "sort_field": "Value"
+      "sort_asc": true,
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
