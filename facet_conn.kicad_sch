@@ -5989,7 +5989,7 @@
 				)
 			)
 		)
-		(property "Value" "EXTERNAL SPI DEVICE"
+		(property "Value" "JST B10B-PHDSS-B(LF)(SN)"
 			(at 224.54 138.14 0)
 			(effects
 				(font
@@ -6024,7 +6024,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C471519"
+		(property "LCSC" "C158039"
 			(at 223.52 140.97 0)
 			(effects
 				(font
@@ -6042,7 +6042,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "B10B-PHDSS(LF)(SN)"
+		(property "MP" "B10B-PHDSS-B(LF)(SN)"
 			(at 224.79 148.59 0)
 			(effects
 				(font
@@ -7282,7 +7282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372555.pdf"
 			(at 64.77 201.93 90)
 			(effects
 				(font
@@ -7291,7 +7291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface"
+		(property "Description" "CONN IDC HEADER SMD 10POS 1.27mm"
 			(at 73.66 170.18 0)
 			(effects
 				(font
@@ -7300,7 +7300,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22392240"
+		(property "LCSC" "C42372555"
 			(at 62.23 168.9099 0)
 			(effects
 				(font
@@ -7309,7 +7309,7 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "XYECONN"
+		(property "MF" "hanxia"
 			(at 73.66 170.18 0)
 			(effects
 				(font
@@ -7318,7 +7318,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "IDC1.27-US2S-5A"
+		(property "MP" "HX JN1.27-2x5 TP H4.9"
 			(at 73.66 170.18 0)
 			(effects
 				(font
@@ -7410,7 +7410,7 @@
 				)
 			)
 		)
-		(property "Value" "FACET Connector"
+		(property "Value" "Conn_02x13P_SMD"
 			(at 97.79 55.88 0)
 			(effects
 				(font
@@ -7427,7 +7427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/stmm-1xx-xx-xx-d-xx-xx-xx-x-xx-mkt1.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C383684.pdf"
 			(at 85.09 74.93 0)
 			(effects
 				(font
@@ -7445,7 +7445,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C720761"
+		(property "LCSC" "C383684"
 			(at 99.06 53.34 0)
 			(effects
 				(font
@@ -7454,7 +7454,7 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Wcon"
+		(property "MF" "Ckmtw"
 			(at 85.09 74.93 0)
 			(effects
 				(font
@@ -7463,7 +7463,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "3111-26MG0BK00R1"
+		(property "MP" "B-3002N26P-0110"
 			(at 85.09 74.93 0)
 			(effects
 				(font
