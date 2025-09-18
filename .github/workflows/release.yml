@@ -2,9 +2,6 @@ name: Release
 
 on:
   push:
-    tags:
-      - "v*.*.*"
-      - "v*.*"
 
 permissions:
   contents: write
@@ -17,10 +14,10 @@ concurrency:
 
 jobs:
   pcb:
-    uses: xboxoneresearch/ASPECT2-PCB/.github/workflows/build_pcbs.yml@main
+    uses: xboxoneresearch/ASPECT2-PCB/.github/workflows/build_pcbs.yml@rc1
 
   firmware:
-    uses: xboxoneresearch/ASPECT2-PCB/.github/workflows/build_stm32_fw.yml@main
+    uses: xboxoneresearch/ASPECT2-PCB/.github/workflows/build_stm32_fw.yml@rc1
 
   release:
     runs-on: ubuntu-latest
@@ -34,16 +31,11 @@ jobs:
         uses: actions/download-artifact@v5
       - name: Zip up release artifact
         run: 7z a aspect2-pcb-${{ github.ref_name }}.7z *
-      - name: Create release
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v2
-        with:
-          files: aspect2-pcb-*.7z
 
       - uses: actions/upload-pages-artifact@v3
         with:
           path: 'output'
 
       - id: deployment
-        if: github.ref_name == 'main'
+        if: github.ref_name == 'rc1'
         uses: actions/deploy-pages@v4
