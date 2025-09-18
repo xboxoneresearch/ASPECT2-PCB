@@ -6,4 +6,5 @@
   (lib (name "SN74LVC1G06DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74LVC1G06DCKR")(options "")(descr ""))
   (lib (name "SN74LVC2G06DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74LVC2G06DCKR")(options "")(descr ""))
   (lib (name "testpoint")(type "KiCad")(uri "${KIPRJMOD}/lib/testpoint")(options "")(descr ""))
+  (lib (name "QR_Code")(type "KiCad")(uri "${KIPRJMOD}/lib/QR_Code.pretty")(options "")(descr ""))
 )
