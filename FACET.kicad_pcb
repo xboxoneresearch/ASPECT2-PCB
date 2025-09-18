@@ -170,7 +170,7 @@
 	(net 10 "Net-(R32-Pad2)")
 	(net 11 "unconnected-(U6-NC-Pad1)")
 	(net 12 "Net-(J4-Pin_4)")
-	(net 13 "unconnected-(IC1-NC-Pad4)")
+	(net 13 "unconnected-(U15-NC-Pad4)")
 	(net 14 "Net-(U7-VREGOUT)")
 	(net 15 "Net-(U7-OSCI)")
 	(net 16 "Net-(U7-OSCO)")
@@ -682,7 +682,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 13 "unconnected-(IC1-NC-Pad4)")
+			(net 13 "unconnected-(U15-NC-Pad4)")
 			(pinfunction "NC")
 			(pintype "no_connect")
 			(uuid "ad856b22-faef-49a7-bf4d-0d8f5be9a3aa")
@@ -34671,7 +34671,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
 			(at 0 0 45)
 			(layer "B.Fab")
 			(hide yes)
@@ -34684,7 +34684,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 0 0 45)
 			(layer "B.Fab")
 			(hide yes)
@@ -34692,6 +34692,90 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "67500295-0a28-47bc-bb76-79d08772dd7a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dca51ec9-f6f9-4f16-ba81-1868fa0ae816")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MP" "0402WGF330JTCE"
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b20d6c39-3540-4629-81a0-4bf7a12f2316")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Availability" ""
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "15cbe9a2-7b2b-41dd-8b5f-bf52f75a1776")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Check_prices" ""
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b76b486b-b8ee-4213-8435-90d3f5edc5ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description_1" ""
+			(at 0 0 225)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "32a3980e-baf5-4e6b-aa2e-7752532da470")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
