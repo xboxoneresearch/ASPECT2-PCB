@@ -7543,7 +7543,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.jst-connector.com/datasheet/jst-connector/B10B-PHDSS.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C158039.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17585,7 +17585,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C3025063.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3020560.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17611,7 +17611,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3025063"
+		(property "LCSC" "C3020560"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -17636,7 +17636,7 @@
 				)
 			)
 		)
-		(property "MP" "USB4105-GF-A-060"
+		(property "MP" "USB4105-GF-A"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45680,7 +45680,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g031j6.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_STMicroelectronics-STM32G031J6M6_C432201.pdf"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)

@@ -12,6 +12,7 @@ filters:
     offsets:
       - ["^PinHeader_2x05_P1\\.27mm_Vertical_SMD$", "0.00,0.00"]
       - ["^JST_PHD_B10B", "4.00,-0.85"]
+      - ["^USB_C_Receptacle_GCT_USB4105", "0.00,-1.50"]
     rotations:
       - ["^DGV20$", 270.0]
       - ["^PinHeader_2x13_P2\\.00mm_Vertical_SMD$", 270]
