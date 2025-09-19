@@ -63,7 +63,7 @@ There are two main repos with support software for this board.
 
 ### PCB Stackup
 
-- 4 Layer board (for impedance control) - 1.6mm
+- 4 Layer board (for impedance control) - 1.6mm thickness
 - Stackup:
   - F.Cu: Signal
   - In1.Cu: Power (GND)
@@ -74,7 +74,22 @@ This PCB was designed with the target stackup of **JLC04161H-3313** (JLCPCB). Se
 
 ### Manufacturing files
 
-**TODO**: Link to github-pages files (once rotation is solved).
+Generally, [Github Pages](https://xboxoneresearch.github.io/ASPECT2-PCB/) hosts the most up-to-date manufacturing files.
+These are also available for download on the [Releases](https://github.com/xboxoneresearch/ASPECT2-PCB/releases)-page.
+
+Here is a list of the most important ones.
+
+- Bill of materials (BOM): [ibom (Interactive HTML)](https://xboxoneresearch.github.io/ASPECT2-PCB/Assembly/FACET-ibom.html), [HTML](https://xboxoneresearch.github.io/ASPECT2-PCB/BoM/Generic/FACET-bom.html), [CSV](https://xboxoneresearch.github.io/ASPECT2-PCB/BoM/Generic/FACET-bom.csv)
+- Schematic: [PDF](https://xboxoneresearch.github.io/ASPECT2-PCB/Schematic/FACET-schematic.pdf)
+- Datasheets: [Here](https://xboxoneresearch.github.io/ASPECT2-PCB/Browse/FACET-navigate_Schematic_docs.html#basic_download_datasheets)
+
+We recommend JLCPCB, due to the specific Layer-Stackup that was used.
+
+JLCPCB MFG files
+
+- [Gerbers](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/FACET-_JLCPCB_compress.zip)
+- [Pick and place / CPL (CSV)](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/JLCPCB/FACET_cpl_jlc.csv)
+- [BOM (CSV)](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/JLCPCB/FACET_bom_jlc.csv)
 
 ### Software / plugins
 
