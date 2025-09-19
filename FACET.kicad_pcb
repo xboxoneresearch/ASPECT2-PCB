@@ -7531,7 +7531,7 @@
 				)
 			)
 		)
-		(property "Value" "JST B10B-PHDSS-B(LF)(SN)"
+		(property "Value" "JST B10B-PHDSS-B"
 			(at 4 4.7 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -22077,7 +22077,7 @@
 		)
 		(property "LCSC" "C42372555"
 			(at 0 0 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(hide yes)
 			(uuid "597b849c-9a05-494d-a2ab-bf13c1cc4dea")
 			(effects
