@@ -3,6 +3,27 @@
 kibot:
   version: 1
 
+filters:
+  - name: fix_rotation
+    comment: 'Adjust rotation for JLC'
+    type: rot_footprint
+    negative_bottom: false
+    mirror_bottom: true
+    offsets:
+      - ["^PinHeader_2x05_P1\\.27mm_Vertical_SMD$", "0.00,0.00"]
+      - ["^JST_PHD_B10B", "4.00,-0.85"]
+    rotations:
+      - ["^DGV20$", 270.0]
+      - ["^PinHeader_2x13_P2\\.00mm_Vertical_SMD$", 270]
+      - ["^JST_PHD_B10B", 180]
+    rotations_and_offsets:
+      - field: Reference
+        regex: U6
+        angle: 270.0
+      - field: Reference
+        regex: U8
+        angle: 270.0
+
 import:
 - file: Elecrow
   definitions:
@@ -14,7 +35,8 @@ import:
 - file: JLCPCB
   definitions:
     _KIBOT_MANF_DIR: Manufacturers/JLCPCB
-    _KIBOT_POS_PRE_TRANSFORM: '[''_kicost_rename'', ''_rot_footprint'']'
+    _KIBOT_POS_PRE_TRANSFORM: '[''_kicost_rename'', ''fix_rotation'']'
+    _KIBOT_POS_ONLY_SMD: false
 - file: MacroFab_XYRS
   definitions:
     _KIBOT_MPN_FIELD: ''
