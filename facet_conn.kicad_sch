@@ -6006,7 +6006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.jst-connector.com/datasheet/jst-connector/B10B-PHDSS.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C158039.pdf"
 			(at 224.79 148.59 0)
 			(effects
 				(font
@@ -7688,7 +7688,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C3025063.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3020560.pdf"
 			(at 187.96 83.82 0)
 			(effects
 				(font
@@ -7706,7 +7706,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C3025063"
+		(property "LCSC" "C3020560"
 			(at 184.15 60.96 0)
 			(effects
 				(font
@@ -7724,7 +7724,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "USB4105-GF-A-060"
+		(property "MP" "USB4105-GF-A"
 			(at 184.15 83.82 0)
 			(effects
 				(font
