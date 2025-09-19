@@ -7688,7 +7688,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3025063.pdf"
 			(at 187.96 83.82 0)
 			(effects
 				(font
@@ -7706,7 +7706,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7095263"
+		(property "LCSC" "C3025063"
 			(at 184.15 60.96 0)
 			(effects
 				(font
@@ -7724,7 +7724,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "USB4085-GF-A"
+		(property "MP" "USB4105-GF-A-060"
 			(at 184.15 83.82 0)
 			(effects
 				(font

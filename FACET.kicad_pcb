@@ -17585,7 +17585,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3025063.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17611,7 +17611,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C7095263"
+		(property "LCSC" "C3025063"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -17636,7 +17636,7 @@
 				)
 			)
 		)
-		(property "MP" "USB4085-GF-A"
+		(property "MP" "USB4105-GF-A-060"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
