@@ -1072,7 +1072,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c0c9c830-cb49-4ba8-afa2-89e547b26a9e")
-		(property "Reference" "IC1"
+		(property "Reference" "U15"
 			(at 116.84 88.9 0)
 			(effects
 				(font
@@ -1188,7 +1188,7 @@
 		(instances
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/847d956d-b9cc-42b2-b762-eac049b2e2f2"
-					(reference "IC1")
+					(reference "U15")
 					(unit 1)
 				)
 			)
