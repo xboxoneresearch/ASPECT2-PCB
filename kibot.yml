@@ -38,6 +38,7 @@ import:
     _KIBOT_MANF_DIR: Manufacturers/JLCPCB
     _KIBOT_POS_PRE_TRANSFORM: '[''_kicost_rename'', ''fix_rotation'']'
     _KIBOT_POS_ONLY_SMD: false
+    MFG_NAME: JLC
 - file: MacroFab_XYRS
   definitions:
     _KIBOT_MPN_FIELD: ''
@@ -52,6 +53,8 @@ preflight:
       command: echo ${GITHUB_REF_NAME}
     - name: ISSUE_DATE
       command: date -I
+    - name: MFG_MARKING
+      command: '[ $MFG_NAME = "JLC" ] && echo JLCJLCJLCJLC || echo ""'
   drc:
     dont_stop: true
     format: HTML,RPT,JSON,CSV

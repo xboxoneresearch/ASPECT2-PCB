@@ -47013,6 +47013,18 @@
 			(justify bottom)
 		)
 	)
+	(gr_text "${MFG_MARKING}"
+		(at 57.5 95 90)
+		(layer "B.SilkS")
+		(uuid "21770cb8-af29-430c-b2d2-de6a39c9f099")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "xboxresearch.com\ngithub.com/XboxOneResearch"
 		(at 110.5 107.7 270)
 		(layer "B.SilkS")
