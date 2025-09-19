@@ -5989,7 +5989,7 @@
 				)
 			)
 		)
-		(property "Value" "JST B10B-PHDSS-B(LF)(SN)"
+		(property "Value" "JST B10B-PHDSS-B"
 			(at 224.54 138.14 0)
 			(effects
 				(font
