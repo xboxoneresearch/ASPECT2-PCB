@@ -1,7 +1,6 @@
 (fp_lib_table
   (version 7)
   (lib (name "MAX6958AAEE_")(type "KiCad")(uri "${KIPRJMOD}/lib/MAX6958AAEE_")(options "")(descr ""))
-  (lib (name "SN74CB3T3245DGVR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74CB3T3245DGVR/footprints.pretty")(options "")(descr ""))
   (lib (name "SN74AUP2G07DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74AUP2G07DCKR")(options "")(descr ""))
   (lib (name "SN74LVC1G06DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74LVC1G06DCKR")(options "")(descr ""))
   (lib (name "SN74LVC2G06DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74LVC2G06DCKR")(options "")(descr ""))
