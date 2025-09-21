@@ -6316,7 +6316,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74CB3T3245DGV"
+		(property "Value" "SN74CB3T3245PWR"
 			(at 98.044 41.656 0)
 			(effects
 				(font
@@ -6325,7 +6325,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SN74CB3T3245DGVR:DGV20"
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
 			(at 110.49 48.26 0)
 			(effects
 				(font
@@ -6354,7 +6354,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2674445"
+		(property "LCSC" "C15298"
 			(at 108.5341 29.21 0)
 			(effects
 				(font
@@ -6372,7 +6372,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "SN74CB3T3245DGVR"
+		(property "MP" "SN74CB3T3245PWR"
 			(at 110.49 48.26 0)
 			(effects
 				(font
@@ -7628,7 +7628,7 @@
 				)
 			)
 		)
-		(property "Value" "74CB3T3245DGV"
+		(property "Value" "SN74CB3T3245PWR"
 			(at 86.36 133.35 0)
 			(effects
 				(font
@@ -7636,7 +7636,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SN74CB3T3245DGVR:DGV20"
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
 			(at 106.68 140.97 0)
 			(effects
 				(font
@@ -7665,7 +7665,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2674445"
+		(property "LCSC" "C15298"
 			(at 104.7241 121.92 0)
 			(effects
 				(font
@@ -7683,7 +7683,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "SN74CB3T3245DGVR"
+		(property "MP" "SN74CB3T3245PWR"
 			(at 106.68 140.97 0)
 			(effects
 				(font
