@@ -5,7 +5,7 @@
 
 # ASPECT2 PCB
 
-Development board for Xbox One / Xbox Series consoles, based mostly on blurry PCB images ([front pcb](./references/orig_pcb_front.jpg), [back pcb](./references/orig_pcb_back.jpg)).
+Development board for Xbox One / Xbox Series consoles, based mostly on [blurry PCB images](https://xboxoneresearch.github.io/wiki/hardware/facet/#external-pcb).
 
 Allows for [POST-Code](https://xboxoneresearch.github.io/wiki/hardware/post/) monitoring (via I2C) and reading flash via SPI.
 
@@ -56,7 +56,6 @@ There are two main repos with support software for this board.
 │   └── Facet2_fabA+.xml - FT Prog template (derived from onboard FTDI dump)
 ├── firmware - STM32 firmware
 ├── lib - additional KiCad symbols / footprints
-└── references - Datasheets and original blurry PCB photos
 ```
 
 ## Manufacturing / Development
