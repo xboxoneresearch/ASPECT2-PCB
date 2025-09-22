@@ -78,6 +78,20 @@ outputs:
 #      rotate_z: -20
 #      file_id: _30deg
 #    - view: bottom
+- name: copy_readme
+  comment: README
+  type: copy_files
+  category: README
+  options:
+    files:
+      - source: README.md
+- name: copy_eeprom
+  comment: EEPROM template for FT4232 (FT-Prog)
+  type: copy_files
+  category: EEPROM
+  options:
+    files:
+      - source: eeprom/*
 - name: basic_boardview
   comment: Board View export
   type: boardview
