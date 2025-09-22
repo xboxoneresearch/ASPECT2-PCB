@@ -14,9 +14,9 @@ filters:
       - ["^JST_PHD_B10B", "4.00,-0.85"]
       - ["^USB_C_Receptacle_GCT_USB4105", "0.00,-1.50"]
     rotations:
-      - ["^DGV20$", 270.0]
-      - ["^PinHeader_2x13_P2\\.00mm_Vertical_SMD$", 270]
-      - ["^JST_PHD_B10B", 180]
+      - ["^PinHeader_2x13_P2\\.00mm_Vertical_SMD$", 270.0]
+      - ["^JST_PHD_B10B", 180.0]
+      - ["^LQFP-64_10x10mm", 0.0]
     rotations_and_offsets:
       - field: Reference
         regex: U6
