@@ -7,13 +7,13 @@ on:
     - "*.kicad_sch"
     - "*.kicad_pcb"
     - "*.kicad_pro"
-    - "kibot.yml"
+    - ".kibot.yml"
   pull_request:
     paths:
     - "*.kicad_sch"
     - "*.kicad_pcb"
     - "*.kicad_pro"
-    - "kibot.yml"
+    - ".kibot.yml"
 
 jobs:
   build_pcb:
@@ -24,7 +24,7 @@ jobs:
           fetch-depth: 0
       - uses: INTI-CMNB/KiBot@v2_k9
         with:
-          config: kibot.yml
+          config: .kibot.yml
           dir: output
           schema: 'FACET.kicad_sch'
           board: 'FACET.kicad_pcb'

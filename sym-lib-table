@@ -3,6 +3,7 @@
   (lib (name "SN74LVC1G06DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74LVC1G06DCKR/SN74LVC1G06DCKR.kicad_sym")(options "")(descr ""))
   (lib (name "SN74AUP2G07DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74AUP2G07DCKR/SN74AUP2G07DCKR.kicad_sym")(options "")(descr ""))
   (lib (name "MAX6958AAEE_")(type "KiCad")(uri "${KIPRJMOD}/lib/MAX6958AAEE_/MAX6958AAEE_.kicad_sym")(options "")(descr ""))
-  (lib (name "2024-05-02_01-26-28")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74CB3T3245DGVR/2024-05-02_01-26-28.kicad_sym")(options "")(descr ""))
   (lib (name "SN74LVC2G06DCKR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74LVC2G06DCKR/SN74LVC2G06DCKR.kicad_sym")(options "")(descr ""))
+  (lib (name "QR_Code")(type "KiCad")(uri "${KIPRJMOD}/lib/QR_Code.kicad_sym")(options "")(descr ""))
+  (lib (name "SN74CB3T3245PWR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74CB3T3245PWR/SN74CB3T3245PWR.kicad_sym")(options "")(descr ""))
 )

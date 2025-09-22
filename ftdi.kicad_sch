@@ -3510,7 +3510,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 104.14) (xy 85.09 104.14)
+			(xy 63.5 104.14) (xy 69.85 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3777,6 +3777,16 @@
 			(type default)
 		)
 		(uuid "585a6ba9-6013-45be-a624-fc0028e9859a")
+	)
+	(wire
+		(pts
+			(xy 74.93 104.14) (xy 85.09 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "587ff502-bf04-4f06-b2a8-0e9c1a789582")
 	)
 	(wire
 		(pts
@@ -6298,7 +6308,7 @@
 		(dnp no)
 		(uuid "0a851f35-f121-40a2-84a7-3be5e39a9525")
 		(property "Reference" "R2"
-			(at 49.53 99.695 0)
+			(at 47.498 101.346 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6307,7 +6317,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 46.99 99.695 0)
+			(at 46.736 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9949,6 +9959,127 @@
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/7f94c121-bd49-4cf2-a199-8adbd7da4bba"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 72.39 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "838bdb54-7bf2-41d5-bd74-dd83b505dc44")
+		(property "Reference" "R50"
+			(at 72.39 101.854 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 72.136 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 72.39 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C11702.pdf"
+			(at 72.39 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 72.39 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 76.962 104.394 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "UNI-ROYAL"
+			(at 72.39 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" "0402WGF1001TCE"
+			(at 72.39 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 72.39 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 72.39 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 72.39 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "78667f6d-522f-4ce3-8968-ee0a45c488f9")
+		)
+		(pin "1"
+			(uuid "defe8b50-7b66-416f-a1f2-afa149a26c65")
+		)
+		(instances
+			(project "FACET"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/7f94c121-bd49-4cf2-a199-8adbd7da4bba"
+					(reference "R50")
 					(unit 1)
 				)
 			)

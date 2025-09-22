@@ -2754,6 +2754,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Power_Protection:USBLC6-2SC6"
 			(pin_names
 				(hide yes)
@@ -3871,16 +4057,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 128.27) (xy 57.15 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33de747d-770f-4612-85eb-0eb9fed7bcc1")
-	)
-	(wire
-		(pts
 			(xy 92.71 72.39) (xy 93.98 72.39)
 		)
 		(stroke
@@ -3888,6 +4064,16 @@
 			(type default)
 		)
 		(uuid "3bd9d644-2cf9-4b2a-ba39-2f21b165bd16")
+	)
+	(wire
+		(pts
+			(xy 64.77 128.27) (xy 77.47 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f302ee7-d940-4642-898b-2ce931fbd3fe")
 	)
 	(wire
 		(pts
@@ -3931,6 +4117,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 128.27) (xy 57.15 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5037e917-9d6c-4a44-abc0-5b7d5884f0d1")
+	)
+	(wire
+		(pts
 			(xy 113.03 69.85) (xy 125.73 69.85)
 		)
 		(stroke
@@ -3948,16 +4144,6 @@
 			(type default)
 		)
 		(uuid "53b26063-2e1f-44d5-b93e-3b3b8785e540")
-	)
-	(wire
-		(pts
-			(xy 62.23 128.27) (xy 64.77 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55b51253-3ac7-4d84-9ccf-7aac5d816f5d")
 	)
 	(wire
 		(pts
@@ -4765,7 +4951,7 @@
 	)
 	(global_label "V_3P3STBY_FACET"
 		(shape input)
-		(at 64.77 128.27 0)
+		(at 77.47 128.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4775,7 +4961,7 @@
 		)
 		(uuid "05399540-64d5-47bf-8a2a-e50950b82cc8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.5675 128.27 0)
+			(at 97.2675 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5989,7 +6175,7 @@
 				)
 			)
 		)
-		(property "Value" "EXTERNAL SPI DEVICE"
+		(property "Value" "JST B10B-PHDSS-B"
 			(at 224.54 138.14 0)
 			(effects
 				(font
@@ -6006,7 +6192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.jst-connector.com/datasheet/jst-connector/B10B-PHDSS.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C158039.pdf"
 			(at 224.79 148.59 0)
 			(effects
 				(font
@@ -6024,7 +6210,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C471519"
+		(property "LCSC" "C158039"
 			(at 223.52 140.97 0)
 			(effects
 				(font
@@ -6042,7 +6228,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "B10B-PHDSS(LF)(SN)"
+		(property "MP" "B10B-PHDSS-B(LF)(SN)"
 			(at 224.79 148.59 0)
 			(effects
 				(font
@@ -6928,130 +7114,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 59.69 128.27 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "85990d15-bad6-48ca-ab90-d2972643feb9")
-		(property "Reference" "R19"
-			(at 61.468 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0"
-			(at 60.96 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 59.69 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
-			(at 59.69 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 59.69 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17168"
-			(at 61.468 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "UNI-ROYAL"
-			(at 59.69 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" "0402WGF0000TCE"
-			(at 59.69 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 59.69 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 59.69 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 59.69 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c8a9965f-3e5c-4ea1-9dee-7820fe437e42")
-		)
-		(pin "2"
-			(uuid "3d56daed-c13e-4049-aba8-30f1d84fa9d3")
-		)
-		(instances
-			(project "FACET"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6790ceb4-c894-4a55-bed0-4e1e495dcffe"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 130.81 114.3 0)
 		(unit 1)
@@ -7282,7 +7344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C42372555.pdf"
 			(at 64.77 201.93 90)
 			(effects
 				(font
@@ -7291,7 +7353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface"
+		(property "Description" "CONN IDC HEADER SMD 10POS 1.27mm"
 			(at 73.66 170.18 0)
 			(effects
 				(font
@@ -7300,7 +7362,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22392240"
+		(property "LCSC" "C42372555"
 			(at 62.23 168.9099 0)
 			(effects
 				(font
@@ -7309,7 +7371,7 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "XYECONN"
+		(property "MF" "hanxia"
 			(at 73.66 170.18 0)
 			(effects
 				(font
@@ -7318,7 +7380,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "IDC1.27-US2S-5A"
+		(property "MP" "HX JN1.27-2x5 TP H4.9"
 			(at 73.66 170.18 0)
 			(effects
 				(font
@@ -7410,7 +7472,7 @@
 				)
 			)
 		)
-		(property "Value" "FACET Connector"
+		(property "Value" "Conn_02x13P_SMD"
 			(at 97.79 55.88 0)
 			(effects
 				(font
@@ -7427,7 +7489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/stmm-1xx-xx-xx-d-xx-xx-xx-x-xx-mkt1.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C383684.pdf"
 			(at 85.09 74.93 0)
 			(effects
 				(font
@@ -7445,7 +7507,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C720761"
+		(property "LCSC" "C383684"
 			(at 99.06 53.34 0)
 			(effects
 				(font
@@ -7454,7 +7516,7 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Wcon"
+		(property "MF" "Ckmtw"
 			(at 85.09 74.93 0)
 			(effects
 				(font
@@ -7463,7 +7525,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "3111-26MG0BK00R1"
+		(property "MP" "B-3002N26P-0110"
 			(at 85.09 74.93 0)
 			(effects
 				(font
@@ -7688,7 +7750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3020560.pdf"
 			(at 187.96 83.82 0)
 			(effects
 				(font
@@ -7706,7 +7768,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7095263"
+		(property "LCSC" "C3020560"
 			(at 184.15 60.96 0)
 			(effects
 				(font
@@ -7724,7 +7786,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "USB4085-GF-A"
+		(property "MP" "USB4105-GF-A"
 			(at 184.15 83.82 0)
 			(effects
 				(font
@@ -7815,6 +7877,73 @@
 			(project "FACET"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6790ceb4-c894-4a55-bed0-4e1e495dcffe"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 60.96 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "db47be01-f21a-49e4-8fcb-0955004229ea")
+		(property "Reference" "JP1"
+			(at 60.96 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 63.246 124.968 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ca56ea35-cd7c-4f11-9262-62e041f2680f")
+		)
+		(pin "1"
+			(uuid "e6cb060b-ab35-4843-bfad-f12505a553ff")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6790ceb4-c894-4a55-bed0-4e1e495dcffe"
+					(reference "JP1")
 					(unit 1)
 				)
 			)

@@ -3,6 +3,28 @@
 kibot:
   version: 1
 
+filters:
+  - name: fix_rotation
+    comment: 'Adjust rotation for JLC'
+    type: rot_footprint
+    negative_bottom: false
+    mirror_bottom: true
+    offsets:
+      - ["^PinHeader_2x05_P1\\.27mm_Vertical_SMD$", "0.00,0.00"]
+      - ["^JST_PHD_B10B", "4.00,-0.85"]
+      - ["^USB_C_Receptacle_GCT_USB4105", "0.00,-1.50"]
+    rotations:
+      - ["^PinHeader_2x13_P2\\.00mm_Vertical_SMD$", 270.0]
+      - ["^JST_PHD_B10B", 180.0]
+      - ["^LQFP-64_10x10mm", 0.0]
+    rotations_and_offsets:
+      - field: Reference
+        regex: U6
+        angle: 270.0
+      - field: Reference
+        regex: U8
+        angle: 270.0
+
 import:
 - file: Elecrow
   definitions:
@@ -14,7 +36,9 @@ import:
 - file: JLCPCB
   definitions:
     _KIBOT_MANF_DIR: Manufacturers/JLCPCB
-    _KIBOT_POS_PRE_TRANSFORM: '[''_kicost_rename'', ''_rot_footprint'']'
+    _KIBOT_POS_PRE_TRANSFORM: '[''_kicost_rename'', ''fix_rotation'']'
+    _KIBOT_POS_ONLY_SMD: false
+    MFG_NAME: JLC
 - file: MacroFab_XYRS
   definitions:
     _KIBOT_MPN_FIELD: ''
@@ -29,6 +53,8 @@ preflight:
       command: echo ${GITHUB_REF_NAME}
     - name: ISSUE_DATE
       command: date -I
+    - name: MFG_MARKING
+      command: '[ $MFG_NAME = "JLC" ] && echo JLCJLCJLCJLC || echo ""'
   drc:
     dont_stop: true
     format: HTML,RPT,JSON,CSV
@@ -52,6 +78,20 @@ outputs:
 #      rotate_z: -20
 #      file_id: _30deg
 #    - view: bottom
+- name: copy_readme
+  comment: README
+  type: copy_files
+  category: README
+  options:
+    files:
+      - source: README.md
+- name: copy_eeprom
+  comment: EEPROM template for FT4232 (FT-Prog)
+  type: copy_files
+  category: EEPROM
+  options:
+    files:
+      - source: eeprom/*
 - name: basic_boardview
   comment: Board View export
   type: boardview
@@ -611,19 +651,6 @@ outputs:
   comment: Schematic in PS format
   type: ps_sch_print
   dir: Schematic
-- name: basic_qr_lib_example
-  comment: QR code symbol and footprint example
-  type: qr_lib
-  dir: QR_libs
-  options:
-    qrs:
-    - correction_level: medium
-      name: QR_data
-      pcb_negative: true
-    - correction_level: medium
-      name: QR_kibot
-      text: https://github.com/INTI-CMNB/KiBot/
-    use_sch_dir: false
 - name: basic_render_3d_top
   comment: 3D view from top
   type: render_3d

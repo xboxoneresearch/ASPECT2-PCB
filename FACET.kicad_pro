@@ -858,6 +858,7 @@
   ],
   "text_variables": {
     "DESIGN_REV": "UNVERSIONED",
-    "ISSUE_DATE": "1970-01-01"
+    "ISSUE_DATE": "1970-01-01",
+    "MFG_MARKING": "MFGMFGMFGMFG"
   }
 }
