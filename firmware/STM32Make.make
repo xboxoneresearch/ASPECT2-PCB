@@ -76,6 +76,7 @@ endif
 # C sources
 C_SOURCES =  \
 Core/Src/display.c \
+Core/Src/jmp_bl.c \
 Core/Src/main.c \
 Core/Src/slave.c \
 Core/Src/stm32g0xx_hal_msp.c \

@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include "display.h"
 #include "slave.h"
+#include "jmp_bl.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,7 +60,18 @@ static void MX_I2C2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void CheckBootloaderButton(void) {
+  uint8_t bl_jump_requested = 0;
 
+  // Spend a little while reading GPIO state to not trigger accidentally
+  for (int i=0; i<10; i++) {
+    bl_jump_requested = HAL_GPIO_ReadPin(ENTER_BL_GPIO_Port, ENTER_BL_Pin) == GPIO_PIN_RESET;
+  }
+
+  if (bl_jump_requested) {
+    JumpToBootloader();
+  }
+}
 /* USER CODE END 0 */
 
 /**
@@ -94,6 +106,7 @@ int main(void)
   MX_I2C1_Init();
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
+  CheckBootloaderButton();
   Display_Init();
   Slave_Init();
   /* USER CODE END 2 */
@@ -259,6 +272,7 @@ static void MX_I2C2_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
   /* USER CODE BEGIN MX_GPIO_Init_1 */
 
   /* USER CODE END MX_GPIO_Init_1 */
@@ -266,6 +280,12 @@ static void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+
+  /*Configure GPIO pin : ENTER_BL_Pin */
+  GPIO_InitStruct.Pin = ENTER_BL_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(ENTER_BL_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
