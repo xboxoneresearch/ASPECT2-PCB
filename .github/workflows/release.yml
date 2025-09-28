@@ -45,5 +45,5 @@ jobs:
           path: 'output'
 
       - id: deployment
-        if: github.ref_name == 'main'
+        if: startsWith(github.ref, 'refs/tags/')
         uses: actions/deploy-pages@v4
