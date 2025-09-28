@@ -120,6 +120,10 @@ Before being able to communicate with the device, programming eeprom or regular 
 
 See [firmware/](./firmware/) for build & flash instructions.
 
+## Thanks
+
+@emoose @OGXHarcroft @cactusduper @TorusHyperV @ShadowLAG @billy @craftbenmine @DonyPS3 @flynnyfoo @jacksomness @Pheeeenoom and everybody else helping and testing along the way
+
 ## References
 
 - [AssemblerGames](https://web.archive.org/web/20250327165519/https://assemblergames.org/viewtopic.php?p=870129) - first mentioning of FACET2 PCB
