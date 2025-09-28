@@ -5,7 +5,7 @@
 	(uuid "0580435c-6315-48e7-93a4-67d9e6f58cf8")
 	(paper "A4")
 	(title_block
-		(title "FACET2 Homebrew")
+		(title "ASPECT2 PCB")
 		(date "${ISSUE_DATE}")
 		(rev "${DESIGN_REV}")
 	)
@@ -1924,7 +1924,7 @@
 			(uuid "c7c13e4c-8863-4937-a11c-8766282e15a8")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "#PWR069")
 					(unit 1)
@@ -1990,7 +1990,7 @@
 			(uuid "fb1c0c70-3ab4-438c-9d89-1aca76189e14")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "#PWR070")
 					(unit 1)
@@ -2113,7 +2113,7 @@
 			(uuid "08e73f6b-bfd7-4043-bde6-12c6443bb3d6")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "C9")
 					(unit 1)
@@ -2380,7 +2380,7 @@
 			(uuid "476b21f9-ed47-44cc-89a2-ed1d5efce440")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "R47")
 					(unit 1)
@@ -2504,7 +2504,7 @@
 			(uuid "55efff04-aebf-4779-b8cd-0a621b59b344")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "R48")
 					(unit 1)
@@ -2627,7 +2627,7 @@
 			(uuid "27d8233a-4c61-469d-849e-b3072e937737")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "C15")
 					(unit 1)
@@ -2795,7 +2795,7 @@
 			(uuid "0e6b1af2-75a7-429f-bd87-2d2eb8371b15")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "#PWR071")
 					(unit 1)
@@ -2862,7 +2862,7 @@
 			(uuid "7f91c6a6-3b27-409c-a990-2b48b2690e64")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "#PWR051")
 					(unit 1)
@@ -2928,7 +2928,7 @@
 			(uuid "e34ca153-b10e-44bc-9288-a308ef8c7f32")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "#PWR026")
 					(unit 1)
@@ -2995,7 +2995,7 @@
 			(uuid "301f0e22-5dd8-4610-ad2e-c676ac48f87c")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "#PWR068")
 					(unit 1)
@@ -3062,7 +3062,7 @@
 			(uuid "1392c1d8-cb8c-4a41-8197-b1631b861653")
 		)
 		(instances
-			(project "FACET"
+			(project "ASPECT2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cf0a1fe6-4d52-4e94-93d0-c50a738ac440"
 					(reference "#PWR067")
 					(unit 1)

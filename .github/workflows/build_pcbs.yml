@@ -26,8 +26,8 @@ jobs:
         with:
           config: .kibot.yml
           dir: output
-          schema: 'FACET.kicad_sch'
-          board: 'FACET.kicad_pcb'
+          schema: 'ASPECT2.kicad_sch'
+          board: 'ASPECT2.kicad_pcb'
 
       - name: upload results
         if: ${{ always() }}

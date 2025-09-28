@@ -340,7 +340,7 @@ outputs:
   type: kikit_present
   dir: Presentation
   options:
-    description: '# Presentation for FACET
+    description: '# Presentation for ASPECT2-PCB
 
       This is an automatically generated presentation page'
     boards:

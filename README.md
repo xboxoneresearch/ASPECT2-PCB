@@ -13,9 +13,9 @@ On some development kits, there are more features available.
 
 See [Functionality](#functionality) for more infos
 
-![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/FACET-3D_top.png)
-![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/FACET-3D_top30deg.png)
-![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/FACET-3D_bottom.png)
+![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/ASPECT2-3D_top.png)
+![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/ASPECT2-3D_top30deg.png)
+![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/ASPECT2-3D_bottom.png)
 
 
 This repo contains:
@@ -78,17 +78,17 @@ These are also available for download on the [Releases](https://github.com/xboxo
 
 Here is a list of the most important ones.
 
-- Bill of materials (BOM): [ibom (Interactive HTML)](https://xboxoneresearch.github.io/ASPECT2-PCB/Assembly/FACET-ibom.html), [HTML](https://xboxoneresearch.github.io/ASPECT2-PCB/BoM/Generic/FACET-bom.html), [CSV](https://xboxoneresearch.github.io/ASPECT2-PCB/BoM/Generic/FACET-bom.csv)
-- Schematic: [PDF](https://xboxoneresearch.github.io/ASPECT2-PCB/Schematic/FACET-schematic.pdf)
-- Datasheets: [Here](https://xboxoneresearch.github.io/ASPECT2-PCB/Browse/FACET-navigate_Schematic_docs.html#basic_download_datasheets)
+- Bill of materials (BOM): [ibom (Interactive HTML)](https://xboxoneresearch.github.io/ASPECT2-PCB/Assembly/ASPECT2-ibom.html), [HTML](https://xboxoneresearch.github.io/ASPECT2-PCB/BoM/Generic/ASPECT2-bom.html), [CSV](https://xboxoneresearch.github.io/ASPECT2-PCB/BoM/Generic/ASPECT2-bom.csv)
+- Schematic: [PDF](https://xboxoneresearch.github.io/ASPECT2-PCB/Schematic/ASPECT2-schematic.pdf)
+- Datasheets: [Here](https://xboxoneresearch.github.io/ASPECT2-PCB/Browse/ASPECT2-navigate_Schematic_docs.html#basic_download_datasheets)
 
 We recommend JLCPCB, due to the specific Layer-Stackup that was used.
 
 JLCPCB MFG files
 
-- [Gerbers](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/FACET-_JLCPCB_compress.zip)
-- [Pick and place / CPL (CSV)](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/JLCPCB/FACET_cpl_jlc.csv)
-- [BOM (CSV)](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/JLCPCB/FACET_bom_jlc.csv)
+- [Gerbers](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/ASPECT2-_JLCPCB_compress.zip)
+- [Pick and place / CPL (CSV)](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/JLCPCB/ASPECT2_cpl_jlc.csv)
+- [BOM (CSV)](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/JLCPCB/ASPECT2_bom_jlc.csv)
 
 ### Software / plugins
 

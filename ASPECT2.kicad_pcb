@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "FACET2 Homebrew")
+		(title "ASPECT2 PCB")
 		(date "${ISSUE_DATE}")
 		(rev "${DESIGN_REV}")
 	)
@@ -152,7 +152,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "/home/user/FACET2_PCB/Gerber File")
+			(outputdirectory "/home/user/ASPECT2_PCB/Gerber File")
 		)
 	)
 	(property "DESIGN_REV" "UNVERSIONED")
@@ -8542,7 +8542,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/d918ce52-f40d-4aa8-a437-4037fb3a7d87")
 		(sheetname "/")
-		(sheetfile "FACET.kicad_sch")
+		(sheetfile "ASPECT2.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -15986,7 +15986,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/a5ed58a2-454c-417c-83d0-ad482d18328b")
 		(sheetname "/")
-		(sheetfile "FACET.kicad_sch")
+		(sheetfile "ASPECT2.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -29398,7 +29398,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/a7c06d79-8bea-4275-8bc6-d5ac4a584b74")
 		(sheetname "/")
-		(sheetfile "FACET.kicad_sch")
+		(sheetfile "ASPECT2.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -32082,7 +32082,7 @@
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/18a92500-75bc-4e2d-8ca2-be6a28e24f25")
 		(sheetname "/")
-		(sheetfile "FACET.kicad_sch")
+		(sheetfile "ASPECT2.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -36230,7 +36230,7 @@
 		)
 		(path "/843dbce9-473d-4b90-af1c-07e8d1b4c9e5")
 		(sheetname "/")
-		(sheetfile "FACET.kicad_sch")
+		(sheetfile "ASPECT2.kicad_sch")
 		(attr exclude_from_bom)
 		(fp_rect
 			(start 6.75 7.25)
@@ -45714,7 +45714,7 @@
 		)
 	)
 	(gr_text "${DESIGN_REV}"
-		(at 57.7 124 90)
+		(at 57.75 121.5 90)
 		(layer "F.SilkS" knockout)
 		(uuid "5b6ee715-9b56-44c1-a1cf-6ca6d9082726")
 		(effects
@@ -45796,8 +45796,8 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "FACET2 FAB A"
-		(at 57.6 132.2 90)
+	(gr_text "ASPECT2 FAB A"
+		(at 57.75 130.75 90)
 		(layer "F.SilkS" knockout)
 		(uuid "9043d0bd-59c2-4524-8fd6-c7ae8c657b8d")
 		(effects
