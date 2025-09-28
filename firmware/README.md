@@ -9,9 +9,16 @@ Download from the latest release archive: [Release](https://github.com/xboxonere
 
 ## Flashing firmware
 
-See datasheet for the particular STM32 MCU.
+### External programming
 
-- TODO
+- Use SWD programmer and connect 3V3, GND, SWDIO, SWDCLK to the MCU.
+- Flash via openocd or official stm32flash utility.
+
+### In-field update
+
+1. Disconnect PCB from console!
+2. Connect PCB to PC
+3. Use custom stm32flash tool from this [repo](https://github.com/xboxoneresearch/libaspect2)
 
 ## Development
 
