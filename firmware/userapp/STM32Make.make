@@ -31,7 +31,7 @@ endif
 ######################################
 # This is the name of the embedded target which will be build
 # The final file name will also have debug or release appended to it.
-TARGET ?= dual_i2c_g03
+TARGET ?= uapp_max6958_emul
 
 #######################################
 # Build directories

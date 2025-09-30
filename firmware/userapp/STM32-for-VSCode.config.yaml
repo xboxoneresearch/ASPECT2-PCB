@@ -6,7 +6,7 @@
 # - entry_2
 
 # The project name
-target: dual_i2c_g03
+target: uapp_max6958_emul
 # Can be C or C++
 language: C
 
