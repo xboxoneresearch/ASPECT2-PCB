@@ -59,11 +59,7 @@ _Min_Heap_Size = 0x200;      /* required amount of heap  */
 _Min_Stack_Size = 0x400; /* required amount of stack */
 
 /* Specify the memory areas */
-MEMORY
-{
-RAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 8K
-FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 32K
-}
+INCLUDE ../common/linker_common.ld
 
 /* Define output sections */
 SECTIONS
@@ -74,7 +70,7 @@ SECTIONS
     . = ALIGN(4);
     KEEP(*(.isr_vector)) /* Startup code */
     . = ALIGN(4);
-  } >FLASH
+  } > APP
 
   /* The program code and other data goes into FLASH */
   .text :
@@ -91,7 +87,7 @@ SECTIONS
 
     . = ALIGN(4);
     _etext = .;        /* define a global symbols at end of code */
-  } >FLASH
+  } > APP
 
   /* Constant data goes into FLASH */
   .rodata :
@@ -100,14 +96,14 @@ SECTIONS
     *(.rodata)         /* .rodata sections (constants, strings, etc.) */
     *(.rodata*)        /* .rodata* sections (constants, strings, etc.) */
     . = ALIGN(4);
-  } >FLASH
+  } > APP
 
   .ARM.extab (READONLY) : /* The "READONLY" keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
     . = ALIGN(4);
     *(.ARM.extab* .gnu.linkonce.armextab.*)
     . = ALIGN(4);
-  } >FLASH
+  } > APP
 
   .ARM (READONLY) : /* The "READONLY" keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
@@ -116,7 +112,7 @@ SECTIONS
     *(.ARM.exidx*)
     __exidx_end = .;
     . = ALIGN(4);
-  } >FLASH
+  } > APP
 
   .preinit_array (READONLY) : /* The "READONLY" keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
@@ -125,7 +121,7 @@ SECTIONS
     KEEP (*(.preinit_array*))
     PROVIDE_HIDDEN (__preinit_array_end = .);
     . = ALIGN(4);
-  } >FLASH
+  } > APP
 
   .init_array (READONLY) : /* The "READONLY" keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
@@ -135,7 +131,7 @@ SECTIONS
     KEEP (*(.init_array*))
     PROVIDE_HIDDEN (__init_array_end = .);
     . = ALIGN(4);
-  } >FLASH
+  } > APP
 
   .fini_array (READONLY) : /* The "READONLY" keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
@@ -145,7 +141,7 @@ SECTIONS
     KEEP (*(.fini_array*))
     PROVIDE_HIDDEN (__fini_array_end = .);
     . = ALIGN(4);
-  } >FLASH
+  } > APP
 
   /* used by the startup to initialize data */
   _sidata = LOADADDR(.data);
@@ -162,7 +158,7 @@ SECTIONS
 
     . = ALIGN(4);
     _edata = .;        /* define a global symbol at data end */
-  } >RAM AT> FLASH
+  } >RAM AT> APP
 
 
   /* Uninitialized data section */
@@ -201,6 +197,10 @@ SECTIONS
     libm.a ( * )
     libgcc.a ( * )
   }
+  .tombstone_uapp ORIGIN(TOMBSTONE_UAPP) :
+  {
+    KEEP(*(.tombstone_uapp))
+  } > TOMBSTONE_UAPP
 
 }
 

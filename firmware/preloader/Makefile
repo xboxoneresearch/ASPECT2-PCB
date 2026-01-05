@@ -32,6 +32,7 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+../common/bootloader.c \
 src/main.c
 
 # ASM sources

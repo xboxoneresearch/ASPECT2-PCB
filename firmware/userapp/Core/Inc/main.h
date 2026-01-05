@@ -34,6 +34,7 @@ extern "C" {
 #include <string.h>
 #include <stdio.h>
 #include <stdint.h>
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -59,7 +60,7 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define ENTER_BL_Pin GPIO_PIN_13
+#define ENTER_BL_Pin GPIO_PIN_0
 #define ENTER_BL_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */

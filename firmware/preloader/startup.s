@@ -126,9 +126,10 @@ Infinite_Loop:
 g_pfnVectors:
   .word  _estack
   .word  Reset_Handler      /* Reset */
-  .word  0                  /* NMI */
-  .word  0                  /* HardFault */
+  .word  Default_Handler                  /* NMI */
+  .word  Default_Handler                  /* HardFault */
   /* fill rest with 0 */
   .rept (48-4)
-    .word 0
+    .word Default_Handler
   .endr
+  

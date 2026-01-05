@@ -1,0 +1,49 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build STM",
+			"type": "shell",
+			"command": "make",
+			"options": {
+				"cwd": "${workspaceRoot}"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"label": "Build Clean STM",
+			"type": "shell",
+			"command": "make clean",
+			"options": {
+				"cwd": "${workspaceRoot}"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"label": "Flash STM",
+			"type": "shell",
+			"command": "openocd -f common/openocd.cfg -c \"program out/combined.bin verify reset exit 0x08000000\"",
+			"options": {
+				"cwd": "${workspaceRoot}"
+			},
+			"group": {
+				"kind": "none",
+				"isDefault": false
+			},
+			"problemMatcher": [],
+			"dependsOn":["Build STM"]
+		}
+	]
+}

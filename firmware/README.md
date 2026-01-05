@@ -74,12 +74,6 @@ Download from the latest release archive: [Release](https://github.com/xboxonere
 
 ## Development
 
-### VS Code
-
-- Download the [stm32-for-vscode extension](https://marketplace.visualstudio.com/items?itemName=bmd.stm32-for-vscode).
-- Open the `firmware/` folder from this repo in VS Code.
-- Change to the STM32-tab in VS Code and hit `Build`. 
-
 ### Manual
 
 (for linux hosts)
@@ -89,4 +83,3 @@ Download from the latest release archive: [Release](https://github.com/xboxonere
 - Extract the archive and add the `bin/` directory to your `$PATH` environment variable
 - Build firmware via `make`
 
-For Windows, this should help: [mydeardoctor/STM32_VSCode_Make_Windows_Tutorial](https://github.com/mydeardoctor/STM32_VSCode_Make_Windows_Tutorial)

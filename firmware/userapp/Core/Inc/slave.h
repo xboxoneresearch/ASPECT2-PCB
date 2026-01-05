@@ -11,7 +11,6 @@ extern "C" {
 
 void Slave_Init(void);
 
-/* Example accessors */
 uint8_t slave_reg_read(uint8_t addr);
 void slave_reg_write(uint8_t addr, uint8_t val);
 

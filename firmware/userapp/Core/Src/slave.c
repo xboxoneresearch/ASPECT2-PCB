@@ -1,5 +1,6 @@
 #include "slave.h"
 #include "display.h"
+
 extern I2C_HandleTypeDef hi2c1;
 
 static uint8_t register_map[REG_MAP_SIZE] = {0}; // Register map storage

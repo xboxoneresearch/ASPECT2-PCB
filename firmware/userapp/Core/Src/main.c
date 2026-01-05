@@ -23,7 +23,8 @@
 /* USER CODE BEGIN Includes */
 #include "display.h"
 #include "slave.h"
-#include "jmp_bl.h"
+#include "button.h"
+#include "tombstone.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -60,18 +61,16 @@ static void MX_I2C2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void CheckBootloaderButton(void) {
-  uint8_t bl_jump_requested = 0;
-
-  // Spend a little while reading GPIO state to not trigger accidentally
-  for (int i=0; i<10; i++) {
-    bl_jump_requested = HAL_GPIO_ReadPin(ENTER_BL_GPIO_Port, ENTER_BL_Pin) == GPIO_PIN_RESET;
-  }
-
-  if (bl_jump_requested) {
-    JumpToBootloader();
-  }
-}
+__attribute__((section(".tombstone_uapp")))
+__attribute__((used))
+const tombstone_t tombstone = {
+    .magic = UAPP_MAGIC,
+    .ver_major = 1,
+    .ver_minor = 0,
+    .size = 0xB00B,
+    .crc = 0xAAAAAAAA,
+    .reserved = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,0xFF, 0xFF, 0xFF, 0xFF,  0xFF, 0xFF, 0xFF, 0xFF },
+};
 /* USER CODE END 0 */
 
 /**
@@ -98,7 +97,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+  RCC->AHBENR |= RCC_AHBENR_CRCEN;
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -106,15 +105,15 @@ int main(void)
   MX_I2C1_Init();
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
-  CheckBootloaderButton();
   Display_Init();
-  Slave_Init();
+  //Slave_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    Button_Tick();
     Display_Tick();
     /* USER CODE END WHILE */
 

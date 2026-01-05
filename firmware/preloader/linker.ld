@@ -53,15 +53,7 @@
 ENTRY(Reset_Handler)
 
 /* Specify the memory areas */
-MEMORY
-{
-  FLASH          (rx)   : ORIGIN = 0x08000000, LENGTH = 2K - 0x20    /* Preloader code (IAPL) */
-  TOMBSTONE_IAPL (rx)   : ORIGIN = 0x080007E0, LENGTH = 0x20         /* Tombstone Preloader (IAPL) @ end of preloader section */
-  TOMBSTONE_UAPP (rx)   : ORIGIN = 0x08000800, LENGTH = 0x20         /* Tombstone User Application (UAPP) @ before app code start */
-  APP            (rx)   : ORIGIN = 0x08000820, LENGTH = 30K - 0x20   /* User Application (UAPP) */
-  RAM            (xrw)  : ORIGIN = 0x20000000, LENGTH = 8K
-}
-
+INCLUDE ../common/linker_common.ld
 
 /* Highest address of the user mode stack */
 _estack = ORIGIN(RAM) + LENGTH(RAM);
@@ -78,7 +70,7 @@ SECTIONS
     . = ALIGN(4);
     KEEP(*(.isr_vector)) /* Startup code */
     . = ALIGN(4);
-  } > FLASH
+  } > IAPL
 
  /* The program code and other data goes into FLASH */
   .text :
@@ -93,7 +85,7 @@ SECTIONS
   
     . = ALIGN(4);
     _etext = .;        /* define a global symbols at end of code */
-  } > FLASH
+  } > IAPL
 
   /* Constant data goes into FLASH */
   .rodata :
@@ -102,7 +94,7 @@ SECTIONS
     *(.rodata)         /* .rodata sections (constants, strings, etc.) */
     *(.rodata*)        /* .rodata* sections (constants, strings, etc.) */
     . = ALIGN(4);
-  } >FLASH
+  } > IAPL
 
   /* used by the startup to initialize data */
   _sidata = LOADADDR(.data);
@@ -157,8 +149,8 @@ SECTIONS
     libgcc.a ( * )
   }
 
-  .tombstone ORIGIN(TOMBSTONE_IAPL) :
+  .tombstone_iapl ORIGIN(TOMBSTONE_IAPL) :
   {
-    KEEP(*(.tombstone))
+    KEEP(*(.tombstone_iapl))
   } > TOMBSTONE_IAPL
 }

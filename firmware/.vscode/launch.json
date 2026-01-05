@@ -1,0 +1,76 @@
+{
+    "configurations": [
+        {
+            "showDevDebugOutput": "parsed",
+            "cwd": "${workspaceRoot}",
+            "executable": "./artifacts/uapp_max6958_emul.elf",
+            "name": "Debug STM32",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "preLaunchTask": "Build STM",
+            "device": "stm32g031",
+            "svdFile": "../common/STM32G031.svd",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
+            "configFiles": [
+                "common/openocd.cfg"
+            ],
+            "runToEntryPoint": "main",
+            "postLaunchCommands": [
+                "monitor reset halt",
+                "add-symbol-file ${workspaceRoot}/artifacts/uapp_max6958_emul.elf"
+            ],
+            "postResetCommands": [
+                "monitor reset halt"
+            ]
+        },
+        {
+            "showDevDebugOutput": "parsed",
+            "cwd": "${workspaceRoot}",
+            "executable": "./artifacts/preloader.elf",
+            "name": "Attach STM32",
+            "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "preLaunchTask": "Build STM",
+            "device": "stm32g031",
+            "svdFile": "common/STM32G031.svd",
+            "configFiles": [
+                "common/openocd.cfg"
+            ],
+            "symbolFiles": [
+                "${workspaceRoot}/artifacts/uapp_max6958_emul.elf"
+            ]
+        },
+        {
+            "showDevDebugOutput": "parsed",
+            "cwd": "${workspaceRoot}",
+            "executable": "./artifacts/preloader.elf",
+            "name": "Flash + Debug STM32",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "preLaunchTask": "Build STM",
+            "device": "stm32g031",
+            "svdFile": "common/STM32G031.svd",
+            "configFiles": [
+                "common/openocd.cfg"
+            ],
+            "runToEntryPoint": "main",
+            "postLaunchCommands": [
+                // initialize target and ensure openocd ready
+                "monitor reset init",
+                "monitor halt",
+                // flash the combined binary to the base address
+                "monitor flash write_image erase ${workspaceRoot}/out/combined.bin 0x08000000",
+                // reset and halt so symbols can be added safely
+                "monitor reset halt",
+                // load user-app symbols at its flash address
+                "add-symbol-file ${workspaceRoot}/artifacts/uapp_max6958_emul.elf"
+            ]
+        }
+    ]
+}

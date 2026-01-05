@@ -54,14 +54,32 @@ Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c \
-Drivers/ssd1306/ssd1306/ssd1306_fonts.c \
-Drivers/ssd1306/ssd1306/ssd1306.c \
+Drivers/u8g2/csrc/u8x8_display.c \
+Drivers/u8g2/csrc/u8x8_setup.c \
+Drivers/u8g2/csrc/u8x8_cad.c \
+Drivers/u8g2/csrc/u8x8_byte.c \
+Drivers/u8g2/csrc/u8x8_gpio.c \
+Drivers/u8g2/csrc/u8x8_8x8.c \
+Drivers/u8g2/csrc/u8x8_d_ssd1306_64x32.c \
+Drivers/u8g2/csrc/u8g2_setup.c \
+Drivers/u8g2/csrc/u8g2_d_setup.c \
+Drivers/u8g2/csrc/u8g2_d_memory.c \
+Drivers/u8g2/csrc/u8g2_font.c \
+Drivers/u8g2/csrc/u8g2_fonts.c \
+Drivers/u8g2/csrc/u8g2_buffer.c \
+Drivers/u8g2/csrc/u8g2_cleardisplay.c \
+Drivers/u8g2/csrc/u8g2_ll_hvline.c \
+Drivers/u8g2/csrc/u8g2_hvline.c \
+Drivers/u8g2/csrc/u8g2_box.c \
+Drivers/u8g2/csrc/u8g2_intersection.c \
 Core/Src/system_stm32g0xx.c \
 Core/Src/sysmem.c \
 Core/Src/syscalls.c \
+Core/Src/postcodes.c \
 Core/Src/display.c \
 Core/Src/slave.c \
-Core/Src/jmp_bl.c
+Core/Src/button.c \
+../common/bootloader.c
 
 # ASM sources
 ASM_SOURCES =  \
@@ -124,12 +142,13 @@ AS_INCLUDES =
 
 # C includes
 C_INCLUDES =  \
+-I../common \
 -ICore/Inc \
 -IDrivers/STM32G0xx_HAL_Driver/Inc \
 -IDrivers/STM32G0xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32G0xx/Include \
 -IDrivers/CMSIS/Include \
--IDrivers/ssd1306/ssd1306
+-IDrivers/u8g2/csrc
 
 
 # compile gcc flags

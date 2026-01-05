@@ -122,7 +122,7 @@ Infinite_Loop:
 *
 * The minimal vector table for a Cortex M0.  Note that the proper constructs
 * must be placed on this to ensure that it ends up at physical address
-* 0x0000.0000.
+* 0x0000.0A00.
 *
 ******************************************************************************/
   .section .isr_vector,"a",%progbits
