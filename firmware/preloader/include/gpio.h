@@ -1,7 +1,7 @@
 #ifndef _GPIO_H
 #define _GPIO_H
 
-#define PIN_PA0    0
+#define PIN_13          (13)
 
 typedef enum {
     GPIO_MODE_INPUT     = 0x0,
