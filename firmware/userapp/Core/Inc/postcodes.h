@@ -34,10 +34,10 @@ enum MAX6958Registers {
     REG_Segments = 0x24,
 };
 
-uint16_t read_postcode();
-uint8_t read_segment();
-const char *get_segment_name(uint8_t seg);
-char get_segment_index(uint8_t seg);
+uint16_t POST_ReadCode();
+uint8_t POST_ReadSegment();
+const char *POST_GetSegmentName(uint8_t seg);
+char POST_GetSegmentIndex(uint8_t seg);
 
 #ifdef __cplusplus
 }

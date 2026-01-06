@@ -104,8 +104,8 @@ void Display_Init(void)
 
     u8g2_SetFont(&myDisplay, u8g2_font_5x7_mr);
     // Print Bootloader version
-    if (validate_iapl_tombstone()) {
-        tombstone_t *iapl_ts = (tombstone_t *)(APP_BASE-TOMBSTONE_SIZE);
+    if (validateIaplTombstone()) {
+        tombstone_t *iapl_ts = (tombstone_t *)(TOMBSTONE_OFFSET_IAPL);
         snprintf(lcd_buf, sizeof(lcd_buf), "IAPL %i.%i", iapl_ts->ver_major, iapl_ts->ver_minor);
     } else {
         strncat(lcd_buf, "IAPL INVALID", sizeof(lcd_buf)-1);
@@ -113,8 +113,8 @@ void Display_Init(void)
     u8g2_DrawStr(&myDisplay, 4, 22, lcd_buf);
 
     // Print userapp version
-    if (validate_uapp_tombstone()) {
-        tombstone_t *uapp_ts = (tombstone_t *)APP_BASE;
+    if (validateUappTombstone()) {
+        tombstone_t *uapp_ts = (tombstone_t *)(TOMBSTONE_OFFSET_UAPP);
         snprintf(lcd_buf, sizeof(lcd_buf), "UAPP %i.%i", uapp_ts->ver_major, uapp_ts->ver_minor);
     } else {
         strncat(lcd_buf, "UAPP INVALID", sizeof(lcd_buf)-1);
@@ -137,9 +137,9 @@ void Display_Init(void)
 }
 
 void Display_ShowCode(uint16_t code, uint8_t segment) {
-    seg_name = get_segment_name(segment);
+    seg_name = POST_GetSegmentName(segment);
     // Convert numeric index to ASCII character
-    seg_index_str[1] = get_segment_index(segment) + '0';
+    seg_index_str[1] = POST_GetSegmentIndex(segment) + '0';
 
     // Assemble content
     snprintf(lcd_buf, sizeof(lcd_buf), "%04X", code);
@@ -160,12 +160,12 @@ void Display_ShowCode(uint16_t code, uint8_t segment) {
   */
 void Display_Tick(void)
 {
-    if (slave_hard_error()) {
+    if (Slave_HardError()) {
         Display_Print("BUS ERROR");
-    } else if (slave_is_new_segment_available()) {
+    } else if (Slave_IsNewSegmentAvailable()) {
         Display_ShowCode(
-            read_postcode(),
-            read_segment()
+            POST_ReadCode(),
+            POST_ReadSegment()
         );
     }
 }

@@ -79,7 +79,7 @@ void HAL_I2C_AbortCpltCallback(I2C_HandleTypeDef *hi2c)
         Error_Handler();
 }
 
-void handle_complete()
+void Slave_HandleComplete()
 {
         if (reg_index == 0x26 && (register_map[0x24] & 0x1))
                 new_segment_available = 1;
@@ -107,16 +107,16 @@ void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c)
         }
         
         hi2c->ErrorCode = 0;
-        handle_complete();
+        Slave_HandleComplete();
 
         Slave_Start();
 
 }
 
-uint8_t slave_reg_read(uint8_t addr) { return register_map[addr % REG_MAP_SIZE]; }
-void slave_reg_write(uint8_t addr, uint8_t val) { register_map[addr % REG_MAP_SIZE] = val; }
+uint8_t Slave_RegRead(uint8_t addr) { return register_map[addr % REG_MAP_SIZE]; }
+void Slave_RegWrite(uint8_t addr, uint8_t val) { register_map[addr % REG_MAP_SIZE] = val; }
 
-uint8_t slave_is_new_segment_available(void) {
+uint8_t Slave_IsNewSegmentAvailable(void) {
         if (new_segment_available) {
                 new_segment_available = 0;
                 return 1;
@@ -124,6 +124,6 @@ uint8_t slave_is_new_segment_available(void) {
         return 0;
 }
 
-uint8_t slave_hard_error(void) {
+uint8_t Slave_HardError(void) {
         return error_state;
 }

@@ -10,7 +10,7 @@ static uint32_t 	JumpAddress;
 extern int 			_estack;
 static uint32_t* 	bootloader_flag = (uint32_t*) (&_estack - SYSBOOTLOADER_FLAG_OFFSET);
 
-uint32_t calculate_crc32(uint8_t *data, uint32_t len) {
+uint32_t calculateCrc32(uint8_t *data, uint32_t len) {
     if (len == 0) {
         return 0xFFFFFFFF;
     }
@@ -28,14 +28,14 @@ uint32_t calculate_crc32(uint8_t *data, uint32_t len) {
     return (CRC->DR ^ 0xFFFFFFFF);
 }
 
-void resetToBootLoader()
+void resetToSystemBootLoader()
 {
 	*bootloader_flag = SYSBOOTLOADER_FLAG_MAGIC;
 	NVIC_SystemReset();
 }
 
 
-void handleBootLoader()
+void handleSystemBootLoader()
 {
 	if( *bootloader_flag == SYSBOOTLOADER_FLAG_MAGIC )
 	{
@@ -99,7 +99,7 @@ void jump(uint32_t addr) {
     app_entry();
 }
 
-bool validate_tombstone(uint32_t tombstone_address, uint32_t data_offset, const uint8_t magic[4]) {
+bool validateTombstone(uint32_t tombstone_address, uint32_t data_offset, const uint8_t magic[4]) {
     tombstone_t *ts = (tombstone_t *)tombstone_address;
 
     if (!(ts->magic[0] == magic[0] &&
@@ -109,7 +109,7 @@ bool validate_tombstone(uint32_t tombstone_address, uint32_t data_offset, const 
         return false;
     }
 
-    uint32_t calculated_crc32 = calculate_crc32((uint8_t *)data_offset, ts->size);
+    uint32_t calculated_crc32 = calculateCrc32((uint8_t *)data_offset, ts->size);
 
     if (calculated_crc32 != ts->crc) {
         return false;
@@ -118,10 +118,10 @@ bool validate_tombstone(uint32_t tombstone_address, uint32_t data_offset, const 
     return true;
 }
 
-bool validate_iapl_tombstone() {
-    return validate_tombstone(TOMBSTONE_OFFSET_IAPL, PRELOADER_ENTRY_POINT, TOMBSTONE_IAPL_MAGIC);
+bool validateIaplTombstone() {
+    return validateTombstone(TOMBSTONE_OFFSET_IAPL, PRELOADER_ENTRY_POINT, TOMBSTONE_IAPL_MAGIC);
 }
 
-bool validate_uapp_tombstone() {
-    return validate_tombstone(TOMBSTONE_OFFSET_UAPP, APP_ENTRY_POINT, TOMBSTONE_UAPP_MAGIC);
+bool validateUappTombstone() {
+    return validateTombstone(TOMBSTONE_OFFSET_UAPP, APP_ENTRY_POINT, TOMBSTONE_UAPP_MAGIC);
 }

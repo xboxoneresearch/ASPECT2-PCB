@@ -43,12 +43,12 @@ tombstone_t;
 static_assert (TOMBSTONE_SIZE == (sizeof(tombstone_t)),
     "TOMBSTONE vs sizeof(tombstone_t) mismatch");
 
-uint32_t calculate_crc32(uint8_t *data, uint32_t len);
-void resetToBootLoader();
-void handleBootLoader();
+uint32_t calculateCrc32(uint8_t *data, uint32_t len);
+void resetToSystemBootLoader();
+void handleSystemBootLoader();
 void jump(uint32_t addr);
-bool validate_tombstone(uint32_t tombstone_address, uint32_t data_offset, const uint8_t magic[4]);
-bool validate_iapl_tombstone();
-bool validate_uapp_tombstone();
+bool validateTombstone(uint32_t tombstone_address, uint32_t data_offset, const uint8_t magic[4]);
+bool validateIaplTombstone();
+bool validateUappTombstone();
 
 #endif // _BOOTLOADER_H

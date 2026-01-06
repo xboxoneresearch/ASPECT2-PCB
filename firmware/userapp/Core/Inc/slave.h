@@ -11,11 +11,11 @@ extern "C" {
 
 void Slave_Init(void);
 
-uint8_t slave_reg_read(uint8_t addr);
-void slave_reg_write(uint8_t addr, uint8_t val);
+uint8_t Slave_RegRead(uint8_t addr);
+void Slave_RegWrite(uint8_t addr, uint8_t val);
 
-uint8_t slave_is_new_segment_available(void);
-uint8_t slave_hard_error(void);
+uint8_t Slave_IsNewSegmentAvailable(void);
+uint8_t Slave_HardError(void);
 
 #ifdef __cplusplus
 }

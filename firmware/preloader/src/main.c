@@ -18,7 +18,7 @@ const tombstone_t tombstone = {
 };
 
 /* Delay ms using SysTick */
-static void delay_ms(uint32_t ms) {
+static void delayMs(uint32_t ms) {
     SysTick->LOAD = (CLOCK_FREQ_HSI/1000 - 1);
     SysTick->VAL = 0;
     SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_ENABLE_Msk;
@@ -29,7 +29,7 @@ static void delay_ms(uint32_t ms) {
     SysTick->CTRL = 0;
 }
 
-void gpio_config(GPIO_TypeDef *port, uint8_t pin,
+void gpioConfig(GPIO_TypeDef *port, uint8_t pin,
                         GPIO_Mode mode,
                         GPIO_OutputType otype,
                         GPIO_Speed speed,
@@ -54,7 +54,7 @@ void gpio_config(GPIO_TypeDef *port, uint8_t pin,
 
 int main(void) {
 
-    handleBootLoader();
+    handleSystemBootLoader();
 
     // Enable GPIOA
     RCC->IOPENR |= RCC_IOPENR_GPIOAEN;
@@ -64,7 +64,7 @@ int main(void) {
     
 
     // Configure PA13 as Input, Pull-up
-    gpio_config(GPIOA, PIN_13,
+    gpioConfig(GPIOA, PIN_13,
                     GPIO_MODE_INPUT,
                     GPIO_OTYPE_PP,     // doesn’t matter for input
                     GPIO_SPEED_LOW,    // doesn’t matter for input
@@ -73,19 +73,20 @@ int main(void) {
 
     // 2 second wait, debounced 
     if (!(GPIOA->IDR & GPIO_IDR_ID13)) {
-        delay_ms(DEBOUNCE_DELAY);
+        delayMs(DEBOUNCE_DELAY);
         if (!(GPIOA->IDR & GPIO_IDR_ID0)) {  // check again
             // button pressed -> system bootloader
-            resetToBootLoader();
+            resetToSystemBootLoader();
         }
     }
 
-    bool uapp_valid = validate_uapp_tombstone();
+    bool uapp_valid = validateUappTombstone();
     if (uapp_valid) {
         /* jump to application */
         jump(APP_ENTRY_POINT);
     }
 
-    resetToBootLoader();
+    // As last resort, drop to system bootloader
+    resetToSystemBootLoader();
     return 0;
 }

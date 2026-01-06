@@ -1,17 +1,17 @@
 #include "postcodes.h"
 
-uint16_t read_postcode() {
-    return (slave_reg_read(REG_Digit0) & 0x0F)
-        | ((slave_reg_read(REG_Digit1) & 0x0F) << 4)
-        | ((slave_reg_read(REG_Digit2) & 0x0F) << 8)
-        | ((slave_reg_read(REG_Digit3) & 0x0F) << 12);
+uint16_t POST_ReadCode() {
+    return (Slave_RegRead(REG_Digit0) & 0x0F)
+        | ((Slave_RegRead(REG_Digit1) & 0x0F) << 4)
+        | ((Slave_RegRead(REG_Digit2) & 0x0F) << 8)
+        | ((Slave_RegRead(REG_Digit3) & 0x0F) << 12);
 }
 
-uint8_t read_segment() {
-    return slave_reg_read(REG_Segments);
+uint8_t POST_ReadSegment() {
+    return Slave_RegRead(REG_Segments);
 }
 
-const char *get_segment_name(uint8_t seg) {
+const char *POST_GetSegmentName(uint8_t seg) {
     switch (seg & 0xF0) {
         case CODE_FLAVOR_CPU:
             return "CPU";
@@ -26,6 +26,6 @@ const char *get_segment_name(uint8_t seg) {
     }
 }
 
-char get_segment_index(uint8_t seg) {
+char POST_GetSegmentIndex(uint8_t seg) {
     return seg & 0x0F;
 }
