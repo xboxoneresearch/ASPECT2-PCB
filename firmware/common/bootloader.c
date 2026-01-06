@@ -1,10 +1,6 @@
 
 #include "stm32g031xx.h"
-#include "tombstone.h"
-
-#define BOOTLOADER_ADDRESS 		0x1FFF0000U  // STM32F40xxx. See https://bit.ly/AN2606
-#define BOOTLOADER_FLAG_OFFSET 	100			// 4 * 100 = 400 bytes below top of stack
-#define BOOTLOADER_FLAG_MAGIC	0xFEEFFEEFU
+#include "bootloader.h"
 
 typedef void 		(*pFunction)(void);
 
@@ -12,7 +8,7 @@ static pFunction 	JumpToBootLoader;
 static uint32_t 	JumpAddress;
 
 extern int 			_estack;
-static uint32_t* 	bootloader_flag = (uint32_t*) (&_estack - BOOTLOADER_FLAG_OFFSET);
+static uint32_t* 	bootloader_flag = (uint32_t*) (&_estack - SYSBOOTLOADER_FLAG_OFFSET);
 
 uint32_t calculate_crc32(uint8_t *data, uint32_t len) {
     if (len == 0) {
@@ -34,19 +30,19 @@ uint32_t calculate_crc32(uint8_t *data, uint32_t len) {
 
 void resetToBootLoader()
 {
-	*bootloader_flag = BOOTLOADER_FLAG_MAGIC;
+	*bootloader_flag = SYSBOOTLOADER_FLAG_MAGIC;
 	NVIC_SystemReset();
 }
 
 
 void handleBootLoader()
 {
-	if( *bootloader_flag == BOOTLOADER_FLAG_MAGIC )
+	if( *bootloader_flag == SYSBOOTLOADER_FLAG_MAGIC )
 	{
 		*bootloader_flag = 0; // so next boot won't be affected
 
 		/* Jump to system memory bootloader */
-		JumpAddress = *(uint32_t*) (BOOTLOADER_ADDRESS + 4);
+		JumpAddress = *(uint32_t*) (SYSBOOTLOADER_OFFSET + 4);
 
 		JumpToBootLoader = (pFunction) JumpAddress;
 		JumpToBootLoader();
@@ -123,9 +119,9 @@ bool validate_tombstone(uint32_t tombstone_address, uint32_t data_offset, const 
 }
 
 bool validate_iapl_tombstone() {
-    return validate_tombstone(APP_BASE-TOMBSTONE_SIZE, PRELOADER_BASE, TOMBSTONE_IAPL_MAGIC);
+    return validate_tombstone(TOMBSTONE_OFFSET_IAPL, PRELOADER_ENTRY_POINT, TOMBSTONE_IAPL_MAGIC);
 }
 
 bool validate_uapp_tombstone() {
-    return validate_tombstone(APP_BASE, APP_ENTRY_POINT, TOMBSTONE_UAPP_MAGIC);
+    return validate_tombstone(TOMBSTONE_OFFSET_UAPP, APP_ENTRY_POINT, TOMBSTONE_UAPP_MAGIC);
 }

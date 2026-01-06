@@ -2,7 +2,6 @@
 #include "stm32g031xx.h"
 #include "gpio.h"
 #include "bootloader.h"
-#include "tombstone.h"
 
 #define DEBOUNCE_DELAY  200
 #define CLOCK_FREQ_HSI 16000000 // 16 MHz HSI
@@ -63,8 +62,9 @@ int main(void) {
     // Enable CRC clock
     RCC->AHBENR |= RCC_AHBENR_CRCEN;
     
+
     // Configure PA13 as Input, Pull-up
-    gpio_config(GPIOA, PIN_PA0,
+    gpio_config(GPIOA, PIN_13,
                     GPIO_MODE_INPUT,
                     GPIO_OTYPE_PP,     // doesn’t matter for input
                     GPIO_SPEED_LOW,    // doesn’t matter for input
@@ -72,7 +72,7 @@ int main(void) {
 
 
     // 2 second wait, debounced 
-    if (!(GPIOA->IDR & GPIO_IDR_ID0)) {
+    if (!(GPIOA->IDR & GPIO_IDR_ID13)) {
         delay_ms(DEBOUNCE_DELAY);
         if (!(GPIOA->IDR & GPIO_IDR_ID0)) {  // check again
             // button pressed -> system bootloader

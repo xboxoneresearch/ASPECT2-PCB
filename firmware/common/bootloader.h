@@ -1,17 +1,26 @@
-#ifndef _TOMBSTONE_H
-#define _TOMBSTONE_H
+#ifndef _BOOTLOADER_H
+#define _BOOTLOADER_H
 
 #include <assert.h>
 #include <stdint.h>
 #include <stdbool.h>
 
-#define PRELOADER_BASE (FLASH_BASE)
-#define PRELOADER_SIZE (2 * 1024) // 2KB
-#define APP_BASE       (PRELOADER_BASE + PRELOADER_SIZE)
-#define APP_ENTRY_POINT (0x08000A00U)
-#define SYSTEM_BOOTLOADER_OFFSET   (0x1FFF0000U)
+#define TOMBSTONE_SIZE              (0x20)
 
-#define TOMBSTONE_SIZE (0x20)
+#define PRELOADER_BASE              (FLASH_BASE)
+#define PRELOADER_SIZE              (2 * 1024) // 2KB, this includes tombstone data
+#define PRELOADER_ENTRY_POINT       (PRELOADER_BASE)
+
+#define APP_BASE                    (PRELOADER_BASE + PRELOADER_SIZE)
+#define APP_ENTRY_POINT             (0x08000A00U)
+
+#define TOMBSTONE_OFFSET_IAPL       (APP_BASE - TOMBSTONE_SIZE)
+#define TOMBSTONE_OFFSET_UAPP       (APP_BASE)
+
+#define SYSBOOTLOADER_OFFSET        (0x1FFF0000U)
+#define SYSBOOTLOADER_FLAG_OFFSET 	(100)			// 4 * 100 = 400 bytes below top of stack
+#define SYSBOOTLOADER_FLAG_MAGIC	(0xFEEFFEEFU)
+
 #define IAPL_MAGIC {'I', 'A', 'P', 'L'}
 #define UAPP_MAGIC {'U', 'A', 'P', 'P'}
 
@@ -42,4 +51,4 @@ bool validate_tombstone(uint32_t tombstone_address, uint32_t data_offset, const 
 bool validate_iapl_tombstone();
 bool validate_uapp_tombstone();
 
-#endif // _TOMBSTONE_H
+#endif // _BOOTLOADER_H

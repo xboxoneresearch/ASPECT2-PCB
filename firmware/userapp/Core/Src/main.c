@@ -24,7 +24,7 @@
 #include "display.h"
 #include "slave.h"
 #include "button.h"
-#include "tombstone.h"
+#include "bootloader.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
