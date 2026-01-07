@@ -3,7 +3,7 @@
         {
             "showDevDebugOutput": "parsed",
             "cwd": "${workspaceRoot}",
-            "executable": "./artifacts/uapp_max6958_emul.elf",
+            "executable": "./out/uapp_max6958_emul.elf",
             "name": "Debug STM32",
             "request": "launch",
             "type": "cortex-debug",
@@ -21,7 +21,7 @@
             "runToEntryPoint": "main",
             "postLaunchCommands": [
                 "monitor reset halt",
-                "add-symbol-file ${workspaceRoot}/artifacts/uapp_max6958_emul.elf"
+                "add-symbol-file ${workspaceRoot}/out/uapp_max6958_emul.elf"
             ],
             "postResetCommands": [
                 "monitor reset halt"
@@ -30,7 +30,7 @@
         {
             "showDevDebugOutput": "parsed",
             "cwd": "${workspaceRoot}",
-            "executable": "./artifacts/preloader.elf",
+            "executable": "./out/preloader.elf",
             "name": "Attach STM32",
             "request": "attach",
             "type": "cortex-debug",
@@ -42,13 +42,13 @@
                 "common/openocd.cfg"
             ],
             "symbolFiles": [
-                "${workspaceRoot}/artifacts/uapp_max6958_emul.elf"
+                "${workspaceRoot}/out/uapp_max6958_emul.elf"
             ]
         },
         {
             "showDevDebugOutput": "parsed",
             "cwd": "${workspaceRoot}",
-            "executable": "./artifacts/preloader.elf",
+            "executable": "./out/preloader.elf",
             "name": "Flash + Debug STM32",
             "request": "launch",
             "type": "cortex-debug",
@@ -69,7 +69,7 @@
                 // reset and halt so symbols can be added safely
                 "monitor reset halt",
                 // load user-app symbols at its flash address
-                "add-symbol-file ${workspaceRoot}/artifacts/uapp_max6958_emul.elf"
+                "add-symbol-file ${workspaceRoot}/out/uapp_max6958_emul.elf"
             ]
         }
     ]
