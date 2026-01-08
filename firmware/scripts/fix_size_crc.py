@@ -17,7 +17,6 @@ calculation:
 import argparse
 import enum
 import struct
-import zlib
 from typing import Tuple
 
 # Constants mirroring firmware common/bootloader.h
@@ -41,8 +40,22 @@ def write_le_u32(buf: bytearray, offset: int, value: int):
     buf[offset:offset+4] = struct.pack('<I', value & 0xFFFFFFFF)
 
 
-def crc32_final(data: bytes) -> int:
-    return zlib.crc32(data)
+def crc32_final(data: bytes, crc: int = 0xffffffff) -> int:
+    """
+    CRC32/MPEG-2 with data fed in byte-reversed u32-chunks
+    """
+    U32_SZ = 4
+    assert len(data) % 4 == 0
+    for position in range(0, len(data), U32_SZ):
+        uint32 = data[position:position+U32_SZ]
+        # Reverse bytes
+        uint32 = uint32[::-1]
+
+        for val in uint32:
+            crc ^= val << 24
+            for _ in range(8):
+                crc = crc << 1 if (crc & 0x80000000) == 0 else (crc << 1) ^ 0x104c11db7
+    return crc
 
 
 def compute_and_patch(buf: bytearray, ptype: ProgramType) -> Tuple[int, int, int]:
@@ -60,7 +73,6 @@ def compute_and_patch(buf: bytearray, ptype: ProgramType) -> Tuple[int, int, int
     elif ptype is ProgramType.UAPP:
         if len(buf) < UAPP_ENTRY_OFFSET:
             raise SystemExit("UAPP binary smaller than expected entry offset; cannot compute tombstone")
-        assert b"UAPP" == buf[UAPP_TOMBSTONE_OFF:UAPP_TOMBSTONE_OFF + 4]
         crc_region = bytes(buf[UAPP_ENTRY_OFFSET:])
         size = len(crc_region)
         crc = crc32_final(crc_region)

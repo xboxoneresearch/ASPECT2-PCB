@@ -15,17 +15,16 @@ uint32_t calculateCrc32(uint8_t *data, uint32_t len) {
         return 0xFFFFFFFF;
     }
 
-    /* Configure and reset CRC peripheral: use byte-wise input and reversed output */
-    CRC->CR = CRC_CR_RESET | CRC_CR_REV_IN_0 | CRC_CR_REV_OUT;
+    /* Configure and reset CRC peripheral: use default algorithm */
+    CRC->CR = CRC_CR_RESET;
 
     /* Feed data as bytes so peripheral processes one byte per write */
-    uint8_t *p = (uint8_t *)data;
-    for (uint32_t i = 0; i < len; i++) {
-        *((volatile uint8_t *)&CRC->DR) = p[i];
+    uint32_t *p = (uint32_t *)data;
+    for (uint32_t i = 0; i < (len / sizeof(uint32_t)); i++) {
+        *((volatile uint32_t *)&CRC->DR) = p[i];
     }
 
-    /* Final XOR and return */
-    return (CRC->DR ^ 0xFFFFFFFF);
+    return CRC->DR;
 }
 
 void resetToSystemBootLoader()

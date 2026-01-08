@@ -13,14 +13,14 @@ This project is split into two independent components:
   * Tombstone info located at the end, at `0x0800_07E0-0x0800_0800`
   * Responsible for:
 
-    * Checking a GPIO pin for 2 s after reset.
+    * Checking a GPIO pin for 200 ms after reset.
     * If pressed → jump to the STM32 system ROM bootloader.
     * If not pressed → jump to the user application at `0x0800_0800`.
   * Contains a fixed **tombstone** block at the end of its flash region, with build metadata (magic, version, date).
 
 * **UAPP (User-app) @ `userapp/`**
 
-  * Section starts at `0x0800_0800` (tombstone: `0x0800_0800`, code: `0x0800_0820`)
+  * Section starts at `0x0800_0800` (tombstone: `0x0800_0800`, code: `0x0800_0A00`)
   * Normal user firmware, built with its own vector table and linker script.
   * At the very start, contains a **tombstone** block, to identify itself.
   * Uses the tombstone info (if needed) to check validity or report version.
@@ -28,27 +28,27 @@ This project is split into two independent components:
 **Flash Memory Layout**
 
 ```
-+-----------------------+ 0x0800_0000
-| Preloader Vector      |
-| & Code                |
-|  (2 KB-32 bytes)      |
-+-----------------------+ 0x0800_07E0
-| Tombstone info IAPL   |
-| (32 bytes, fixed info)|
-+-----------------------+ 0x0800_0800
-| Tombstone info UAPP   |
-| (32 bytes, fixed info)|
-+-----------------------+ 0x0800_0820
-| User App Vector       |
-| & Code                |
-| (up to 30KB-32 bytes) |
-+-----------------------+ end of flash
++--------------------------+ 0x0800_0000
+| Preloader Vector         |
+| & Code                   |
+|  (2 KB-32 bytes)         |
++--------------------------+ 0x0800_07E0
+| Tombstone info IAPL      |
+| (32 bytes)               |
++--------------------------+ 0x0800_0800
+| Tombstone info UAPP      |
+| (32 bytes + padding)     |
++--------------------------+ 0x0800_0A00
+| User App Vector          |
+| & Code                   |
+| (up to 30KB-0x200 bytes) |
++--------------------------+ end of flash
 ```
 
 * **Preloader region**: `0x0800_0000 .. 0x0800_07E0`
 * **Tombstone IAPL**: `0x0800_07E0 .. 0x0800_0800`
 * **Tombstone UAPP**: `0x0800_0800 .. 0x0800_0820`
-* **User application**: `0x0800_0820 ..`
+* **User application**: `0x0800_0A00 ..`
 
 **Build/Flash**
 
@@ -68,9 +68,10 @@ Download from the latest release archive: [Release](https://github.com/xboxonere
 
 ### In-field update
 
-1. Disconnect PCB from console!
-2. Connect PCB to PC
-3. Use custom stm32flash tool from this [repo](https://github.com/xboxoneresearch/libaspect2)
+1. Disconnect PCB from console and PC!
+2. Press and hold the button on the PCB.
+3. Connect PCB to PC, keep button pressed for a second.
+4. Use custom stm32flash tool from this repo: [repo](https://github.com/xboxoneresearch/libaspect2)
 
 ## Development
 
