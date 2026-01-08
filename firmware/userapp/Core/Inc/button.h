@@ -9,7 +9,8 @@ extern "C" {
 
 extern bool button_pressed;
 
-bool Button_IsPressed(uint32_t *duration_ms);
+bool Button_IsPressed();
+uint32_t Button_IsPressedDuration();
 void Button_Tick();
 
 #ifdef __cplusplus

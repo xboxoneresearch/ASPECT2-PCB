@@ -2,6 +2,7 @@
 #include "u8g2.h"
 #include "postcodes.h"
 #include "bootloader.h"
+#include "button.h"
 
 #define OLED_Addr (0x3C << 1)
 #define DISPLAY_INIT_FUNC u8g2_Setup_ssd1306_i2c_64x32_1f_f
@@ -133,7 +134,6 @@ void Display_Init(void)
 
     // Cleanup
     u8g2_ClearDisplay(&myDisplay);
-    Display_ShowCode(0x4242, 0x71);
 }
 
 void Display_ShowCode(uint16_t code, uint8_t segment) {
@@ -167,6 +167,8 @@ void Display_Tick(void)
             POST_ReadCode(),
             POST_ReadSegment()
         );
+    } else if (Button_IsPressed()) {
+        Display_Print("BtnPress");
     }
 }
 

@@ -72,9 +72,9 @@ int main(void) {
 
 
     // 2 second wait, debounced 
-    if (!(GPIOA->IDR & GPIO_IDR_ID13)) {
+    if (!(GPIOA->IDR & (1 << PIN_13))) {
         delayMs(DEBOUNCE_DELAY);
-        if (!(GPIOA->IDR & GPIO_IDR_ID0)) {  // check again
+        if (!(GPIOA->IDR & (1 << PIN_13))) {  // check again
             // button pressed -> system bootloader
             resetToSystemBootLoader();
         }

@@ -1,25 +1,24 @@
 #include "button.h"
 
 #define DELAY_TIME_MS 10
-
-static uint32_t btnpress_duration = 0;
 bool button_pressed = false;
 
-bool Button_IsPressed(uint32_t *duration_ms) {
-    *duration_ms = 0;
-    if (HAL_GPIO_ReadPin(ENTER_BL_GPIO_Port, ENTER_BL_Pin) == GPIO_PIN_RESET) {
+bool Button_IsPressed() {
+    return (HAL_GPIO_ReadPin(ENTER_BL_GPIO_Port, ENTER_BL_Pin) == GPIO_PIN_RESET);
+}
+
+uint32_t Button_IsPressedDuration() {
+    uint32_t duration_ms = 0;
+    if (Button_IsPressed()) {
         // Measure duration of button press
-        while (HAL_GPIO_ReadPin(ENTER_BL_GPIO_Port, ENTER_BL_Pin) == GPIO_PIN_RESET) {
+        while (Button_IsPressed()) {
             HAL_Delay(DELAY_TIME_MS);
-            *duration_ms += DELAY_TIME_MS;
+            duration_ms += DELAY_TIME_MS;
         }
-        return true;
     }
-    return false;
+    return duration_ms;
 }
 
 void Button_Tick() {
-    if (Button_IsPressed(&btnpress_duration)) {
-        // Do something
-    }
+    button_pressed = Button_IsPressed();
 }
