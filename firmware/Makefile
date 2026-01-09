@@ -21,15 +21,15 @@ all: merge
 preloader:
 	$(MAKE) -C $(PRE_DIR) all
 
-userapp: preloader
+userapp:
 	$(MAKE) -C $(APP_DIR) all
 
-copy: userapp
+copy: userapp preloader
+	@mkdir -p $(OUT_DIR)
 	@cp $(PRE_ELF) $(OUT_DIR)/
 	@cp $(APP_ELF) $(OUT_DIR)/ 
 
 patch: copy
-	@mkdir -p $(OUT_DIR)
 	@python3 scripts/fix_size_crc.py iapl $(PRE_BIN) $(OUT_BIN_PRE)
 	@python3 scripts/fix_size_crc.py uapp $(APP_BIN) $(OUT_BIN_APP)
 
