@@ -1,0 +1,54 @@
+#ifndef _BOOTLOADER_H
+#define _BOOTLOADER_H
+
+#include <assert.h>
+#include <stdint.h>
+#include <stdbool.h>
+
+#define TOMBSTONE_SIZE              (0x20)
+
+#define PRELOADER_BASE              (FLASH_BASE)
+#define PRELOADER_SIZE              (2 * 1024) // 2KB, this includes tombstone data
+#define PRELOADER_ENTRY_POINT       (PRELOADER_BASE)
+
+#define APP_BASE                    (PRELOADER_BASE + PRELOADER_SIZE)
+#define APP_ENTRY_POINT             (0x08000A00U)
+
+#define TOMBSTONE_OFFSET_IAPL       (APP_BASE - TOMBSTONE_SIZE)
+#define TOMBSTONE_OFFSET_UAPP       (APP_BASE)
+
+#define SYSBOOTLOADER_OFFSET        (0x1FFF0000U)
+#define SYSBOOTLOADER_FLAG_OFFSET 	(100)			// 4 * 100 = 400 bytes below top of stack
+#define SYSBOOTLOADER_FLAG_MAGIC	(0xFEEFFEEFU)
+
+#define IAPL_MAGIC {'I', 'A', 'P', 'L'}
+#define UAPP_MAGIC {'U', 'A', 'P', 'P'}
+
+static const uint8_t TOMBSTONE_IAPL_MAGIC[4] = IAPL_MAGIC;
+static const uint8_t TOMBSTONE_UAPP_MAGIC[4] = UAPP_MAGIC;
+
+/* Tombstone */
+typedef struct {
+    /* 0x00 */ uint8_t magic[4];
+    /* 0x04 */ uint16_t ver_major;
+    /* 0x06 */ uint16_t ver_minor;
+    /* 0x08 */ uint16_t size;
+    /* 0x0A */ uint32_t crc;
+    /* 0x0E */ uint8_t  reserved[0x12];
+    /* 0x20 total */
+}
+__attribute__((packed, aligned(1)))
+tombstone_t;
+
+static_assert (TOMBSTONE_SIZE == (sizeof(tombstone_t)),
+    "TOMBSTONE vs sizeof(tombstone_t) mismatch");
+
+uint32_t calculateCrc32(uint8_t *data, uint32_t len);
+void resetToSystemBootLoader();
+void handleSystemBootLoader();
+void jump(uint32_t addr);
+bool validateTombstone(uint32_t tombstone_address, uint32_t data_offset, const uint8_t magic[4]);
+bool validateIaplTombstone();
+bool validateUappTombstone();
+
+#endif // _BOOTLOADER_H

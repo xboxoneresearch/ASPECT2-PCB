@@ -1,4 +1,2 @@
-build/
-.vscode/
-.stm32env
-.mxproject
+**/out/
+**/build/

@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "STM32",
+      "includePath": [
+        "common",
+        "preloader/include",
+        "userapp/Core/Inc",
+        "userapp/Drivers/CMSIS/Device/ST/STM32G0xx/Include",
+        "userapp/Drivers/CMSIS/Include",
+        "userapp/Drivers/STM32G0xx_HAL_Driver/Inc",
+        "userapp/Drivers/STM32G0xx_HAL_Driver/Inc/Legacy",
+        "userapp/Drivers/u8g2/csrc"
+      ],
+      "defines": [
+        "STM32G031xx",
+        "USE_HAL_DRIVER"
+      ]
+    }
+  ],
+  "version": 4
+}

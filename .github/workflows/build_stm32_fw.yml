@@ -19,6 +19,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v5
+      with:
+        submodules: recursive
 
     - name: Install ARM GCC Toolchain
       run: |
@@ -43,7 +45,5 @@ jobs:
       with:
         name: aspect2-stm32-firmware-${{ github.sha }}
         path: |
-          firmware/build/*.bin
-          firmware/build/*.elf
-          firmware/build/*.hex
+          firmware/out/*
         retention-days: 30
