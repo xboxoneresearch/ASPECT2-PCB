@@ -15,6 +15,16 @@ uint32_t calculateCrc32(uint8_t *data, uint32_t len) {
         return 0xFFFFFFFF;
     }
 
+    uintptr_t addr = (uintptr_t)data;
+
+    /* Require 32-bit words and word alignment */
+    if ((len % 4) != 0) return 0xFFFFFFFF;
+    if ((addr % 4) != 0) return 0xFFFFFFFF;
+
+    /* Bounds check (overflow-safe): addr + len must fit inside flash */
+    if (addr < FLASH_BASE) return 0xFFFFFFFF;
+    if (addr > ((FLASH_BASE + FLASH_SIZE) - len)) return 0xFFFFFFFF;
+
     /* Configure and reset CRC peripheral: use default algorithm */
     CRC->CR = CRC_CR_RESET;
 
