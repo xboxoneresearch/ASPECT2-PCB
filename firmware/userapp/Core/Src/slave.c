@@ -81,7 +81,7 @@ void HAL_I2C_AbortCpltCallback(I2C_HandleTypeDef *hi2c)
 
 void Slave_HandleComplete()
 {
-        if (reg_index == 0x26 && (register_map[0x24] & 0x1))
+        if (reg_index == 0x26 /*&& (register_map[0x24] & 0x0F) > 0*/)
                 new_segment_available = 1;
 }
 
