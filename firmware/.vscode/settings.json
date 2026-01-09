@@ -1,5 +1,3 @@
 {
-    "cortex-debug.armToolchainPath": "/home/e99/.config/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin",
-    "cortex-debug.openocdPath": "/home/e99/.config/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/openocd/0.12.0-6.1/.content/bin/openocd",
     "cortex-debug.variableUseNaturalFormat": false
 }
