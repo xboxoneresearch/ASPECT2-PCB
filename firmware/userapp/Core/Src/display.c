@@ -145,7 +145,7 @@ void Display_ShowCode(uint16_t code, uint8_t segment) {
     snprintf(lcd_buf, sizeof(lcd_buf), "%04X", code);
 
     u8g2_ClearDisplay(&myDisplay);
-    u8g2_SetFont(&myDisplay, u8g2_font_luBS14_tn);
+    u8g2_SetFont(&myDisplay, u8g2_font_luBS14_tr);
     u8g2_DrawStr(&myDisplay, 4, 32, lcd_buf);
     u8g2_SetFont(&myDisplay, u8g2_font_7x13_mr);
     u8g2_DrawStr(&myDisplay, 12, 10, seg_name);

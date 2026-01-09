@@ -70,7 +70,7 @@ __attribute__((used))
 const tombstone_t tombstone = {
     .magic = UAPP_MAGIC,
     .ver_major = 1,
-    .ver_minor = 0,
+    .ver_minor = 1,
     .size = 0x5A53, // ASCII: SZ
     .crc = 0x00435243, // ASCII: CRC + \0
     .reserved = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,0xFF, 0xFF, 0xFF, 0xFF,  0xFF, 0xFF, 0xFF, 0xFF },
@@ -110,7 +110,7 @@ int main(void)
   MX_CRC_Init();
   /* USER CODE BEGIN 2 */
   Display_Init();
-  //Slave_Init();
+  Slave_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
