@@ -6,6 +6,7 @@
 #define DEBOUNCE_DELAY  200
 #define CLOCK_FREQ_HSI 16000000 // 16 MHz HSI
 
+/* size and crc are being replaced by scripts/fix_size_crc.py */
 __attribute__((section(".tombstone_iapl")))
 __attribute__((used))
 const tombstone_t tombstone = {

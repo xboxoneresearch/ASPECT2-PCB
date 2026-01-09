@@ -18,7 +18,3 @@ uint32_t Button_IsPressedDuration() {
     }
     return duration_ms;
 }
-
-void Button_Tick() {
-    button_pressed = Button_IsPressed();
-}

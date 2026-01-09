@@ -64,6 +64,7 @@ static void MX_CRC_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+/* size and crc are being replaced by scripts/fix_size_crc.py */
 __attribute__((section(".tombstone_uapp")))
 __attribute__((used))
 const tombstone_t tombstone = {
@@ -116,7 +117,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    Button_Tick();
     Display_Tick();
     /* USER CODE END WHILE */
 

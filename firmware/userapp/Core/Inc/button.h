@@ -11,7 +11,6 @@ extern bool button_pressed;
 
 bool Button_IsPressed();
 uint32_t Button_IsPressedDuration();
-void Button_Tick();
 
 #ifdef __cplusplus
 }

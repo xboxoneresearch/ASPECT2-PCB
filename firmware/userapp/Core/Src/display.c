@@ -109,7 +109,7 @@ void Display_Init(void)
         tombstone_t *iapl_ts = (tombstone_t *)(TOMBSTONE_OFFSET_IAPL);
         snprintf(lcd_buf, sizeof(lcd_buf), "IAPL %i.%i", iapl_ts->ver_major, iapl_ts->ver_minor);
     } else {
-        strncat(lcd_buf, "IAPL INVALID", sizeof(lcd_buf)-1);
+        snprintf(lcd_buf, sizeof(lcd_buf), "IAPL INVALID");
     }
     u8g2_DrawStr(&myDisplay, 4, 22, lcd_buf);
 
@@ -118,7 +118,7 @@ void Display_Init(void)
         tombstone_t *uapp_ts = (tombstone_t *)(TOMBSTONE_OFFSET_UAPP);
         snprintf(lcd_buf, sizeof(lcd_buf), "UAPP %i.%i", uapp_ts->ver_major, uapp_ts->ver_minor);
     } else {
-        strncat(lcd_buf, "UAPP INVALID", sizeof(lcd_buf)-1);
+        snprintf(lcd_buf, sizeof(lcd_buf), "UAPP INVALID");
     }
     u8g2_DrawStr(&myDisplay, 4, 32, lcd_buf);
     u8g2_SendBuffer(&myDisplay);
