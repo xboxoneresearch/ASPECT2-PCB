@@ -72,6 +72,7 @@ Download from the latest release archive: [Release](https://github.com/xboxonere
 2. Press and hold the button on the PCB.
 3. Connect PCB to PC, keep button pressed for a second.
 4. Use custom `aspect2-stm32-updater` tool from this repo: [repo](https://github.com/xboxoneresearch/libaspect2)
+
 4.1. Preloader first
 
 ```
