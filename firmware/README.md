@@ -71,7 +71,77 @@ Download from the latest release archive: [Release](https://github.com/xboxonere
 1. Disconnect PCB from console and PC!
 2. Press and hold the button on the PCB.
 3. Connect PCB to PC, keep button pressed for a second.
-4. Use custom stm32flash tool from this repo: [repo](https://github.com/xboxoneresearch/libaspect2)
+4. Use custom `aspect2-stm32-updater` tool from this repo: [repo](https://github.com/xboxoneresearch/libaspect2)
+4.1. Preloader first
+
+```
+$ ./aspect2-stm32-updater flash preloader preloader.bin`
+* Using File=Ok("preloader.bin"), Size=2048 bytes
+[*] About to write offset 0x8000000 - 0x8000800 (0x800 bytes)
+[*] Start page: 0, count: 1
+[+] Chip ID: 0x466
+[+] Erasing flash...
+[+] Writing firmware...
+[00:00:18, eta:2m] Writing █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 256 B / 2.00 KiB (13 B/s)
+```
+
+At the end, this should appear:
+
+```
+[+] Writing firmware...
+[+] Verifying firmware...
+[00:02:17, eta:0s] Writing ████████████████████████████████████████ 2.00 KiB / 2.00 KiB (15 B/s)
+[00:02:17, eta:0s] Verifying ████████████████████████████████████████ 2.00 KiB / 2.00 KiB (15 B/s)
+[*] Done
+```
+
+The info command is supposed to show
+
+```
+$ ./aspect2-stm32-updater info
+Magic 'IAPL' @ 0x80007E0
+Version=1.1, Size=0x7E0, CRC32=0xC2A290A3
+Hash valid: YES
+No firmware / tombstone found @ 0x8000800
+```
+
+4.2. Now userapp (and yes, it is veeeery slow)
+
+```
+./aspect2-stm32-updater flash user-app userapp.bin
+* Using File=Ok("userapp.bin"), Size=24104 bytes
+[*] About to write offset 0x8000800 - 0x8006628 (0x5E28 bytes)
+[*] Start page: 1, count: 12
+[+] Chip ID: 0x466
+[+] Erasing flash...
+[+] Writing firmware...
+[00:00:11, eta:37m] Writing ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 128 B / 23.54 KiB (10 B/s)
+```
+
+Firmware got written successfully
+
+```
+[+] Writing firmware...
+[00:26:33, eta:0s] Writing ████████████████████████████████████████ 23.54 KiB / 23.54 KiB (14 B/s)
+[+] Verifying firmware...
+[00:26:33, eta:0s] Verifying ████████████████████████████████████████ 23.54 KiB / 23.54 KiB (14 B/s)
+[*] Done
+```
+
+Let's check the info command once again
+
+```
+$ ./aspect2-stm32-updater info
+Magic 'IAPL' @ 0x80007E0
+Version=1.1, Size=0x7E0, CRC32=0xC2A290A3
+Hash valid: YES
+Magic 'UAPP' @ 0x8000800
+Version=1.1, Size=0x5C28, CRC32=0xC8961915
+Hash valid: YES
+```
+
+5. We are all done!
+
 
 ## Development
 
@@ -83,4 +153,3 @@ Download from the latest release archive: [Release](https://github.com/xboxonere
 - Get an `arm-none-eabi` toolchain (f.e. from [developer.arm.com](https://developer.arm.com/-/media/Files/downloads/gnu/14.3.rel1/binrel/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi.tar.xz))
 - Extract the archive and add the `bin/` directory to your `$PATH` environment variable
 - Build firmware via `make`
-

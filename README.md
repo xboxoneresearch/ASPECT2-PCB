@@ -118,7 +118,7 @@ Before being able to communicate with the device, programming eeprom or regular 
 
 ### Programming the STM32 (POST Code display)
 
-See [firmware/](./firmware/) for build & flash instructions.
+See [firmware/](./firmware/) for detailed build & flash instructions.
 
 ## Thanks
 
