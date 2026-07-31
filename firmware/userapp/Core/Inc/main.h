@@ -28,6 +28,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32g0xx_hal.h"
+#include "bootloader.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -60,8 +61,9 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define ENTER_BL_Pin GPIO_PIN_13
-#define ENTER_BL_GPIO_Port GPIOA
+// NUCLEO_DEBUG / ENTER_BL_PORT / ENTER_BL_PIN: see common/bootloader.h
+#define ENTER_BL_Pin ((uint16_t)(1 << ENTER_BL_PIN))
+#define ENTER_BL_GPIO_Port ENTER_BL_PORT
 
 /* USER CODE BEGIN Private defines */
 
