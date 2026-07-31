@@ -1,17 +1,23 @@
 #include "slave.h"
 #include "bootloader.h"
+#include "postcodes.h"
 
 extern I2C_HandleTypeDef hi2c1;
 
 static uint8_t register_map[REG_MAP_SIZE] = {0}; // Register map storage
 static uint8_t new_segment_available = 0;
-static uint8_t reg_index = 0;              // Current write address
+static uint8_t reg_index = 0;
 
 static uint32_t error = HAL_OK;
 static uint8_t error_state = 0;
 
 static uint8_t bootloader_magic_buf[4] = {0};
 static uint8_t receiving_boot_magic = 0;   // Set while a BOOTLOADER_TRIGGER_I2C_ADDR write is in flight
+
+static uint8_t rx_scratch[REG_MAP_SIZE + 1]; // [0]=target register, [1..]=data
+
+// Set by ISR callbacks, checked by Slave_Poll() from the main loop.
+static volatile uint8_t need_restart = 0;
 
 void Slave_Start(void);
 
@@ -22,6 +28,14 @@ void Slave_Start(void);
 void Slave_Init(void)
 {
         Slave_Start();
+}
+
+void Slave_Poll(void)
+{
+        if (need_restart) {
+                need_restart = 0;
+                Slave_Start();
+        }
 }
 
 void Slave_Start(void)
@@ -35,7 +49,6 @@ void Slave_Start(void)
 
         HAL_I2C_EnableListen_IT(&hi2c1);
 }
-
 
 void HAL_I2C_AddrCallback(I2C_HandleTypeDef *hi2c, uint8_t TransferDirection, uint16_t AddrMatchCode)
 {
@@ -55,11 +68,12 @@ void HAL_I2C_AddrCallback(I2C_HandleTypeDef *hi2c, uint8_t TransferDirection, ui
                         receiving_boot_magic = 1;
                         ret = HAL_I2C_Slave_Seq_Receive_IT(&hi2c1, bootloader_magic_buf, sizeof(bootloader_magic_buf), I2C_LAST_FRAME);
                 } else {
-                        ret = HAL_I2C_Slave_Seq_Receive_IT(&hi2c1, &reg_index, 1, I2C_NEXT_FRAME);
+                        // Single call for the whole transaction
+                        ret = HAL_I2C_Slave_Seq_Receive_IT(&hi2c1, rx_scratch, sizeof(rx_scratch), I2C_NEXT_FRAME);
                 }
 
                 if (ret != HAL_OK) {
-                        Error_Handler();
+                        need_restart = 1;
                 }
         }
 }
@@ -70,7 +84,29 @@ void HAL_I2C_ListenCpltCallback(I2C_HandleTypeDef *hi2c)
                 return;
         }
 
-        Slave_Start();
+        need_restart = 1;
+}
+
+static void Slave_FlushRxScratch(void)
+{
+        if (hi2c1.pBuffPtr >= rx_scratch && hi2c1.pBuffPtr <= rx_scratch + sizeof(rx_scratch)) {
+                uint16_t received = (uint16_t)(hi2c1.pBuffPtr - rx_scratch);
+
+                if (received >= 1) {
+                        uint8_t start_addr = rx_scratch[0];
+                        uint16_t data_len = received - 1;
+
+                        for (uint16_t i = 0; i < data_len; i++) {
+                                register_map[(start_addr + i) % REG_MAP_SIZE] = rx_scratch[1 + i];
+                        }
+                        reg_index = (uint8_t)(start_addr + data_len);
+
+                        // Did the received range contain Segment register?
+                        if (start_addr <= REG_Segments && REG_Segments < start_addr + data_len) {
+                                new_segment_available = 1;
+                        }
+                }
+        }
 }
 
 void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
@@ -93,9 +129,7 @@ void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
                 return;
         }
 
-        if (HAL_I2C_Slave_Seq_Receive_IT(hi2c, &register_map[reg_index++], 1, I2C_NEXT_FRAME) != HAL_OK) {
-                Error_Handler();
-        }
+        Slave_FlushRxScratch();
 }
 
 void HAL_I2C_AbortCpltCallback(I2C_HandleTypeDef *hi2c)
@@ -104,15 +138,8 @@ void HAL_I2C_AbortCpltCallback(I2C_HandleTypeDef *hi2c)
                 return;
         }
 
-        Error_Handler();
+        need_restart = 1;
 }
-
-void Slave_HandleComplete()
-{
-        if (reg_index == 0x26 /*&& (register_map[0x24] & 0x0F) > 0*/)
-                new_segment_available = 1;
-}
-
 
 void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c)
 {
@@ -122,31 +149,31 @@ void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c)
 
         error = HAL_I2C_GetError(&hi2c1);
 
-        switch (error) {
-                case HAL_I2C_ERROR_AF:
-                        __HAL_I2C_CLEAR_FLAG(hi2c, I2C_FLAG_AF);
-                        break;
-                case HAL_I2C_ERROR_BERR:
-                        __HAL_I2C_CLEAR_FLAG(hi2c, I2C_FLAG_BERR);
-                        error_state = 1;
-                        break;
-                default:
-                        Error_Handler();
+        // error is a bitmask
+        if (error & HAL_I2C_ERROR_AF) {
+            __HAL_I2C_CLEAR_FLAG(hi2c, I2C_FLAG_AF);
         }
-                        
+        if (error & HAL_I2C_ERROR_ARLO) {
+            __HAL_I2C_CLEAR_FLAG(hi2c, I2C_FLAG_ARLO);
+        }
+        if (error & HAL_I2C_ERROR_OVR) {
+            __HAL_I2C_CLEAR_FLAG(hi2c, I2C_FLAG_OVR);
+        }
+        if (error & HAL_I2C_ERROR_BERR) {
+            __HAL_I2C_CLEAR_FLAG(hi2c, I2C_FLAG_BERR);
+            error_state = 1;
+        }
+
         hi2c->ErrorCode = 0;
 
         if (receiving_boot_magic) {
-                // Truncated bootloader-trigger write; discard it rather than
-                // let stale reg_index state be mistaken for a completed
-                // register-map transfer below.
+                // Truncated bootloader-trigger write; discard it.
                 receiving_boot_magic = 0;
         } else {
-                Slave_HandleComplete();
+                Slave_FlushRxScratch();
         }
 
-        Slave_Start();
-
+        need_restart = 1;
 }
 
 uint8_t Slave_RegRead(uint8_t addr) { return register_map[addr % REG_MAP_SIZE]; }

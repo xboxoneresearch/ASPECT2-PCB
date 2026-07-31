@@ -19,6 +19,7 @@ extern "C" {
 #define BOOTLOADER_TRIGGER_MAGIC      0xB007B007UL
 
 void Slave_Init(void);
+void Slave_Poll(void);
 
 uint8_t Slave_RegRead(uint8_t addr);
 void Slave_RegWrite(uint8_t addr, uint8_t val);
