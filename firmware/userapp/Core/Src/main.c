@@ -219,10 +219,10 @@ static void MX_I2C1_Init(void)
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
   hi2c1.Init.Timing = 0x00C12166;
-  hi2c1.Init.OwnAddress1 = 112;
+  hi2c1.Init.OwnAddress1 = (MAX6958_SLAVE_I2C_ADDR << 1);
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
-  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_ENABLE;
+  hi2c1.Init.OwnAddress2 = (BOOTLOADER_TRIGGER_I2C_ADDR << 1);
   hi2c1.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
   hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
   hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_ENABLE;
