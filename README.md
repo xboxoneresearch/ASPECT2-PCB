@@ -34,7 +34,7 @@ This repo contains:
 | I2C           | SMBus communication    | ❌                 | Requires bitbanging driver @ libaspect2 (TODO)      |
 | SWO           | ARM Single-Wire-Output | ❌                 | No success, Devkit exclusive (?)                    |
 | UART (KRNL)   | Kernel Debugging       | ✅                 | Devkit exclusive                                    |
-| UART (SMC)    | SMC/SB Debugging (?)   | ❌                 | No success, likely Devkit exclusive                 |
+| UART (SMC)    | SMC/SB Debugging       | ✅                 | Requires soldering (see FACET in #references)       |
 
 
 * Devkit exclusive: Requires specific flavor of bootloaders or certain [Certificate capabilities](https://xboxoneresearch.github.io/wiki/security/certificates/#capabilities).
