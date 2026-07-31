@@ -8,6 +8,9 @@ extern "C" {
 #include "main.h"
 #include "slave.h"
 
+#define SEGMENT_FLAVOR_MASK 0xF0
+#define SEGMENT_INDEX_MASK  0x0F
+
 // Indicated by Segments-register
 enum CodeFlavor: uint8_t {
     CODE_FLAVOR_CPU = 0x10,
@@ -15,6 +18,11 @@ enum CodeFlavor: uint8_t {
     CODE_FLAVOR_SMC = 0x70,
     CODE_FLAVOR_OS =  0xF0,
 };
+
+typedef struct {
+    uint64_t code;
+    uint8_t flavor;
+} PostCode;
 
 enum MAX6958Registers {
     REG_NoOp = 0x00,
@@ -34,10 +42,13 @@ enum MAX6958Registers {
     REG_Segments = 0x24,
 };
 
-uint16_t POST_ReadCode();
-uint8_t POST_ReadSegment();
-const char *POST_GetSegmentName(uint8_t seg);
-char POST_GetSegmentIndex(uint8_t seg);
+const char *POST_GetSegmentName(uint8_t flavor);
+
+// Feeds the current Digit0-3/Segments registers into the code assembler.
+// A full POST code is made up of up to 4 consecutive Segments-writes of the
+// same flavor (MSB-first, terminated by index 1); returns 1 and fills *out
+// once a full code has been assembled, 0 otherwise.
+uint8_t POST_ProcessSegment(PostCode *out);
 
 #ifdef __cplusplus
 }

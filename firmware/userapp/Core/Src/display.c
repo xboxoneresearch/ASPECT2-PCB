@@ -11,8 +11,6 @@
 static u8g2_t myDisplay;
 
 static char lcd_buf[20] = {0};
-static const char *seg_name = NULL;
-static char seg_index_str[] = {'(', 'X', ')' ,'\0'};
 
 uint8_t u8x8_gpio_and_delay(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr)
 {
@@ -136,20 +134,45 @@ void Display_Init(void)
     u8g2_ClearDisplay(&myDisplay);
 }
 
-void Display_ShowCode(uint16_t code, uint8_t segment) {
-    seg_name = POST_GetSegmentName(segment);
-    // Convert numeric index to ASCII character
-    seg_index_str[1] = POST_GetSegmentIndex(segment) + '0';
+static void drawCenteredStr(int16_t y, const char *str) {
+    int16_t x = (64 - u8g2_GetStrWidth(&myDisplay, str)) / 2;
+    if (x < 0) {
+        x = 0;
+    }
+    u8g2_DrawStr(&myDisplay, x, y, str);
+}
 
-    // Assemble content
-    snprintf(lcd_buf, sizeof(lcd_buf), "%04X", code);
+void Display_ShowCode(uint64_t code, const char *flavor) {
+    // Unpadded hex digit count, to decide layout below.
+    uint64_t tmp = code;
+    int digits = 1;
+    while (tmp > 0xF) {
+        tmp >>= 4;
+        digits++;
+    }
 
     u8g2_ClearDisplay(&myDisplay);
-    u8g2_SetFont(&myDisplay, u8g2_font_luBS14_tr);
-    u8g2_DrawStr(&myDisplay, 4, 32, lcd_buf);
-    u8g2_SetFont(&myDisplay, u8g2_font_7x13_mr);
-    u8g2_DrawStr(&myDisplay, 12, 10, seg_name);
-    u8g2_DrawStr(&myDisplay, 40, 10, seg_index_str);
+
+    u8g2_SetFont(&myDisplay, u8g2_font_5x7_mr);
+    u8g2_DrawStr(&myDisplay, 2, 7, flavor);
+
+    if (digits <= 8) {
+        // Fits in 32 bits: single, bigger line.
+        char buf[9];
+        snprintf(buf, sizeof(buf), "%lX", (unsigned long)code);
+        u8g2_SetFont(&myDisplay, u8g2_font_7x13_mr);
+        drawCenteredStr(30, buf);
+    } else {
+        // Longer code: split across two lines, one 32-bit half each.
+        char hiBuf[9];
+        char loBuf[9];
+        snprintf(hiBuf, sizeof(hiBuf), "%lX", (unsigned long)(code >> 32));
+        snprintf(loBuf, sizeof(loBuf), "%lX", (unsigned long)code);
+        u8g2_SetFont(&myDisplay, u8g2_font_6x10_mr);
+        drawCenteredStr(18, hiBuf);
+        drawCenteredStr(29, loBuf);
+    }
+
     u8g2_SendBuffer(&myDisplay);
 }
 
@@ -160,13 +183,12 @@ void Display_ShowCode(uint16_t code, uint8_t segment) {
   */
 void Display_Tick(void)
 {
+    PostCode postCode;
+
     if (Slave_HardError()) {
         Display_Print("BUS ERROR");
-    } else if (Slave_IsNewSegmentAvailable()) {
-        Display_ShowCode(
-            POST_ReadCode(),
-            POST_ReadSegment()
-        );
+    } else if (Slave_IsNewSegmentAvailable() && POST_ProcessSegment(&postCode)) {
+        Display_ShowCode(postCode.code, POST_GetSegmentName(postCode.flavor));
     } else if (Button_IsPressed()) {
         Display_Print("BtnPress");
     }

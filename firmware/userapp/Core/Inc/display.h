@@ -15,7 +15,7 @@ extern I2C_HandleTypeDef hi2c2;
 void Display_Init(void);
 void Display_Print(const char *message);
 void Display_ScrollText(const char *text);
-void Display_ShowCode(uint16_t code, uint8_t segment);
+void Display_ShowCode(uint64_t code, const char *flavor);
 void Display_Tick(void);
 
 #ifdef __cplusplus
