@@ -5,6 +5,20 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+// Comment out for the SO8N target: PA13 is SWDIO there, and on Nucleo
+// ENTER_BL moves to PB0 (bonded to I2C2_SCL/OLED on the SO8N target).
+// #define NUCLEO_DEBUG
+
+#ifdef NUCLEO_DEBUG
+#define ENTER_BL_PORT        GPIOB
+#define ENTER_BL_PIN         0
+#define ENTER_BL_RCC_ENABLE  RCC_IOPENR_GPIOBEN
+#else
+#define ENTER_BL_PORT        GPIOA
+#define ENTER_BL_PIN         13
+#define ENTER_BL_RCC_ENABLE  RCC_IOPENR_GPIOAEN
+#endif
+
 #define TOMBSTONE_SIZE              (0x20)
 
 #define PRELOADER_BASE              (FLASH_BASE)

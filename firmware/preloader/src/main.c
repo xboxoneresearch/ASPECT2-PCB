@@ -57,25 +57,25 @@ int main(void) {
 
     handleSystemBootLoader();
 
-    // Enable GPIOA
-    RCC->IOPENR |= RCC_IOPENR_GPIOAEN;
+    // Enable ENTER_BL's GPIO port (see common/bootloader.h)
+    RCC->IOPENR |= ENTER_BL_RCC_ENABLE;
 
     // Enable CRC clock
     RCC->AHBENR |= RCC_AHBENR_CRCEN;
-    
 
-    // Configure PA13 as Input, Pull-up
-    gpioConfig(GPIOA, PIN_13,
+
+    // Configure ENTER_BL as Input, Pull-up
+    gpioConfig(ENTER_BL_PORT, ENTER_BL_PIN,
                     GPIO_MODE_INPUT,
                     GPIO_OTYPE_PP,     // doesn’t matter for input
                     GPIO_SPEED_LOW,    // doesn’t matter for input
                     GPIO_PULLUP);
 
 
-    // 2 second wait, debounced 
-    if (!(GPIOA->IDR & (1 << PIN_13))) {
+    // 2 second wait, debounced
+    if (!(ENTER_BL_PORT->IDR & (1 << ENTER_BL_PIN))) {
         delayMs(DEBOUNCE_DELAY);
-        if (!(GPIOA->IDR & (1 << PIN_13))) {  // check again
+        if (!(ENTER_BL_PORT->IDR & (1 << ENTER_BL_PIN))) {  // check again
             // button pressed -> system bootloader
             resetToSystemBootLoader();
         }
