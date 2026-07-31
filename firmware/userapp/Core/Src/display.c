@@ -12,6 +12,8 @@ static u8g2_t myDisplay;
 
 static char lcd_buf[20] = {0};
 
+static void drawCenteredStr(int16_t y, const char *str);
+
 uint8_t u8x8_gpio_and_delay(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr)
 {
     switch(msg)
@@ -62,8 +64,7 @@ void Display_ScrollText(const char *text) {
     int text_w = u8g2_GetStrWidth(&myDisplay, text);
     int y = lower_y + lower_h - 2; /* baseline near bottom */
 
-    /* Start just off the right edge and scroll left until just off the left edge */
-    for (int x = screen_w; x > -text_w; x--) {
+    for (int x = 0; x > screen_w - text_w; x--) {
         /* Clear only the lower third by drawing a background box (draw color 0) */
         u8g2_SetDrawColor(&myDisplay, 0);
         u8g2_DrawBox(&myDisplay, 0, lower_y, screen_w, lower_h);
@@ -130,8 +131,12 @@ void Display_Init(void)
     u8g2_SendBuffer(&myDisplay);
     Display_ScrollText("xboxresearch.com");
 
-    // Cleanup
     u8g2_ClearDisplay(&myDisplay);
+    u8g2_SetFont(&myDisplay, u8g2_font_5x7_mr);
+    drawCenteredStr(9, "Waiting");
+    drawCenteredStr(19, "for");
+    drawCenteredStr(29, "POST codes");
+    u8g2_SendBuffer(&myDisplay);
 }
 
 static void drawCenteredStr(int16_t y, const char *str) {
