@@ -1,4 +1,5 @@
 #include "slave.h"
+#include "bootloader.h"
 
 extern I2C_HandleTypeDef hi2c1;
 
@@ -8,6 +9,9 @@ static uint8_t reg_index = 0;              // Current write address
 
 static uint32_t error = HAL_OK;
 static uint8_t error_state = 0;
+
+static uint8_t bootloader_magic_buf[4] = {0};
+static uint8_t receiving_boot_magic = 0;   // Set while a BOOTLOADER_TRIGGER_I2C_ADDR write is in flight
 
 void Slave_Start(void);
 
@@ -43,7 +47,17 @@ void HAL_I2C_AddrCallback(I2C_HandleTypeDef *hi2c, uint8_t TransferDirection, ui
         // Check if master->slave transmission
         if (TransferDirection == I2C_DIRECTION_TRANSMIT)
         {
-                HAL_StatusTypeDef ret = HAL_I2C_Slave_Seq_Receive_IT(&hi2c1, &reg_index, 1, I2C_NEXT_FRAME);
+                HAL_StatusTypeDef ret;
+
+                // AddrMatchCode is delivered pre-shifted by 1 (same convention as
+                // Init.OwnAddress1/OwnAddress2), not the raw 7-bit address.
+                if (AddrMatchCode == (BOOTLOADER_TRIGGER_I2C_ADDR << 1)) {
+                        receiving_boot_magic = 1;
+                        ret = HAL_I2C_Slave_Seq_Receive_IT(&hi2c1, bootloader_magic_buf, sizeof(bootloader_magic_buf), I2C_LAST_FRAME);
+                } else {
+                        ret = HAL_I2C_Slave_Seq_Receive_IT(&hi2c1, &reg_index, 1, I2C_NEXT_FRAME);
+                }
+
                 if (ret != HAL_OK) {
                         Error_Handler();
                 }
@@ -62,6 +76,20 @@ void HAL_I2C_ListenCpltCallback(I2C_HandleTypeDef *hi2c)
 void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
 {
         if (hi2c != &hi2c1) {
+                return;
+        }
+
+        if (receiving_boot_magic) {
+                receiving_boot_magic = 0;
+
+                uint32_t magic = ((uint32_t)bootloader_magic_buf[0] << 24)
+                                | ((uint32_t)bootloader_magic_buf[1] << 16)
+                                | ((uint32_t)bootloader_magic_buf[2] << 8)
+                                |  (uint32_t)bootloader_magic_buf[3];
+
+                if (magic == BOOTLOADER_TRIGGER_MAGIC) {
+                        resetToSystemBootLoader(); // Does not return
+                }
                 return;
         }
 
@@ -105,9 +133,17 @@ void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c)
                 default:
                         Error_Handler();
         }
-        
+                        
         hi2c->ErrorCode = 0;
-        Slave_HandleComplete();
+
+        if (receiving_boot_magic) {
+                // Truncated bootloader-trigger write; discard it rather than
+                // let stale reg_index state be mistaken for a completed
+                // register-map transfer below.
+                receiving_boot_magic = 0;
+        } else {
+                Slave_HandleComplete();
+        }
 
         Slave_Start();
 
