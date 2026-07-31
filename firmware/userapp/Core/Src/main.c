@@ -118,6 +118,7 @@ int main(void)
   while (1)
   {
     Display_Tick();
+    Slave_Poll();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
