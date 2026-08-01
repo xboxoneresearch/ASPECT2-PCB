@@ -4,15 +4,15 @@ on:
   workflow_call:
   push:
     paths:
-    - "*.kicad_sch"
-    - "*.kicad_pcb"
-    - "*.kicad_pro"
+    - "pcb/**.kicad_sch"
+    - "pcb/**.kicad_pcb"
+    - "pcb/**.kicad_pro"
     - ".kibot.yml"
   pull_request:
     paths:
-    - "*.kicad_sch"
-    - "*.kicad_pcb"
-    - "*.kicad_pro"
+    - "pcb/**.kicad_sch"
+    - "pcb/**.kicad_pcb"
+    - "pcb/**.kicad_pro"
     - ".kibot.yml"
 
 jobs:
@@ -26,8 +26,8 @@ jobs:
         with:
           config: .kibot.yml
           dir: output
-          schema: 'ASPECT2.kicad_sch'
-          board: 'ASPECT2.kicad_pcb'
+          schema: 'pcb/ASPECT2.kicad_sch'
+          board: 'pcb/ASPECT2.kicad_pcb'
 
       - name: upload results
         if: ${{ always() }}

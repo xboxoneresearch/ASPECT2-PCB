@@ -20,7 +20,7 @@ See [Functionality](#functionality) for more infos
 
 This repo contains:
 
-* KiCad files for the PCB / schematics
+* [KiCad files](./pcb/) for the PCB / schematics
 * [EEPROM template](./eeprom/) for FT_PROG
 * [STM32 firmware](./firmware/)
 
@@ -55,7 +55,8 @@ There are two main repos with support software for this board.
 │   ├── Greybull_FabD+.xml - FT Prog template (official on-board FACET)
 │   └── Facet2_fabA+.xml - FT Prog template (derived from onboard FTDI dump)
 ├── firmware - STM32 firmware
-├── lib - additional KiCad symbols / footprints
+├── pcb - KiCad project (PCB / schematics)
+│   └── lib - additional KiCad symbols / footprints
 ```
 
 ## Manufacturing / Development
@@ -89,6 +90,16 @@ JLCPCB MFG files
 - [Gerbers](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/ASPECT2-_JLCPCB_compress.zip)
 - [Pick and place / CPL (CSV)](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/JLCPCB/ASPECT2_cpl_jlc.csv)
 - [BOM (CSV)](https://xboxoneresearch.github.io/ASPECT2-PCB/Manufacturers/JLCPCB/ASPECT2_bom_jlc.csv)
+
+### Building manufacturing files locally (Docker)
+
+Manufacturing files are normally built by CI (see badges above), but you can reproduce that build locally with [KiBot](https://github.com/INTI-CMNB/KiBot)'s Docker image instead of installing KiCad + KiBot yourself.
+
+```sh
+docker run --rm -v "$(pwd)":/work --entrypoint /work/docker-entrypoint.sh ghcr.io/inti-cmnb/kicad9_auto_full:latest
+```
+
+This mounts the repo into the container, runs KiBot against [`.kibot.yml`](./.kibot.yml) / [`pcb/ASPECT2.kicad_sch`](./pcb/ASPECT2.kicad_sch), and copies the results back into `output_docker/`. Works with Podman too (`podman run` in place of `docker run`).
 
 ### Software / plugins
 
