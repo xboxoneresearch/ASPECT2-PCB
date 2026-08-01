@@ -31,7 +31,7 @@ This repo contains:
 | SPI           | Reading eMMC flash     | ✅                 | Could also support reading SPI NOR on series-family |
 | POST          | POST-Code display      | ✅                 | STM32 renders codes to OLED display                 |
 | JTAG          | Southbridge JTAG       | ✅                 | Devkit exclusive                                    |
-| I2C           | SMBus communication    | ❌                 | Requires bitbanging driver @ libaspect2 (TODO)      |
+| I2C           | SMBus communication    | ✅                 | As I2C-master via bitbanging (libaspect2, slow)     |
 | SWO           | ARM Single-Wire-Output | ❌                 | No success, Devkit exclusive (?)                    |
 | UART (KRNL)   | Kernel Debugging       | ✅                 | Devkit exclusive                                    |
 | UART (SMC)    | SMC/SB Debugging       | ✅                 | Requires soldering (see FACET in #references)       |
