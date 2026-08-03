@@ -17,12 +17,16 @@ See [Functionality](#functionality) for more infos
 ![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/ASPECT2-3D_top30deg.png)
 ![PCB - front](https://xboxoneresearch.github.io/ASPECT2-PCB/3D/ASPECT2-3D_bottom.png)
 
+Breakout board:
+
+![Breakout PCB](./assets/breakout_pcb.png)
 
 This repo contains:
 
 * [KiCad files](./pcb/) for the PCB / schematics
 * [EEPROM template](./eeprom/) for FT_PROG
 * [STM32 firmware](./firmware/)
+* [FACET breakout board](./breakout_pcb/)
 
 ## Functionality
 
